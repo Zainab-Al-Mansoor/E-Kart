@@ -1,0 +1,145 @@
+[
+  {
+    "title": "Luna Smartwatch",
+    "display": "1.39\" HD Display (TFT)",
+    "price": 5999,
+    "original_price": 21999,
+    "discount": "73% OFF",
+    "rating": 4.85,
+    "tag": "BEST SELLER",
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/Luna-_1_1.webp?v=1733297912&width=700",
+      "https://zerolifestyle.co/cdn/shop/files/Envi_1.webp?v=1734558268&width=700"
+    ]
+  },
+  {
+    "title": "Infinity Smartwatch",
+    "display": "1.4\" IPS (240×240)",
+    "price": 6999,
+    "original_price": 23499,
+    "discount": "70% OFF",
+    "rating": 4.89,
+    "tag": "JUST LAUNCHED",
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/Infinity_gld.webp?v=1729678902&width=700",
+      "https://zerolifestyle.co/cdn/shop/files/Infinity-silver-realistic.jpg?v=1733315727&width=400"
+    ]
+  },
+  {
+    "title": "Revoltt Smartwatch",
+    "display": "1.5\" AMOLED",
+    "price": 8999,
+    "original_price": 29999,
+    "discount": "67% OFF",
+    "rating": 4.85,
+    "tag": "LIMITED OFFER",
+    "img": [      "https://zerolifestyle.co/cdn/shop/files/01_a1bd6670-1c70-448c-99ec-0409703d183f.webp?v=1734678626&width=700"
+,
+      "https://zerolifestyle.co/cdn/shop/files/02_96fb2437-2c3b-4207-84f4-b141169c27dc.webp?v=1734007124&width=700"
+    ]
+  },
+  {
+    "title": "Phantom Pro Smartwatch",
+    "display": "2.04\" Always‑On AMOLED",
+    "price": 8999,
+    "original_price": 29999,
+    "discount": "70% OFF",
+    "rating": 4.89,
+    "tag": "TRENDING",
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/MAGNETICMARSALAORANGE_4.webp?v=1723561256&width=700",
+      "https://zerolifestyle.co/cdn/shop/files/OCEANBLUEORANGE_4.webp?v=1723561486&width=700"
+    ]
+  },
+  {
+    "title": "Elite Smartwatch",
+    "display": "2.04\" Curved AMOLED",
+    "price": 9899,
+    "original_price": 29999,
+    "discount": "67% OFF",
+    "rating": 4.6,
+    "tag": "HOT DEAL",
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/RoseGold_1.webp?v=1725950101&width=700",
+      "https://zerolifestyle.co/cdn/shop/files/Starlight_1.webp?v=1725950518&width=700"
+    ]
+  },
+  {
+    "title": "Glory Smartwatch",
+    "display": "Curved Square AMOLED",
+    "price": 7999,
+    "original_price": 24999,
+    "discount": "68% OFF",
+    "rating": null,
+    "tag": "NEW ARRIVAL",
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/Layer_1_G.webp?v=1719928985&width=700",
+      "https://zerolifestyle.co/cdn/shop/files/Layer_3_B.webp?v=1719928924&width=400"
+    ]
+  },
+  {
+    "title": "Meta Smartwatch",
+    "display": "1.83\" HD Display",
+    "price": 6999,
+    "original_price": 19999,
+    "discount": "65% OFF",
+    "rating": null,
+    "tag": "TRENDING",
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/Meta_blk.webp?v=1717768847&width=600",
+      "https://zerolifestyle.co/cdn/shop/files/Meta_Realistic_05_1.webp?v=1719096837&width=400"
+    ]
+  },
+  {
+    "title": "Pixel Smartwatch",
+    "display": "AMOLED (尺寸未公布)",
+    "price": 7999,
+    "original_price": 12999,
+    "discount": "38% OFF",
+    "rating": null,
+    "tag": "PREMIUM",
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/2_4_2adebc78-1547-4a64-bd35-6eda4c743fc9.png?v=1717406207&width=500",
+      "https://zerolifestyle.co/cdn/shop/files/3_4_-1_0516861b-fcf0-4c15-ba7e-aac3c322c36f.png?v=1717406207&width=600"
+    ]
+  },
+  {
+    "title": "Crown Smartwatch",
+    "display": "True Always‑On Ultra AMOLED",
+    "price": 11999,
+    "original_price": 35999,
+    "discount": "66% OFF",
+    "rating": 4.92,
+    "tag": "BEST SELLER",
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/01_202a37db-cf55-4a8d-b7e2-851b2e550263.webp?v=1732197227&width=700",
+      "https://zerolifestyle.co/cdn/shop/files/1_ceb0f8ec-2695-4c16-b0cd-0862a61e3c6b.jpg?v=1732606599&width=400"
+    ]
+  },
+  {
+    "title": "Vogue Smartwatch",
+    "display": "AMOLED",
+    "price": 14999,
+    "original_price": 35999,
+    "discount": "58% OFF",
+    "rating": 4.92,
+    "tag": "PREMIUM",
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/Vogue_Silver_0002.webp?v=1742632877&width=700",
+      "https://zerolifestyle.co/cdn/shop/files/Silver-vogue.webp?v=1742632877&width=400"
+    ]
+  },
+  {
+    "title": "Ninja Smartwatch",
+    "display": "1.9\" Always‑On AMOLED",
+    "price": 10999,
+    "original_price": 32000,
+    "discount": "65% OFF",
+    "rating": null,
+    "tag": "NEW ARRIVAL",
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/nin_grn.webp?v=1717769452&width=500",
+      "https://zerolifestyle.co/cdn/shop/files/nin_b_c.webp?v=1717769452&width=500"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+#productContainer ,#laptopContainer ,#tabletContainer
+ ,#womensWatchContainer ,#watchContainer,#cameraContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+  background: #f9f9f9;
+}
+.product-card:hover {
+  transform: scale(1.03);
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.product-card h4 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+.product-card p {
+  margin: 5px 0;
+}

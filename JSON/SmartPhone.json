@@ -1,0 +1,170 @@
+[
+  {
+    "title": "iPhone 14 Pro",
+    "display": "6.1\" Super Retina XDR",
+    "price": 274999,
+    "original_price": 319999,
+    "discount": "14% OFF",
+    "rating": 4.9,
+    "tag": "PRO PERFORMANCE",
+    "description": "Apple's flagship with Dynamic Island and ProMotion OLED.",
+    "img": [
+      "https://m.media-amazon.com/images/I/51CJE8vrvIL._AC_SX522_.jpg",
+      "https://m.media-amazon.com/images/I/51BSZYdcy2L._AC_SX679_.jpg"
+    ]
+  },
+  {
+    "title": "Samsung Galaxy S23 Ultra",
+    "display": "6.8\" Dynamic AMOLED 2X",
+    "price": 289999,
+    "original_price": 339999,
+    "discount": "15% OFF",
+    "rating": 4.8,
+    "tag": "ULTRA FLAGSHIP",
+    "description": "200MP camera & S-Pen flagship experience.",
+    "img": [
+      "https://images.priceoye.pk/samsung-galaxy-s23-fe-pakistan-priceoye-g80vp-500x500.webp",
+      "https://images.priceoye.pk/samsung-galaxy-s23-fe-pakistan-priceoye-4qzll-500x500.webp"
+    ]
+  },
+  {
+    "title": "Xiaomi 13 Pro",
+    "display": "6.73\" AMOLED WQHD+",
+    "price": 199999,
+    "original_price": 249999,
+    "discount": "20% OFF",
+    "rating": 4.7,
+    "tag": "CAMERA KING",
+    "description": "Leica-powered camera with WQHD+ AMOLED.",
+    "img": [
+      "https://images.priceoye.pk/xiaomi-redmi-note-13-pro-pakistan-priceoye-8zikv-500x500.webp",
+      "https://images.priceoye.pk/xiaomi-redmi-note-13-pro-pakistan-priceoye-g80t6-500x500.webp"
+    ]
+  },
+  {
+    "title": "Realme Narzo 60x",
+    "display": "6.72\" IPS LCD, 120Hz",
+    "price": 34999,
+    "original_price": 41999,
+    "discount": "17% OFF",
+    "rating": 4.5,
+    "tag": "GAMER’S PICK",
+    "description": "High refresh rate display for gaming & smooth UI.",
+    "img": [
+      "https://images.priceoye.pk/realme-note-60-pakistan-priceoye-4ee41-500x500.webp",
+      "https://images.priceoye.pk/realme-note-60-pakistan-priceoye-5qnqn-500x500.webp"
+    ]
+  },
+  {
+    "title": "TECNO Camon 20 Pro",
+    "display": "6.67\" AMOLED",
+    "price": 41999,
+    "original_price": 49999,
+    "discount": "16% OFF",
+    "rating": 4.3,
+    "tag": "STYLE & VALUE",
+    "description": "AMOLED screen & premium design at budget price.",
+    "img": [
+      "https://images.priceoye.pk/tecno-camon-20-pro-pakistan-priceoye-i672r-500x500.webp",
+      "https://images.priceoye.pk/tecno-camon-20-pro-pakistan-priceoye-f2vv4-500x500.webp"
+    ]
+  },
+  {
+    "title": "Vivo Y36",
+    "display": "6.64\" IPS LCD, 90Hz",
+    "price": 40999,
+    "original_price": 47999,
+    "discount": "15% OFF",
+    "rating": 4.4,
+    "tag": "STYLISH CHOICE",
+    "description": "Stylish body, long battery life & 90Hz display.",
+    "img": [
+      "https://images.priceoye.pk/vivo-y29-pakistan-priceoye-2233y-500x500.webp",
+      "https://images.priceoye.pk/vivo-y29-pakistan-priceoye-atc7c-500x500.webp"
+    ]
+  },
+  {
+    "title": "Oppo Reno 10",
+    "display": "6.7\" AMOLED, 120Hz",
+    "price": 124999,
+    "original_price": 139999,
+    "discount": "11% OFF",
+    "rating": 4.6,
+    "tag": "PORTRAIT MASTER",
+    "description": "Portrait Expert with flagship-grade features.",
+    "img": [
+      "https://images.priceoye.pk/oppo-reno-11-5g-pakistan-priceoye-30ovw-500x500.webp",
+      "https://images.priceoye.pk/oppo-reno-11-5g-pakistan-priceoye-vu20c-500x500.webp"
+    ]
+  },
+  {
+    "title": "OnePlus Nord 3",
+    "display": "6.74\" Fluid AMOLED, 120Hz",
+    "price": 117999,
+    "original_price": 134999,
+    "discount": "13% OFF",
+    "rating": 4.7,
+    "tag": "FLAGSHIP KILLER",
+    "description": "Flagship killer with fast charging and clean UI.",
+    "img": [
+      "https://images.priceoye.pk/tecno-spark-8c-pakistan-priceoye-x8bpl-500x500.webp",
+      "https://images.priceoye.pk/tecno-spark-8c-pakistan-priceoye-91ryn-500x500.webp"
+    ]
+  },
+  {
+    "title": "Samsung Galaxy A54",
+    "display": "6.4\" Super AMOLED",
+    "price": 109999,
+    "original_price": 124999,
+    "discount": "12% OFF",
+    "rating": 4.6,
+    "tag": "MIDRANGE KING",
+    "description": "Reliable mid-range with IP67 & great cameras.",
+    "img": [
+      "https://images.priceoye.pk/samsung-galaxy-a54-5g-pakistan-priceoye-wmmpy-500x500.webp",
+      "https://images.priceoye.pk/samsung-galaxy-a54-5g-pakistan-priceoye-9z4d9-500x500.webp"
+    ]
+  },
+  {
+    "title": "Redmi Note 12",
+    "display": "6.67\" AMOLED, 120Hz",
+    "price": 54999,
+    "original_price": 62999,
+    "discount": "13% OFF",
+    "rating": 4.5,
+    "tag": "POPULAR CHOICE",
+    "description": "Best-seller with AMOLED & stereo speakers.",
+    "img": [
+      "https://images.priceoye.pk/xiaomi-redmi-note-12-pro-pakistan-priceoye-yyklz-500x500.webp",
+      "https://images.priceoye.pk/xiaomi-redmi-note-12-pro-pakistan-priceoye-7rgsb-500x500.webp"
+    ]
+  },
+  {
+    "title": "Infinix Note 30",
+    "display": "6.78\" IPS LCD, 120Hz",
+    "price": 41999,
+    "original_price": 48999,
+    "discount": "14% OFF",
+    "rating": 4.4,
+    "tag": "BIG SCREEN DEAL",
+    "description": "Affordable phone with smooth 120Hz display.",
+    "img": [
+      "https://images.priceoye.pk/infinix-note-50-pakistan-priceoye-iqzrw-500x500.webp",
+      "https://images.priceoye.pk/infinix-note-50-pakistan-priceoye-w3jlm-500x500.webp"
+    ]
+  },
+  {
+    "title": "Motorola G73",
+    "display": "6.5\" IPS LCD, 120Hz",
+    "price": 52999,
+    "original_price": 59999,
+    "discount": "12% OFF",
+    "rating": 4.3,
+    "tag": "CLEAN UI PICK",
+    "description": "Clean stock Android with fast performance.",
+    "img": [
+      "https://images.priceoye.pk/motorola-moto-g23-pakistan-priceoye-fkuhw-500x500.webp",
+      "https://images.priceoye.pk/motorola-moto-g23-pakistan-priceoye-nays6-500x500.webp"
+    ]
+  }
+]

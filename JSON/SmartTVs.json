@@ -1,0 +1,56 @@
+[
+  {
+    "title": "TCL 40” Android LED TV",
+    "display": "Google Play | Chromecast Built-in",
+    "price": 59999,
+    "original_price": 74999,
+    "discount": "20% OFF",
+    "rating": 4.6,
+    "tag": "ANDROID TV",
+    "img": [
+      "https://www.tclpakistan.com/media/catalog/product/cache/abd9e3bfa46ca9e24f4d847673043117/4/0/40-1_1_1_cropped_2.png",
+      "https://www.tclpakistan.com/media/catalog/product/cache/abd9e3bfa46ca9e24f4d847673043117/t/c/tcl-uhd-s6500_1_1_1_2.jpg"
+    ]
+  },
+  {
+    "title": "EcoStar 32” HD Ready",
+    "display": "HDMI | USB | Eco-Friendly",
+    "price": 37999,
+    "original_price": 44999,
+    "discount": "16% OFF",
+    "rating": 4.2,
+    "tag": "BUDGET PICK",
+    "img": [
+      "https://images.priceoye.pk/ecostar-65-inch-4k-smart-led-tv-cx65u921p-pakistan-priceoye-yiov0-500x500.webp",
+      "https://static.tossdown.com/images/7d6fa91f-ead3-426f-9860-45e53e0da208.webp"
+    ]
+  },
+
+  {
+    "title": "Samsung 43\" 4K UHD",
+    "display": "Crystal Display | Tizen OS | HDR",
+    "price": 99999,
+    "original_price": 114999,
+    "discount": "13% OFF",
+    "rating": 4.7,
+    "tag": "BEST QUALITY",
+    "img": [
+      "https://images.samsung.com/is/image/samsung/p6pim/pk/ua43cu7000uxmm/gallery/pk-crystal-uhd-cu7000-ua43cu7000uxmm-537261215?$684_547_PNG$",
+      "https://images.samsung.com/is/image/samsung/p6pim/pk/ua43cu7000uxmm/gallery/pk-crystal-uhd-cu7000-ua43cu7000uxmm-537261203?$684_547_JPG$"
+    ]
+  },
+  {
+    "title": "Haier LE40K6600",
+    "display": "FHD | Smart Remote | USB x2",
+    "price": 55999,
+    "original_price": 63999,
+    "discount": "13% OFF",
+    "rating": 4.3,
+    "tag": "VALUE DEAL",
+    "img": [
+      "https://cdn1.smartprix.com/rx-iOWoo2v5d-w280-h280/xiaomi-g-series-32-i.webp"   ,
+      "https://www.mega.pk/items_images/HAIER+40INCH+SMART++LE-40K6600+Price+in+Pakistan%2C+Specifications%2C+Features_-_20685.webp"
+
+    ]
+  }
+]

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy Now</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .buy-now-form {
+      background-color: #ffffff;
+      padding: 40px 30px;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 500px;
+      margin: 20px;
+    }
+
+    .buy-now-form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 26px;
+      color: #333;
+    }
+
+    .buy-now-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .buy-now-form input,
+    .buy-now-form textarea,
+    .buy-now-form select {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      border: 1px solid #d0d0d0;
+      border-radius: 8px;
+      font-size: 15px;
+      background-color: #fff;
+      color: #333;
+      transition: border-color 0.3s ease;
+    }
+
+    .buy-now-form input:focus,
+    .buy-now-form textarea:focus,
+    .buy-now-form select:focus {
+      border-color: #ff7a7a;
+      outline: none;
+    }
+
+    .buy-now-form textarea {
+      resize: vertical;
+    }
+
+    .checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .checkbox-wrapper input[type="checkbox"] {
+      margin-right: 10px;
+      accent-color: #ff416c;
+    }
+
+    .buy-now-form button {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: linear-gradient(to right, #ff416c, #ff9a00);
+      color: white;
+      transition: 0.2s ease;
+    }
+
+    .buy-now-form button:hover {
+      opacity: 0.95;
+      transform: translateY(-2px);
+    }
+
+    ::placeholder {
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      .buy-now-form {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="buy-now-form">
+    <h2>Buy Now</h2>
+    <form id="buyForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="John Doe" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="+92-300-1234567" required>
+
+      <label for="address">Street Address</label>
+      <input type="text" id="address" placeholder="123 Main Street" required>
+
+      <label for="city">City</label>
+      <input type="text" id="city" placeholder="Karachi" required>
+
+      <label for="zip">Zip Code</label>
+      <input type="text" id="zip" placeholder="74000" required>
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" required>
+        <option value="">Select Payment Method</option>
+        <option value="COD">Cash on Delivery</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+      </select>
+
+      <label for="notes">Order Notes (Optional)</label>
+      <textarea id="notes" rows="3" placeholder="Any specific instructions?"></textarea>
+
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to the Terms and Conditions</label>
+      </div>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('buyForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (!document.getElementById('terms').checked) {
+        alert("⚠️ Please agree to the terms to proceed.");
+        return;
+      }
+      alert('✅ Thank you! Your order has been placed.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

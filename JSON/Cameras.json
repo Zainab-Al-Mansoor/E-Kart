@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Canon EOS 200D Mark II",
+    "display": "24.1MP APS-C | Dual Pixel AF | 4K Video",
+    "price": 144999,
+    "original_price": 174999,
+    "discount": "17% OFF",
+    "rating": 4.8,
+    "tag": "BEST SELLER",
+    "img": [
+      "https://asia.canon/media/image/2019/04/10/bc342d12af8c417393a4f78e4c10955e_EOS+200D+MKII+BK+Front.png",
+      "https://asia.canon/media/image/2019/04/09/bd61bd3552524e8e8a7c006dd580c826_EOS+200D+MKII+BK+Front+Slant+w+Screen.png"
+    ]
+  },
+  {
+    "title": "Nikon D5600 DSLR",
+    "display": "24.2MP | Vari-Angle Touchscreen | Wi-Fi & Bluetooth",
+    "price": 122499,
+    "original_price": 149999,
+    "discount": "18% OFF",
+    "rating": 4.6,
+    "tag": "POPULAR PICK",
+    "img": [
+      "https://www.nikon.com.pk/wp-content/uploads/2023/05/dc-300x300.jpg",
+      "https://www.nikon.com.pk/wp-content/uploads/2023/05/d66-300x300.jpg"
+    ]
+  },
+  {
+    "title": "Sony Alpha ZV-E10",
+    "display": "24.2MP | Mirrorless | Flip Screen | 4K Video",
+    "price": 169999,
+    "original_price": 194999,
+    "discount": "13% OFF",
+    "rating": 4.9,
+    "tag": "VLOGGING KING",
+    "img": [
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/93805_original_local_1200x1050_v3_converted.webp",
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/101630_original_local_1200x1050_v3_converted.webp"
+    ]
+  },
+  {
+    "title": "Fujifilm X-T30 II",
+    "display": "26.1MP | Retro Design | 4K 30fps",
+    "price": 189999,
+    "original_price": 209999,
+    "discount": "10% OFF",
+    "rating": 4.7,
+    "tag": "RETRO STYLE",
+    "img": [
+      "https://m.media-amazon.com/images/I/71IFO4AldiL._AC_SX466_.jpg",
+      "https://m.media-amazon.com/images/I/71NklGcM0FL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+    ]
+  },
+  {
+    "title": "GoPro HERO11 Black",
+    "display": "5.3K Video | HyperSmooth | Waterproof",
+    "price": 93999,
+    "original_price": 104999,
+    "discount": "11% OFF",
+    "rating": 4.8,
+    "tag": "ACTION CAM",
+    "img": [
+      "https://m.media-amazon.com/images/I/617sGSjmC1L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/71U+IWg+vUL._AC_SX466_.jpg"
+    ]
+  }]
