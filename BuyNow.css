@@ -1,0 +1,134 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    
+    }
+
+    .buy-now-form {
+      background: rgba(255, 255, 255, 0.15); /* Light transparent white */
+  backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+     
+      margin: 0 auto;
+      padding: 30px 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      animation: fadeIn 1s ease;
+    }
+
+    .buy-now-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    input, select, textarea {
+      width: 100%;
+
+
+       background: none; /* Light transparent white */
+      padding: 10px 12px;
+      margin-top: 5px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      font-size: 15px;
+      transition: 0.3s ease;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #7f5af0;
+      box-shadow: 0 0 5px rgba(127, 90, 240, 0.3);
+    }
+
+    .checkbox-wrapper {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox-wrapper input {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .subBtn {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background: linear-gradient(to right, #7f5af0, #ff8cda);
+      border: none;
+      border-radius: 25px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .subBtn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-alert {
+      position: fixed;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: none;
+      z-index: 1000;
+      animation: slideDown 0.5s ease forwards;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -30px);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .buy-now-form {
+        padding: 20px;
+      }
+    }
+ @media (max-width: 768px) {
+   .buy-now-form {
+       width: 90%;
+      }
+}

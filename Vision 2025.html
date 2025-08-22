@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen-AI</title>
+    <link rel="stylesheet" href="Vision 2025.css">
+<link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="EKartNavbar.css">
+    <link rel="stylesheet" href="Visionfooter.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+ 
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- navbar................................................................................................. -->
+ 
+ <header>
+    <div class="container">
+      <div id="navbar" class="navbar">
+        <a href="index.html" class="logo">
+          <img
+            src="img/mylogo.png"
+            alt=" logo" />
+          <h5> E-Kart</h5>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+          <a href="AllProduct.html">All Accessories</a>
+                         <a href="SmartWatch.html">Smart Watches</a>
+
+          <div class="dropdown-content">
+              <a href="SmartPhone.html">Smartphones</a>
+              <a href="SmartTVs.html">SmartTVs</a>
+
+              <a href="SmartWatch.html">Smartwatches</a>
+              <a href="Earbuds.html">Earbuds</a>
+              <a href="Camera.html">Cameras</a>
+            </div>
+          </div>
+          <a href="Vision 2025.html">NextGen-AI</a>
+          <a href="Support.html">Support</a>
+        </nav>
+
+
+        <div id="" class="search-box">
+           <input type="text" id="search-input" placeholder="Search products, features..." />
+            <button onclick="search_products()"
+              style="background: transparent; border: none; cursor: pointer"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="white"
+              viewBox="0 0 24 24">
+              <path d="M21 21l-5.2-5.2M16 10.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <button id="menu-toggle" class="menu-btn">☰</button>
+        <div class="action-buttons">
+  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+</div>
+
+      </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+          <div class="mobile-menu-content">
+            <a href="#">Home</a>
+ <div class="dropdown">
+ <a href="AllProduct.html">All Accessories ▾</a>
+    <div class="dropdown-content">
+      <a href="SmartPhone.html">Smartphones</a>
+      <a href="SmartWatch.html">Smartwatches</a>
+      <a href="Earbuds.html">Earbuds</a>
+      <a href="SmartTVs.html">SmartTVs</a>
+
+      <a href="Camera.html">Cameras</a>
+    </div>
+  </div>           
+            <a href="Vision 2025.html">NextGen-AI</a>
+            <a href="Support.html">Support</a>
+
+        
+  <!-- other links -->
+  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+</div>
+          </div>
+        </div>
+    </div>
+  </header>
+ <script>
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+<!-- banner -->
+
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>Step Into the Future with <span>Vision 2025</span></h1>
+    <p>Explore AI-driven innovation that adapts, learns, and evolves with you.</p>
+    <a href="#ai-products" class="cta-button">Explore AI Products →</a>
+  </div>
+  <div class="hero-visuals">    <img src="img/aip4.jpg" alt="Smartphone AI">
+
+    <img src="img/wh10.jpg" alt="Smartwatch AI">
+    <img src="img/aiT.jpg" alt="SmartTV AI">
+  </div>
+  <div class="background-overlay"></div>
+</section>
+
+
+<style>
+  /* Reset */
+
+body {
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.container1 {
+  display: flex;
+  height: 90vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Left video side */
+.video-wrapper {
+  flex: 1.2;
+  position: relative;
+  border-radius: 16px;
+  width: 500px;
+  height: 470px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+/* Right text side */
+.text-wrapper {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.text-wrapper h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.text-wrapper p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #f0f0f0dd;
+}
+
+/* Scrollbar styling for modern browsers */
+.text-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-wrapper::-webkit-scrollbar-track {
+  background: #0e0e34;
+  border-radius: 10px;
+}
+
+.text-wrapper::-webkit-scrollbar-thumb {
+  background: #9698ff;
+  border-radius: 10px;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
+    gap: 15px;
+  }
+  .video-wrapper,
+  .text-wrapper {
+    flex: unset;
+    width: 100%;         /* Full width */
+    max-width: 400px;    /* Limit max width to keep nice margins */
+    margin: 0 auto;      /* Center horizontally */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  }
+  .video-wrapper {
+    height: auto;       /* Let height adapt to video aspect ratio */
+  }
+  .video-wrapper video {
+    height: auto;
+    max-height: 300px;  /* Limit max height on mobile */
+    object-fit: contain; /* Preserve aspect ratio */
+  }
+  .text-wrapper {
+    height: 300px;
+    overflow-y: auto;
+  }
+  .text-wrapper h1 {
+    font-size: 1.8rem;  /* Smaller heading */
+  }
+  .text-wrapper p {
+    font-size: 1rem;    /* Smaller text */
+  }
+}
+
+/* Extra small screens (phones smaller than 360px) */
+@media (max-width: 360px) {
+  .container1 {
+    padding: 5px;
+    gap: 10px;
+  }
+  .video-wrapper,
+  .text-wrapper {
+    max-width: 100%;   /* Full width */
+  }
+  .text-wrapper {
+    height: 250px;
+    padding: 20px;
+  }
+  .text-wrapper h1 {
+    font-size: 1.5rem;
+  }
+  .text-wrapper p {
+    font-size: 0.9rem;
+  }
+}
+
+</style>
+
+<!-- Slider -->
+    <div class="container1">
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline>
+          <source src="Video/ai1.mp4" type="video/mp4" />
+          Sorry, your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div  id="autoScroll" class="text-wrapper">
+        <h1>Welcome to  NextGen-Ai</h1>
+
+        <p>
+          Discover the future of technology with Ekart’s NextGen-Ai collection —
+          smart, sleek, and powered by artificial intelligence to make your life
+          easier and smarter. Explore our curated range of cutting-edge
+          AI-enabled gadgets designed to elevate your everyday experience.
+        </p>
+
+        <h2>Smart Watches</h2>
+        <p>
+          Stay connected and monitor your health seamlessly with our AI-powered
+          smart watches. Featuring advanced sensors, personalized fitness
+          coaching, and intuitive voice assistants, these smart watches adapt to
+          your lifestyle for maximum convenience.
+        </p>
+
+        <h2>Smartphones</h2>
+        <p>
+          Experience the power of AI with our latest smartphones. Enjoy enhanced
+          camera features, intelligent battery management, and smart UI that
+          learns your habits to offer a smooth and personalized mobile
+          experience.
+        </p>
+
+        <h2>Cameras</h2>
+        <p>
+          Capture every moment with precision using our AI-integrated cameras.
+          From automatic scene detection to real-time image enhancement, these
+          cameras help you take professional-quality photos effortlessly.
+        </p>
+
+        <h2>Televisions</h2>
+        <p>
+          Transform your living room with our AI-driven smart TVs. Benefit from
+          personalized content recommendations, voice control, and stunning
+          picture quality that adapts to your environment for the perfect
+          viewing experience.
+        </p>
+
+        <h2>Earbuds</h2>
+        <p>
+          Immerse yourself in crystal-clear sound with our AI-enabled earbuds.
+          Enjoy noise cancellation, adaptive sound profiles, and smart touch
+          controls designed to deliver an exceptional audio experience wherever
+          you go.
+        </p>
+
+        <p>
+          At Ekart NextGen-Ai, we combine innovation with intelligence to bring
+          you products that not only meet your needs but anticipate them.
+          Upgrade your tech today and step into the future with us.
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+
+<style>
+.text-wrapper {
+  overflow: hidden;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  background: transparent;
+  scroll-behavior: smooth; /* smooth scrolling */
+}
+</style>
+
+<script>
+const wrapper = document.getElementById('autoScroll');
+let scrollAmount = 0;
+
+setInterval(() => {
+  scrollAmount += 50; // pixels to scroll each 3 sec
+  if (scrollAmount > wrapper.scrollHeight - wrapper.clientHeight) {
+    scrollAmount = 0; // reset to top
+  }
+  wrapper.scrollTo({ top: scrollAmount, behavior: 'smooth' });
+}, 1000); // 3 seconds
+</script>
+<!-- 3 video -->
+<section class="video-products">
+  <h2 class="sec-title">Our Live AI Products</h2>
+  <div class="video-grid">
+
+    <div class="video-card">
+      <h3>AI Enabled Smartwatch</h3>
+      <p>Live Now</p>
+      <video autoplay muted loop playsinline>
+        <source src="Video/ai1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="video-card">
+      <h3>World's First Robotic Earbuds</h3>
+      <p>Live Now</p>
+      <video autoplay muted loop playsinline>
+        <source src="Video/ai2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="video-card">
+      <h3>Interactive Screen Smart Earbuds</h3>
+      <p>Live Now</p>
+      <video autoplay muted loop playsinline>
+        <source src="Video/ai3.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- card -->
+<section id="ai-products" class="smart-categories">
+  <h2 class="section-title">Explore Smart by Category</h2>
+  <div class="category-grid">
+
+    <!-- Smartwatch AI -->
+    <div class="category-card">
+      <img src="img/aiW.jpg" alt="Smartwatch AI" class="category-image" />
+      <h3>Smartwatch AI</h3>
+      <p>Track, Learn, Suggest</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <!-- Smart TV AI -->
+    <div class="category-card">
+      <img src="img/aiTV.jpg" alt="Smart TV AI" class="category-image" />
+      <h3>Smart TV AI</h3>
+      <p>Personalized Viewing, Voice Search</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <!-- Smartphone AI -->
+    <div class="category-card">
+      <img src="img/Pai2.jpg" alt="Smartphone AI" class="category-image" />
+      <h3>Smartphone AI</h3>
+      <p>Face Unlock, Smart Assistant</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <!-- Earbuds AI -->
+    <div class="category-card">
+      <img src="img/EarbudAI.jpg" alt="Earbuds AI" class="category-image" />
+      <h3>Earbuds AI</h3>
+      <p>Noise Adaptation, Smart Sensors</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <!-- Camera AI -->
+    <div class="category-card">
+      <img src="img/AICamera.jpg" alt="Camera AI" class="category-image" />
+      <h3>Camera AI</h3>
+      <p>Scene Detection, Auto-Editing</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+<script>
+const cards = document.querySelectorAll('.category-card');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      observer.unobserve(entry.target); // animate only once
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+cards.forEach(card => {
+  observer.observe(card);
+});
+</script>
+<style>
+/* Base state */
+.category-card {
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+}
+
+/* Triggered by IntersectionObserver */
+.category-card.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+</style>
+
+<!-- ai tommorrow -->
+    <section class="ai-tomorrow">
+  <h2 class="ai-title">Where Innovation Meets Imagination</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="circle"></div>
+      <div class="content">
+        <h3>2025</h3>
+        <p>Adaptive UI that learns your preferences and simplifies interactions.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="circle"></div>
+      <div class="content">
+        <h3>2026</h3>
+        <p>Predictive Gesture Control for touchless, intuitive experiences.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="circle"></div>
+      <div class="content">
+        <h3>2027</h3>
+        <p>Emotion-based AI Responses that adapt to your mood in real-time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+const timelineObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      timelineObserver.unobserve(entry.target); // animate once
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+timelineItems.forEach(item => timelineObserver.observe(item));
+</script>
+<style>
+  .timeline-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.timeline-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+</style>
+
+  <!-- .........................FOOTER........................................................................... -->
+
+  <footer>
+    <div class="FT-brandlogo">
+      <div class="FT-brandlogoIMG">
+        <img class="footLogo" src="img/mylogo.png" alt="">
+      </div>
+      <div class="footText">
+        <h2>E-Kart</h2>
+      </div>
+    </div>
+
+    <div class="FT-containerF">
+      <div class="FT-child1">
+        <ul class="FT-list">
+          <a href="index.html">
+            <li class="FT-li">Home</li>
+          </a>
+          <a href="AllProduct.html">
+            <li class="FT-li">All Accessories</li>
+          </a>
+          <a href="SmartPhone.html">
+            <li class="FT-li">Smart Phones</li>
+          </a>
+          <a href="SmartWatch.html">
+            <li class="FT-li">Smart Watches</li>
+          </a>
+          <a href="Camera.html">
+            <li class="FT-li">Cameras</li>
+          </a>
+          <a href="Earbuds.html">
+            <li class="FT-li">Earbuds</li>
+          </a>
+          <a href="vision2025.html">
+            <li class="FT-li">Vision2025</li>
+          </a>
+          <a href="support.html">
+            <li class="FT-li">Support</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="FT-child2">
+        <h3>Customer Care</h3>
+        <ul class="FT-list">
+          <li class="FT-li">Help Center</li>
+          <li class="FT-li">Provide Information</li>
+          <li class="FT-li">Corporate & Bulk Purchasing</li>
+          <li class="FT-li">Returns & Refunds</li>
+          <li class="FT-li">Track Your Order</li>
+          <li class="FT-li">Cancellation Policy</li>
+          <li class="FT-li">Warranty & Repair</li>
+          <li class="FT-li">Product Support</li>
+          <li class="FT-li">Payment Options</li>
+        </ul>
+      </div>
+
+      <div class="FT-child4">
+        <h3>Address</h3>
+        <ul class="FT-list">
+          <li class="FT-li">A-65, ACME Co., Street 12, New York</li>
+          <li class="FT-li">+001-28272300, 2466, 2469</li>
+          <li class="FT-li">webmaster@ekart.com</li>
+
+        </ul>
+      </div>
+
+      <div class="FT-child3">
+        <div class="FT-title">
+          <div class="FT-orange"><b>E-Kart</b></div>
+          <div class="FT-text">Latest innovations</div>
+        </div><br>
+        <div class="FT-images">
+          <img src="img/foot img1.svg" alt="" class="FT-img1">
+          <img src="img/foot img2.svg" alt="" class="FT-img1">
+          <img  src="img/foot img3.png" alt="" class="FT-img1">
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.google.com"><i class="fab fa-google-plus"></i></a>
+        <a href=" https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+
+
+    <div class="footerBottom">
+      <p>Copyright &copy;2025; Designed by <span class="designer">APTECH</span></p>
+    </div>
+  </footer>
+
+
+
+
+  <script src="nav.js"></script>
+</body>
+</html>

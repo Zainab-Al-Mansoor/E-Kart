@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Kart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+     <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="EKartNavbar.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css">
+
+  <!-- Link Swiper's CSS -->
+  
+
+</head>
+
+<body>
+ <!-- navbar................................................................................................. -->
+  <header>
+    <div class="container">
+      <div class="navbar" id="navbar">
+        <a href="index.html" class="logo">
+          <img
+            src="img/mylogo.png"
+            alt=" logo" />
+          <h5> E-Kart</h5>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+          <a href="AllProduct.html">All Accessories</a>
+                         <a href="SmartWatch.html">Smart Watches</a>
+
+          <div class="dropdown-content">
+              <a href="SmartPhone.html">Smartphones</a>
+              <a href="SmartTVs.html">SmartTVs</a>
+
+              <a href="SmartWatch.html">Smartwatches</a>
+              <a href="Earbuds.html">Earbuds</a>
+              <a href="Camera.html">Cameras</a>
+            </div>
+          </div>
+          <a href="Vision 2025.html">NextGen-AI</a>
+          <a href="Support.html">Support</a>
+        </nav>
+
+
+        <div id="" class="search-box">
+           <input type="text" id="search-input" placeholder="Search products, features..." />
+            <button onclick="search_products()"
+              style="background: transparent; border: none; cursor: pointer"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="white"
+              viewBox="0 0 24 24">
+              <path d="M21 21l-5.2-5.2M16 10.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <button id="menu-toggle" class="menu-btn">☰</button>
+        <div class="action-buttons">
+  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+</div>
+
+      </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+          <div class="mobile-menu-content">
+            <a href="index.html">Home</a>
+ <div class="dropdown">
+ <a href="AllProduct.html">All Accessories ▾</a>
+    <div class="dropdown-content">
+      <a href="SmartPhone.html">Smartphones</a>
+      <a href="SmartWatc h.html">Smartwatches</a>
+      <a href="Earbuds.html">Earbuds</a>
+      <a href="SmartTVs.html">SmartTVs</a>
+
+      <a href="Camera.html">Cameras</a>
+    </div>
+  </div>           
+            <a href="Vision 2025.html">NextGen-AI</a>
+            <a href="Support.html">Support</a>
+
+        
+  <!-- other links -->
+  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+</div>
+          </div>
+        </div>
+    </div>
+  </header>
+ <br>
+<br>
+<br>
+
+
+<span class="Wspan" >
+  <a target="_blank" href="https://wa.me/923212271468?text=Assalamualaikum%2C%20mujhe%20aapki%20service%20ke%20baare%20mein%20maloomat%20chahiye
+">
+    <img class="Wimg" src="img/whatsapp-logo-icon-png-png-favpng-2afidVbQGYeKuKGEPQEa56myz-removebg-preview.png" alt="whatsapp" srcset="">
+  </a>
+</span>
+
+
+<!-- products show only when search and bbaki products nhi show ho  -->
+<div style="display: none;" id="allProductsCon"><!-- card --></div>
+<div id="earbuds" style="display: none;"></div>
+<div id="Cameras" style="display: none;"></div>
+<div id="SmartPhoneCon" style="display: none;"></div>
+<div id="SmartTVsCon" style="display: none;"></div>
+
+          <!--...................................................................... Main image............................................................... --> 
+<div style="height: 0px;"></div>
+<section class="fade-in parallax-section">
+  <div class="parallax-content text-center text-white">
+ <h2 class="reveal">EKart – Shop Smart, Live Better</h2>
+<p class="reveal">Everything you need, delivered to your door with ease and savings.</p>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <div class="about-content">
+      <div class="about-text">
+<h2 class="eachProductH2">About Us</h2>
+        <p class="slide-up">Welcome to <strong>E-Kart</strong> — your one-stop destination for hassle-free online shopping. From electronics to fashion, we bring top-quality products right to your doorstep.</p>
+        <p class="slide-up">Our mission is to make shopping simple, enjoyable, and secure — with great deals and fast delivery.</p>
+      </div>
+      <div class="about-image">
+        <div class="swiper aboutSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/all.jpg" alt="Slide 1" loading="lazy"></div>
+            <div class="swiper-slide"><img src="img/c3.jpg" alt="Slide 2" loading="lazy"></div>
+            <div class="swiper-slide"><img src="img/c7.jpg" alt="Slide 3" loading="lazy"></div>
+            <div class="swiper-slide"><img src="img/Flux_Dev_SituationYou_are_a_professional_graphic_designer_spec_1.jpg" alt="Slide 4" loading="lazy"></div>
+          </div>
+          <div class="swiper-pagination about-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="center-container">
+   <h2 class=" eachProductH2">  Featured Launches </h2>
+
+</div>
+<section class="featured-section">
+  
+
+    <div class="cards-container">
+
+      <!-- Card 1 -->
+      <div class="launch-card">
+        <div class="card-header">
+          <div>
+            <h3 class="product-title">Striker</h3>
+            <p class="product-subtitle">Tribute to the Army</p>
+            <div class="tags">
+              <span class="tag">AI ENx</span>
+              <span class="tag">90 Days Standby</span>
+              <span class="tag dark">Aggressive Indicators</span>
+            </div>
+          </div>
+          <button class="arrow-btn"><a href="BuyNow.html">➜</a></button>
+        </div>
+        <img src="img/ad_04.webp" alt="Orbit 2" class="product-image">
+        <div class="card-footer">
+          <p class="highlight">Worth to Buy</p>
+          <div class="metrics">
+            <span class="dot green"></span> 5k+ sold
+            <span class="dot red"></span> 4k+ wishlisted
+            <span class="dot yellow"></span> TRENDING
+          </div>
+        </div>
+      </div>
+<!-- Card 2: Camera Product -->
+<div class="launch-card">
+  <div class="card-header">
+    <div>
+      <h3 class="product-title">Vision Pro Max</h3>
+      <p class="product-subtitle">Capture Beyond Limits</p>
+      <div class="tags">
+        <span class="tag">8K Recording</span>
+        <span class="tag">Night Vision</span>
+        <span class="tag dark">AI Stabilization</span>
+      </div>
+    </div>
+    <button class="arrow-btn"><a href="BuyNow.html">➜</a></button>
+  </div>
+  <img src="img/Vision Pro Max.jpg" alt="Vision Pro Max" class="product-image">
+  <div class="card-footer">
+    <p class="highlight">Photographers' Choice</p>
+    <div class="metrics">
+      <span class="dot green"></span> 7k+ sold
+      <span class="dot red"></span> 3.5k+ wishlisted
+      <span class="dot yellow"></span> TRENDING
+    </div>
+  </div>
+</div>
+
+      <!-- Card 3 -->
+      <div class="launch-card">
+        <div class="card-header">
+          <div>
+            <h3 class="product-title">Orbit 2</h3>
+            <p class="product-subtitle">Style in Every Second</p>
+            <div class="tags">
+              <span class="tag">360 Experience</span>
+              <span class="tag">15 Days Standby</span>
+              <span class="tag dark">1.38 Wide Display</span>
+            </div>
+          </div>
+          <button class="arrow-btn"><a href="BuyNow.html">➜</a></button>
+        </div>
+        <img src="img/orbit-2.webp" alt="Orbit 2" class="product-image">
+        <div class="card-footer">
+          <p class="highlight">Pre-Order Now</p>
+          <div class="metrics">
+            <span class="dot green"></span> 1.5k+ sold
+            <span class="dot red"></span> 1.4k+ wishlisted
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="launch-card">
+        <div class="card-header">
+          <div>
+            <h3 class="product-title">Storm <sup>®</sup> by Zero</h3>
+            <p class="product-subtitle">Fawad's Recommended</p>
+            <div class="tags">
+              <span class="tag">Balanced Audio</span>
+              <span class="tag">70 Hour Playtime</span>
+              <span class="tag dark">40mm Driver</span>
+            </div>
+          </div>
+          <button class="arrow-btn"><a href="BuyNow.html">➜</a></button>
+        </div>
+        <img src="img/3.webp" alt="Storm" class="product-image">
+        <div class="card-footer">
+          <p class="highlight">Zero's Limited Edition</p>
+        
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+ <!-- Home Page Slider (Main) -->
+<div class=" center-container">
+   <h2 class="eachProductH2">  Featured Picks </h2>
+
+</div>
+  <div class="swiper mainSwiper">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/c1.jpg" /></div>
+      <div class="swiper-slide"><img src="img/all.jpg" /></div>
+      <div class="swiper-slide"><img src="img/c3.jpg" /></div>
+      <div class="swiper-slide"><img src="img/c4.jpg" /></div>
+      <div class="swiper-slide"><img src="img/c25.jpg" /></div>
+       <div class="swiper-slide"><img src="img/c6.jpg" /></div>
+      <div class="swiper-slide"><img src="img/c7.jpg" /></div>
+      <div class="swiper-slide"><img src="img/c8.jpg" /></div>
+
+    </div>
+    <div class="swiper-pagination main-swiper-pagination"></div>
+  </div>
+
+
+
+
+
+
+  <div class="center-container">
+
+<h2 class="eachProductH2">What Our Customers Say</h2>
+</div>
+<div class="ekart-review-section">
+
+  <div class="swiper ekart-review-swiper">
+    <div class="swiper-wrapper">
+      
+      <!-- Review 1 -->
+      <div class="swiper-slide">
+        <div class="ekart-review-card">
+          <h3 class="ekart-review-name">Usman A.</h3>
+          <div class="ekart-review-location">Karachi, PK</div>
+          <div class="ekart-review-stars">★★★★☆</div>
+          <p class="ekart-review-text">Great service and value for money. My smartwatch arrived in perfect condition</p>
+        <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a> 
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="swiper-slide">
+        <div class="ekart-review-card">
+          <h3 class="ekart-review-name">Sara K.</h3>
+          <div class="ekart-review-location">Lahore, PK</div>
+          <div class="ekart-review-stars">★★★★★</div>
+          <p class="ekart-review-text">Amazing! Fast delivery . The earbuds I bought exceeded my expectations in sound quality.</p>
+        <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a> 
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="swiper-slide">
+        <div class="ekart-review-card">
+          <h3 class="ekart-review-name">Ali R.</h3>
+          <div class="ekart-review-location">Islamabad, PK</div>
+          <div class="ekart-review-stars">★★★★★</div>
+          <p class="ekart-review-text">The smartphone was exactly as described, and the price was unbeatable. Definitely shopping again!</p>
+        <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a> 
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="swiper-slide">
+        <div class="ekart-review-card">
+          <h3 class="ekart-review-name">Nida F.</h3>
+          <div class="ekart-review-location">Faisalabad, PK</div>
+          <div class="ekart-review-stars">★★★★☆</div>
+          <p class="ekart-review-text">Loved the sleek design of the smartwatch. Battery lasts longer than I expected.</p>
+        <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a> 
+        </div>
+      </div>
+
+      <!-- Review 5 -->
+      <div class="swiper-slide">
+        <div class="ekart-review-card">
+          <h3 class="ekart-review-name">Ahmed B.</h3>
+          <div class="ekart-review-location">Multan, PK</div>
+          <div class="ekart-review-stars">★★★★★</div>
+          <p class="ekart-review-text">Customer service is top-notch! They quickly helped me choose the right product for my needs.</p>
+        <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a> 
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination ekart-review-pagination"></div>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+
+
+
+
+ <script src="gsap.min.js"></script>
+<script src="ScrollTrigger.min.js"></script>
+<script src="index.min.js"></script>
+<script src="lenis.min.js"></script>
+
+<!-- scroll animation -->
+<script>
+
+gsap.registerPlugin(ScrollTrigger)
+
+const splitTypes = document.querySelectorAll('.reveal')
+
+splitTypes.forEach((char,i) =>{
+    const text = new SplitType(char, {types:'chars'})
+
+    gsap.from(text.chars,{
+        scrollTrigger:{
+            trigger:char,
+            start:'top 65%',
+            end:' top 50%',
+            scrub: false,
+            markers:false
+        },
+        // y:30,
+        // opacity:0,
+        // stagger:0.01
+
+        scaleY:0,
+        y: -20,
+        transformOrigin:'right',
+        stagger:0.04
+        
+    })
+
+})
+
+const lenis = new Lenis()
+ lenis.on('scroll', (e)  => {
+ console.log(e) 
+ }) 
+ 
+ function raf(time) {
+ lenis.raf(time)
+ requestAnimationFrame(raf)
+ } 
+ requestAnimationFrame(raf)
+
+</script>
+
+
+  <footer>
+    <div class="FT-brandlogo">
+   
+    </div>
+
+    <div class="FT-containerF">
+      <div class="FT-child1">
+         <h3>E-Kart</h3>
+        <ul class="FT-list">
+          <a href="index.html">
+            <li class="FT-li">Home</li>
+          </a>
+          <a href="AllProduct.html">
+            <li class="FT-li">All Accessories</li>
+          </a>
+          <a href="SmartPhone.html">
+            <li class="FT-li">Smart Phones</li>
+          </a>
+          <a href="SmartWatch.html">
+            <li class="FT-li">Smart Watches</li>
+          </a>
+          <a href="Camera.html">
+            <li class="FT-li">Cameras</li>
+          </a>
+          <a href="Earbuds.html">
+            <li class="FT-li">Earbuds</li>
+          </a>
+          <a href="vision2025.html">
+            <li class="FT-li">Vision2025</li>
+          </a>
+          <a href="support.html">
+            <li class="FT-li">Support</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="FT-child2">
+               <h3>Customer Care</h3>
+
+        <ul class="FT-list">
+          <li class="FT-li">Help Center</li>
+          <li class="FT-li">Provide Information</li>
+          <li class="FT-li">Corporate & Bulk Purchasing</li>
+          <li class="FT-li">Returns & Refunds</li>
+          <li class="FT-li">Track Your Order</li>
+          <li class="FT-li">Cancellation Policy</li>
+          <li class="FT-li">Warranty & Repair</li>
+          <li class="FT-li">Product Support</li>
+        </ul>
+      </div>
+
+      <div class="FT-child4">
+        <h3>Address</h3>
+        <ul class="FT-list">
+          <li class="FT-li">A-65, ACME Co., Street 12, New York</li>
+          <li class="FT-li">+001-28272300, 2466, 2469</li>
+          <li class="FT-li">webmaster@ekart.com</li>
+
+        </ul>
+      </div>
+
+      <div class="FT-child3">
+        <div class="FT-title">
+          <div class="FT-orange"><b>E-Kart</b></div>
+          <div class="FT-text">Latest innovations</div>
+        </div><br>
+        <div class="FT-images">
+          <img src="img/foot img1.svg" alt="" class="FT-img1">
+          <img src="img/foot img2.svg" alt="" class="FT-img1">
+          <img  src="img/foot img3.png" alt="" class="FT-img1">
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.google.com"><i class="fab fa-google-plus"></i></a>
+        <a href=" https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+
+
+    <div class="footerBottom">
+      <p>Copyright &copy;2025; Designed by <span class="designer">APTECH</span></p>
+    </div>
+  </footer>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Initialization -->
+<script src="home.js">
+ 
+</script>
+
+<script src="ShowProducts.js"></script>
+  <script src="nav.js"></script>
+
+<script>
+var swiper = new Swiper('.ekart-review-swiper', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  speed: 3000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.ekart-review-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    1024: { slidesPerView: 3 },
+    768: { slidesPerView: 2 },
+    0: { slidesPerView: 1 }
+  }
+});
+</script>
+
+ 
+</body>
+</html>

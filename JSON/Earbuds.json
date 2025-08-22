@@ -1,5 +1,7 @@
 [
   {
+    "productName": "Earbuds",
+    "description": "Experience powerful sound with premium earbuds.",
     "title": "Zero Arcade 900 Gaming Buds",
     "display": "RGB Lights | Low Latency | IPX4 Water Resistant",
     "price": 2199,
@@ -13,6 +15,8 @@
     ]
   },
   {
+    "productName": "Earbuds",
+    "description": "Experience powerful sound with premium earbuds.",
     "title": "M20 TWS Dolby Buds",
     "display": "ANC | Dolby Audio | Smart Touch Control",
     "price": 6499,
@@ -26,6 +30,8 @@
     ]
   },
   {
+    "productName": "Earbuds",
+    "description": "Experience powerful sound with premium earbuds.",
     "title": "M29 StormPods Edge",
     "display": "BT 5.3 | Deep Bass | Long Battery",
     "price": 3299,
@@ -39,6 +45,8 @@
     ]
   },
   {
+    "productName": "Earbuds",
+    "description": "Experience powerful sound with premium earbuds.",
     "title": "F9 Pro FlexiBuds Z",
     "display": "30H Battery | Smart Touch | Secure Fit",
     "price": 2799,
@@ -52,6 +60,8 @@
     ]
   },
   {
+    "productName": "Earbuds",
+    "description": "Experience powerful sound with premium earbuds.",
     "title": "Wave Neo AuraPods",
     "display": "13mm Drivers | Type-C Fast Charging",
     "price": 3199,
@@ -65,6 +75,8 @@
     ]
   },
   {
+    "productName": "Earbuds",
+    "description": "Experience powerful sound with premium earbuds.",
     "title": "Lenovo XT95 NeoPods Curve",
     "display": "40H Playback | Compact Design | BT 5.3",
     "price": 3599,
@@ -78,6 +90,8 @@
     ]
   },
   {
+    "productName": "Earbuds",
+    "description": "Experience powerful sound with premium earbuds.",
     "title": "Q20 TrekBeats Pro",
     "display": "LCD Battery Display | Touch Control",
     "price": 3999,
@@ -91,6 +105,8 @@
     ]
   },
   {
+    "productName": "Earbuds",
+    "description": "Experience powerful sound with premium earbuds.",
     "title": "Hot TS20 PulsePods Air",
     "display": "Ultra Lightweight | Fast Pairing",
     "price": 2899,
@@ -104,6 +120,8 @@
     ]
   },
   {
+    "productName": "Earbuds",
+    "description": "Experience powerful sound with premium earbuds.",
     "title": "Zero Flash EchoBuds Vibe",
     "display": "Deep Bass | Clear Call Mic | BT 5.3",
     "price": 3399,
@@ -117,6 +135,8 @@
     ]
   },
   {
+    "productName": "Earbuds",
+    "description": "Experience powerful sound with premium earbuds.",
     "title": "DX-02 GlowPods FX",
     "display": "RGB Gaming Lights | Ultra Low Latency",
     "price": 3999,

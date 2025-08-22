@@ -165,7 +165,7 @@ function showSideCart() {
     const totalDiv = document.createElement('div');
     totalDiv.className = 'cart-total';
     totalDiv.innerHTML = `
-      <h3 style="margin-top: 20px; text-align: center; font-size: 20px; font-weight: 600; color: #222;">
+      <h3 style="margin-top: 20px; text-align: center; font-size: 20px; font-weight: 600; color: #ffffffff;">
         Total: Rs.${total}
       </h3>
     `;

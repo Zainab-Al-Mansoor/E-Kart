@@ -51,3 +51,26 @@ fetch("JSON/SmartWatch.json")
     container.innerHTML = `<p>Failed to load smartwatches.</p>`;
     console.error(err);
   });
+
+
+
+
+
+
+  ///filter smart watches on title
+
+  
+const searchInput = document.getElementById('search-input');
+
+function search_products() {
+  const query = searchInput.value.toLowerCase();
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    const title = card.querySelector('.title').textContent.toLowerCase();
+    if (title.includes(query)) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}

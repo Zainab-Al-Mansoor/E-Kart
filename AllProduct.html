@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL Products</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="AllProduct.css">
+    <link rel="stylesheet" href="EKartNavbar.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+<body>
+ <!-- navbar................................................................................................. -->
+  <header>
+    <div class="container">
+      <div id="navbar" class="navbar">
+        <a href="index.html" class="logo">
+          <img
+            src="img/mylogo.png"
+            alt=" logo" />
+          <h5> E-Kart</h5>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+          <a href="AllProduct.html">All Accessories</a>
+                         <a href="SmartWatch.html">Smart Watches</a>
+
+          <div class="dropdown-content">
+              <a href="SmartPhone.html">Smartphones</a>
+              <a href="SmartTVs.html">SmartTVs</a>
+
+              <a href="SmartWatch.html">Smartwatches</a>
+              <a href="Earbuds.html">Earbuds</a>
+              <a href="Camera.html">Cameras</a>
+            </div>
+          </div>
+          <a href="Vision 2025.html"> NextGen-AI</a>
+          <a href="Support.html">Support</a>
+        </nav>
+
+
+        <div id="" class="search-box">
+           <input type="text" id="search-input" placeholder="Search products, features..." />
+            <button onclick="search_products()"
+              style="background: transparent; border: none; cursor: pointer"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="white"
+              viewBox="0 0 24 24">
+              <path d="M21 21l-5.2-5.2M16 10.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <button id="menu-toggle" class="menu-btn">☰</button>
+        <div class="action-buttons">
+  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+</div>
+
+      </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+          <div class="mobile-menu-content">
+            <a href="#">Home</a>
+ <div class="dropdown">
+ <a href="AllProduct.html">All Accessories ▾</a>
+    <div class="dropdown-content">
+      <a href="SmartPhone.html">Smartphones</a>
+      <a href="SmartWatc h.html">Smartwatches</a>
+      <a href="Earbuds.html">Earbuds</a>
+      <a href="SmartTVs.html">SmartTVs</a>
+
+      <a href="Camera.html">Cameras</a>
+    </div>
+  </div>           
+            <a href="Vision 2025.html"> NextGen-AI</a>
+            <a href="Support.html">Support</a>
+
+        
+  <!-- other links -->
+  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+</div>
+          </div>
+        </div>
+    </div>
+  </header>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+    <!-- slider-------------------------------------------------------------------------------------------------- -->
+    <div id="banner" class="slider">
+      <div class="slide-track">
+        <div class="slide"><img src="img/AP.jpg" alt="" srcset="" /></div> 
+        <div class="slide"><img src="img/AP5.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/allb2.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP6.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP1.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP99.jpg" alt="" srcset="" /></div> 
+        <div class="slide"><img src="img/allB3.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP9.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP0.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP7.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP00.jpg" alt="" srcset="" /></div>
+
+      
+        <div class="slide"><img src="img/AP.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/allb2.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP1.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/allB3.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP2.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/ProductsAll.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP3.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP4.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP5.jpg" alt="" srcset="" /></div>
+            <div class="slide"><img src="img/AP7.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP6.jpg" alt="" srcset="" /></div>
+
+         <div class="slide"><img src="img/AP.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/allb2.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP1.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/allB3.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP2.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/ProductsAll.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP3.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP4.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP5.jpg" alt="" srcset="" /></div>
+            <div class="slide"><img src="img/AP7.jpg" alt="" srcset="" /></div>
+        <div class="slide"><img src="img/AP6.jpg" alt="" srcset="" /></div>
+      </div>
+    </div>
+
+
+
+
+
+<!-- SMART WATCHES -->
+<div class="center-container">
+  <h2   id="eachProductH2" class="eachProductH2">SMART WATCHES</h2>
+</div>
+<div id="allProductsCon"><!-- card --></div>
+<!-- detail of SMART WATCHES -->
+
+<section class="sw-detail-section" aria-label="Smart Watches Detail">
+  <h2 class="sw-detail-title">Smart Watches Detail</h2>
+  <div class="sw-detail-content">
+    <div class="sw-detail-image-container">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" alt="Smart Watch Model" class="sw-detail-image" />
+    </div>
+    <div class="sw-detail-info">
+      <h3 class="sw-detail-name">Model X Pro Watch</h3>
+      <p class="sw-detail-price">$299.99</p>
+      <p class="sw-detail-description">
+        The Model X Pro Watch combines sleek design with powerful features including heart rate monitoring, GPS tracking, and 7-day battery life.
+      </p>
+      <ul class="sw-detail-specs">
+        <li>Display: 1.78" AMOLED Touchscreen</li>
+        <li>Connectivity: Bluetooth 5.0, Wi-Fi</li>
+        <li>Water Resistant up to 50m</li>
+        <li>Compatible with iOS and Android</li>
+        <li>Battery Life: Up to 7 days</li>
+      </ul>
+      <button class="sw-detail-btn" type="button"><a href="BuyNow.html">Buy Now</a></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- EARBUDS -->
+<div class="center-container">
+  <h2  class="eachProductH2">EARBUDS</h2>
+</div>
+
+<div id="earbuds">
+
+<!-- card -->
+</div>
+
+<!-- detail of EARBUDS -->
+
+<section class="sw-detail-section" aria-label="Earbuds Detail">
+  <h2 class="sw-detail-title">Earbuds Detail</h2>
+  <div class="sw-detail-content">
+    <div class="sw-detail-image-container">
+      <img src="img/earbuds.jpg" alt="Earbuds Model" class="sw-detail-image" />
+    </div>
+    <div class="sw-detail-info">
+      <h3 class="sw-detail-name">Sony WF-1000XM4</h3>
+      <p class="sw-detail-price">$279.99</p>
+      <p class="sw-detail-description">
+        Industry-leading noise cancellation earbuds with superior sound quality, up to 8 hours of battery life, and ergonomic design for all-day comfort.
+      </p>
+      <ul class="sw-detail-specs">
+        <li>Noise Cancellation: Yes, Adaptive</li>
+        <li>Battery Life: Up to 8 hours + 16 hours charging case</li>
+        <li>Bluetooth: 5.2</li>
+        <li>Water Resistance: IPX4</li>
+        <li>Quick Charge: 5 minutes for 60 minutes playback</li>
+      </ul>
+      <button class="sw-detail-btn" type="button"><a href="BuyNow.html">Buy Now</a></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- CAMERA -->
+<div class="center-container">
+  <h2 class="eachProductH2"> CAMERA</h2>
+</div>
+
+<div id="Cameras">
+
+<!-- card -->
+</div>
+<!-- detail of CAMERA -->
+
+<section class="sw-detail-section" aria-label="Camera Detail">
+  <h2 class="sw-detail-title">Camera Detail</h2>
+  <div class="sw-detail-content">
+    <div class="sw-detail-image-container">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" alt="Camera Model" class="sw-detail-image" />
+    </div>
+    <div class="sw-detail-info">
+      <h3 class="sw-detail-name">Canon EOS R6</h3>
+      <p class="sw-detail-price">$2499.99</p>
+      <p class="sw-detail-description">
+        The Canon EOS R6 is a full-frame mirrorless camera that delivers incredible speed, stunning image quality, and impressive low-light performance.
+      </p>
+      <ul class="sw-detail-specs">
+        <li>Sensor: 20MP Full-Frame CMOS</li>
+        <li>ISO Range: 100-102400</li>
+        <li>Video: 4K UHD at 60fps</li>
+        <li>Autofocus: Dual Pixel CMOS AF II</li>
+        <li>Connectivity: Wi-Fi, Bluetooth</li>
+      </ul>
+      <button class="sw-detail-btn" type="button"><a href="BuyNow.html">Buy Now</a></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- SMARTPHONE -->
+<div class="center-container">
+  <h2 class="eachProductH2"> SMARTPHONE</h2>
+</div>
+
+<div id="SmartPhoneCon">
+
+<!-- card -->
+</div>
+<!-- detail of SMARTPHONE -->
+
+<section class="sw-detail-section" aria-label="Smartphone Detail">
+  <h2 class="sw-detail-title">Smartphone Detail</h2>
+  <div class="sw-detail-content">
+    <div class="sw-detail-image-container">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Smartphone Model" class="sw-detail-image" />
+    </div>
+    <div class="sw-detail-info">
+      <h3 class="sw-detail-name">Galaxy S21 Ultra</h3>
+      <p class="sw-detail-price">$1199.99</p>
+      <p class="sw-detail-description">
+        Experience the next-level performance with the Galaxy S21 Ultra featuring a 6.8" Dynamic AMOLED display, quad-camera setup, and 5000mAh battery.
+      </p>
+      <ul class="sw-detail-specs">
+        <li>Display: 6.8" Dynamic AMOLED 2X</li>
+        <li>Processor: Exynos 2100 / Snapdragon 888</li>
+        <li>Camera: Quad 108MP + 12MP + 10MP + 10MP</li>
+        <li>Battery: 5000mAh with Fast Charging</li>
+        <li>OS: Android 11, One UI 3.1</li>
+      </ul>
+      <button class="sw-detail-btn" type="button"><a href="BuyNow.html">Buy Now</a></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- SMARTTV -->
+<div class="center-container">
+  <h2 class="eachProductH2"> SMARTTV</h2>
+</div>
+
+<div id="SmartTVsCon">
+
+<!-- card -->
+</div>
+<!-- detail of SMARTTV -->
+
+<section class="sw-detail-section" aria-label="Smart TV Detail">
+  <h2 class="sw-detail-title">Smart TV Detail</h2>
+  <div class="sw-detail-content">
+    <div class="sw-detail-image-container">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=500&q=80" alt="Smart TV Model" class="sw-detail-image" />
+    </div>
+    <div class="sw-detail-info">
+      <h3 class="sw-detail-name">LG OLED CX 55"</h3>
+      <p class="sw-detail-price">$1499.99</p>
+      <p class="sw-detail-description">
+        The LG OLED CX series offers stunning 4K OLED picture quality, Dolby Vision IQ, NVIDIA G-SYNC compatibility, and smart webOS features for immersive viewing.
+      </p>
+      <ul class="sw-detail-specs">
+        <li>Screen Size: 55 inches</li>
+        <li>Resolution: 4K UHD (3840 x 2160)</li>
+        <li>Panel Type: OLED</li>
+        <li>Smart Platform: webOS</li>
+        <li>HDMI Ports: 4</li>
+      </ul>
+      <button class="sw-detail-btn" type="button"><a href="BuyNow.html">Buy Now</a></button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- .........................FOOTER........................................................................... -->
+
+  <footer>
+    <div class="FT-brandlogo">
+      <div class="FT-brandlogoIMG">
+        <img class="footLogo" src="img/mylogo.png" alt="">
+      </div>
+      <div class="footText">
+        <h2>E-Kart</h2>
+      </div>
+    </div>
+
+    <div class="FT-containerF">
+      <div class="FT-child1">
+        <ul class="FT-list">
+          <a href="index.html">
+            <li class="FT-li">Home</li>
+          </a>
+          <a href="AllProduct.html">
+            <li class="FT-li">All Accessories</li>
+          </a>
+          <a href="SmartPhone.html">
+            <li class="FT-li">Smart Phones</li>
+          </a>
+          <a href="SmartWatch.html">
+            <li class="FT-li">Smart Watches</li>
+          </a>
+          <a href="Camera.html">
+            <li class="FT-li">Cameras</li>
+          </a>
+          <a href="Earbuds.html">
+            <li class="FT-li">Earbuds</li>
+          </a>
+          <a href="vision2025.html">
+            <li class="FT-li">Vision2025</li>
+          </a>
+          <a href="support.html">
+            <li class="FT-li">Support</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="FT-child2">
+        <h3>Customer Care</h3>
+        <ul class="FT-list">
+          <li class="FT-li">Help Center</li>
+          <li class="FT-li">Provide Information</li>
+          <li class="FT-li">Corporate & Bulk Purchasing</li>
+          <li class="FT-li">Returns & Refunds</li>
+          <li class="FT-li">Track Your Order</li>
+          <li class="FT-li">Cancellation Policy</li>
+          <li class="FT-li">Warranty & Repair</li>
+          <li class="FT-li">Product Support</li>
+          <li class="FT-li">Payment Options</li>
+        </ul>
+      </div>
+
+      <div class="FT-child4">
+        <h3>Address</h3>
+        <ul class="FT-list">
+          <li class="FT-li">A-65, ACME Co., Street 12, New York</li>
+          <li class="FT-li">+001-28272300, 2466, 2469</li>
+          <li class="FT-li">webmaster@ekart.com</li>
+
+        </ul>
+      </div>
+
+      <div class="FT-child3">
+        <div class="FT-title">
+          <div class="FT-orange"><b>E-Kart</b></div>
+          <div class="FT-text">Latest innovations</div>
+        </div><br>
+        <div class="FT-images">
+          <img src="img/foot img1.svg" alt="" class="FT-img1">
+          <img src="img/foot img2.svg" alt="" class="FT-img1">
+          <img  src="img/foot img3.png" alt="" class="FT-img1">
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.google.com"><i class="fab fa-google-plus"></i></a>
+        <a href=" https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+
+
+    <div class="footerBottom">
+      <p>Copyright &copy;2025; Designed by <span class="designer">APTECH</span></p>
+    </div>
+  </footer>
+
+
+    <script src="AllProduct.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>

@@ -1,18 +1,8 @@
 [
+ 
   {
-    "title": "Canon EOS 200D Mark II",
-    "display": "24.1MP APS-C | Dual Pixel AF | 4K Video",
-    "price": 144999,
-    "original_price": 174999,
-    "discount": "17% OFF",
-    "rating": 4.8,
-    "tag": "BEST SELLER",
-    "img": [
-      "https://asia.canon/media/image/2019/04/10/bc342d12af8c417393a4f78e4c10955e_EOS+200D+MKII+BK+Front.png",
-      "https://asia.canon/media/image/2019/04/09/bd61bd3552524e8e8a7c006dd580c826_EOS+200D+MKII+BK+Front+Slant+w+Screen.png"
-    ]
-  },
-  {
+    "productName": "Camera",
+    "description": "Capture your moments with perfection.",
     "title": "Nikon D5600 DSLR",
     "display": "24.2MP | Vari-Angle Touchscreen | Wi-Fi & Bluetooth",
     "price": 122499,
@@ -26,6 +16,8 @@
     ]
   },
   {
+    "productName": "Camera",
+    "description": "Capture your moments with perfection.",
     "title": "Sony Alpha ZV-E10",
     "display": "24.2MP | Mirrorless | Flip Screen | 4K Video",
     "price": 169999,
@@ -39,6 +31,8 @@
     ]
   },
   {
+    "productName": "Camera",
+    "description": "Capture your moments with perfection.",
     "title": "Fujifilm X-T30 II",
     "display": "26.1MP | Retro Design | 4K 30fps",
     "price": 189999,
@@ -52,6 +46,8 @@
     ]
   },
   {
+    "productName": "Camera",
+    "description": "Capture your moments with perfection.",
     "title": "GoPro HERO11 Black",
     "display": "5.3K Video | HyperSmooth | Waterproof",
     "price": 93999,
@@ -63,4 +59,5 @@
       "https://m.media-amazon.com/images/I/617sGSjmC1L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
       "https://m.media-amazon.com/images/I/71U+IWg+vUL._AC_SX466_.jpg"
     ]
-  }]
+  }
+]

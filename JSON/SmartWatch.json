@@ -1,5 +1,7 @@
 [
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Luna Smartwatch",
     "display": "1.39\" HD Display (TFT)",
     "price": 5999,
@@ -13,6 +15,8 @@
     ]
   },
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Infinity Smartwatch",
     "display": "1.4\" IPS (240×240)",
     "price": 6999,
@@ -26,6 +30,8 @@
     ]
   },
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Revoltt Smartwatch",
     "display": "1.5\" AMOLED",
     "price": 8999,
@@ -33,12 +39,14 @@
     "discount": "67% OFF",
     "rating": 4.85,
     "tag": "LIMITED OFFER",
-    "img": [      "https://zerolifestyle.co/cdn/shop/files/01_a1bd6670-1c70-448c-99ec-0409703d183f.webp?v=1734678626&width=700"
-,
+    "img": [
+      "https://zerolifestyle.co/cdn/shop/files/01_a1bd6670-1c70-448c-99ec-0409703d183f.webp?v=1734678626&width=700",
       "https://zerolifestyle.co/cdn/shop/files/02_96fb2437-2c3b-4207-84f4-b141169c27dc.webp?v=1734007124&width=700"
     ]
   },
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Phantom Pro Smartwatch",
     "display": "2.04\" Always‑On AMOLED",
     "price": 8999,
@@ -52,6 +60,8 @@
     ]
   },
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Elite Smartwatch",
     "display": "2.04\" Curved AMOLED",
     "price": 9899,
@@ -65,6 +75,8 @@
     ]
   },
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Glory Smartwatch",
     "display": "Curved Square AMOLED",
     "price": 7999,
@@ -78,6 +90,8 @@
     ]
   },
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Meta Smartwatch",
     "display": "1.83\" HD Display",
     "price": 6999,
@@ -91,6 +105,8 @@
     ]
   },
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Pixel Smartwatch",
     "display": "AMOLED (尺寸未公布)",
     "price": 7999,
@@ -104,6 +120,8 @@
     ]
   },
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Crown Smartwatch",
     "display": "True Always‑On Ultra AMOLED",
     "price": 11999,
@@ -117,6 +135,8 @@
     ]
   },
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Vogue Smartwatch",
     "display": "AMOLED",
     "price": 14999,
@@ -130,6 +150,8 @@
     ]
   },
   {
+    "productName": "Smart Watch",
+    "description": "Premium quality smartwatch with modern features.",
     "title": "Ninja Smartwatch",
     "display": "1.9\" Always‑On AMOLED",
     "price": 10999,

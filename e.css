@@ -1,0 +1,35 @@
+
+  .parallax-section {
+  background-image: url('img/e.jpg'); /* Replace with your image */
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-content {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 80%;
+}
+
+.parallax-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.parallax-content p {
+  font-size: 1.2rem;
+  color: #e0f7fa;
+}
+
+.parallax-info-section {
+  background-color: #f0fff4;
+}

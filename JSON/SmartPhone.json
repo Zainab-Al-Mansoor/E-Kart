@@ -1,5 +1,6 @@
 [
   {
+    "productName": "Smartphone",
     "title": "iPhone 14 Pro",
     "display": "6.1\" Super Retina XDR",
     "price": 274999,
@@ -14,6 +15,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "Samsung Galaxy S23 Ultra",
     "display": "6.8\" Dynamic AMOLED 2X",
     "price": 289999,
@@ -28,6 +30,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "Xiaomi 13 Pro",
     "display": "6.73\" AMOLED WQHD+",
     "price": 199999,
@@ -42,6 +45,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "Realme Narzo 60x",
     "display": "6.72\" IPS LCD, 120Hz",
     "price": 34999,
@@ -56,6 +60,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "TECNO Camon 20 Pro",
     "display": "6.67\" AMOLED",
     "price": 41999,
@@ -70,6 +75,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "Vivo Y36",
     "display": "6.64\" IPS LCD, 90Hz",
     "price": 40999,
@@ -84,6 +90,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "Oppo Reno 10",
     "display": "6.7\" AMOLED, 120Hz",
     "price": 124999,
@@ -98,6 +105,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "OnePlus Nord 3",
     "display": "6.74\" Fluid AMOLED, 120Hz",
     "price": 117999,
@@ -112,6 +120,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "Samsung Galaxy A54",
     "display": "6.4\" Super AMOLED",
     "price": 109999,
@@ -126,6 +135,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "Redmi Note 12",
     "display": "6.67\" AMOLED, 120Hz",
     "price": 54999,
@@ -140,6 +150,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "Infinix Note 30",
     "display": "6.78\" IPS LCD, 120Hz",
     "price": 41999,
@@ -154,6 +165,7 @@
     ]
   },
   {
+    "productName": "Smartphone",
     "title": "Motorola G73",
     "display": "6.5\" IPS LCD, 120Hz",
     "price": 52999,
