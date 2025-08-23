@@ -147,6 +147,7 @@ align-content: center;
 }
     .about-us {
       padding: 60px 20px;
+      text-align: center;
     }
 
     .about-content {
