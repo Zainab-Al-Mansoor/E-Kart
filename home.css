@@ -102,49 +102,6 @@ justify-content: center;
 
 
 
-@media  (max-width: 824px) {
-.parallax-content h2{
-  font-size: 2.3rem;
-  text-align: center;
-}
-}
-@media  (max-width: 500px) {
-.parallax-content h2{
-  font-size: 2rem;
-  text-align: center;
-}
-
-
-.parallax-content p {
-  font-size: 1rem;
-  color: #e0f7fa;
-  text-align: center;
-}
-
-.parallax-content {
-  background-color: rgba(0, 0, 0, 0.5); 
-  max-width: 100%;  height: 70vh;
-align-content: center;
-}
-
-
-  .parallax-section  {
-  background-image: url('img/h2.jpg'); /* Replace with your image */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-    background-size: cover;
-
-  height: 70vh;
-  /* object-fit: cover; */
-  
-}
-.parallax-info-section {
-  background-color: #f0fff4;
-}
-  
-
-}
     .about-us {
       padding: 60px 20px;
       text-align: center;
@@ -1069,5 +1026,51 @@ font-size: 30px;
         padding: 15px 20px;
         text-align: center;
     }
+
+}
+@media  (max-width: 824px) {
+.parallax-content h2{
+  font-size: 2.3rem;
+  text-align: center;
+}
+}
+@media  (max-width: 500px) {
+.parallax-content h2{
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.parallax-content p {
+  font-size: 1rem;
+  color: #e0f7fa;
+  text-align: center;
+}
+
+.parallax-content {
+  background-color: rgba(0, 0, 0, 0.5); 
+  max-width: 100%;  height: 70vh;
+  padding: 74px;
+  border-radius: none;
+align-content: center;
+}
+
+
+  .parallax-section  {  border-radius: none;
+
+  background-image: url('img/h2.jpg'); /* Replace with your image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-size: cover;
+
+  height: 70vh;
+  /* object-fit: cover; */
+  
+}
+.parallax-info-section {
+  background-color: #f0fff4;
+}
+  
 
 }
