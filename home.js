@@ -13,7 +13,7 @@ const aboutSwiper = new Swiper(".aboutSwiper", {
     clickable: true,
   },
   autoplay: {
-    delay: 2000, // 3 seconds
+    delay: 1000, // 3 seconds
     disableOnInteraction: false, // keep autoplay working after user interaction
   },
   loop: true, // optional: makes slider loop infinitely
@@ -37,7 +37,7 @@ const mainSwiper = new Swiper(".mainSwiper", {
     clickable: true,
   },
   autoplay: {
-    delay: 3000, // 3 seconds
+    delay: 1000, // 3 seconds
     disableOnInteraction: false,
   },
   loop: true, // keeps looping

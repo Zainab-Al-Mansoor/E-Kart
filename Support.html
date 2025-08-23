@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="support.css">
   <link rel="stylesheet" href="EKartNavbar.css">
+       <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
+
 </head>
 <body>
 
@@ -90,11 +92,27 @@
     </div>
   </header>
 
+
+
+
+<div style="margin-top:60px ;"></div>
+
+  <div class="MN-marquee-wrapper">
+    <div class="MN-marquee-text">
+     At EKart Support, your questions matter. Whether it’s about your orders, deliveries, returns, or any other service detail – our team is always ready to assist you. Reach out anytime 
+     and we’ll make sure you get the support you need, quickly and smoothly.
+At EKart Support, your questions matter. Whether it’s about your orders, deliveries, returns,
+ or any other service detail – our team is always ready to assist you. Reach out anytime and we’ll make sure you get the support you need, quickly and smoothly.
+At EKart Support, your questions matter. Whether it’s about your orders, deliveries, returns, or any other service detail – our team is always ready to assist you. Reach out anytime 
+and we’ll make sure you get the support you need, quickly and smoothly.
+    </div>
+  </div>
+
   <!-- Hero Section -->
   <section class="support-hero">
     <div class="overlay scroll-reveal">
-      <h1>Need Help? We’re Here for You</h1>
-      <p>Support for orders, payments, returns, and more.</p>
+      <h1 class="reveal">Need Help? We are Here </h1>
+      <p class="reveal">Support for orders, payments, returns, and more.</p>
       <a href="#faq" class="btn">Visit FAQs</a>
     </div>
   </section>
@@ -145,12 +163,78 @@
     </details>
   </section>
 
+<section class="promise-section">
+  <h2 class="promise-title">EKart’s Promise</h2>
+  <div class="promise-cards">
+
+    <!-- Card 1 -->
+    <div class="promise-card" style="background-image: url('img/Artboard_1_copy.webp');">
+    </div>
+
+    <!-- Card 2 -->
+    <div class="promise-card" style="background-image: url('img/Artboard_1.webp');">
+    </div>
+
+    <!-- Card 3 -->
+    <div class="promise-card" style="background-image: url('img/Artboard_1_copy_2.webp');">
+    </div>
+
+    <!-- Card 4 -->
+    <div class="promise-card" style="background-image: url('img/Artboard_1_copy_3.webp');">
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .promise-section {
+    padding: 60px 30px;
+    text-align: center;
+  }
+  .promise-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    text-align: start;
+  }
+  .promise-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .promise-card {
+    width: 260px;
+    height: 460px; /* Make it square */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0 transparent;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .promise-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+  }
+</style>
+
+
   <!-- Contact Section -->
   <section class="contact-support scroll-reveal">
     <h2>Still Need Help?</h2>
     <p>Email us at <a href="mailto:support@ekart.com">support@ekart.com</a></p>
     <p>Call us at <strong>+92-300-1234567</strong></p>
   </section>
+
+
+
+
+
 
   <!-- Scroll Animation Script -->
   <script>
@@ -175,6 +259,75 @@
 
 
 
+<div style="display: flex; justify-content: center; align-items: center; margin: 20px auto; border-radius: 30px; overflow: hidden; max-width: 90%;">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4486.259878026985!2d67.30868724214501!3d25.021515436133544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb34b0db47aa5b3%3A0xd79e410d47f7029c!2sBahria%20Adventure%20Land!5e1!3m2!1sen!2s!4v1745498968865!5m2!1sen!2s"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
+
+
+
+
+
+
+
+ <script src="gsap.min.js"></script>
+<script src="ScrollTrigger.min.js"></script>
+<script src="index.min.js"></script>
+<script src="lenis.min.js"></script>
+
+<!-- scroll animation -->
+<script>
+
+gsap.registerPlugin(ScrollTrigger)
+
+const splitTypes = document.querySelectorAll('.reveal')
+
+splitTypes.forEach((char,i) =>{
+    const text = new SplitType(char, {types:'chars'})
+
+    gsap.from(text.chars,{
+        scrollTrigger:{
+            trigger:char,
+            start:'top 65%',
+            end:' top 50%',
+            scrub: false,
+            markers:false
+        },
+        // y:30,
+        // opacity:0,
+        // stagger:0.01
+
+        scaleY:0,
+        y: -20,
+        transformOrigin:'right',
+        stagger:0.04
+        
+    })
+
+})
+
+const lenis = new Lenis()
+ lenis.on('scroll', (e)  => {
+ console.log(e) 
+ }) 
+ 
+ function raf(time) {
+ lenis.raf(time)
+ requestAnimationFrame(raf)
+ } 
+ requestAnimationFrame(raf)
+
+</script>
+
+
 
 
 
@@ -182,18 +335,15 @@
 
 <!-- .........................FOOTER........................................................................... -->
 
+
   <footer>
     <div class="FT-brandlogo">
-      <div class="FT-brandlogoIMG">
-        <img class="footLogo" src="img/mylogo.png" alt="">
-      </div>
-      <div class="footText">
-        <h2>E-Kart</h2>
-      </div>
+   
     </div>
 
     <div class="FT-containerF">
       <div class="FT-child1">
+         <h3>E-Kart</h3>
         <ul class="FT-list">
           <a href="index.html">
             <li class="FT-li">Home</li>
@@ -223,7 +373,8 @@
       </div>
 
       <div class="FT-child2">
-        <h3>Customer Care</h3>
+               <h3>Customer Care</h3>
+
         <ul class="FT-list">
           <li class="FT-li">Help Center</li>
           <li class="FT-li">Provide Information</li>
@@ -233,7 +384,6 @@
           <li class="FT-li">Cancellation Policy</li>
           <li class="FT-li">Warranty & Repair</li>
           <li class="FT-li">Product Support</li>
-          <li class="FT-li">Payment Options</li>
         </ul>
       </div>
 

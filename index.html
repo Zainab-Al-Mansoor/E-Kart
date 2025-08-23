@@ -118,13 +118,32 @@
 
           <!--...................................................................... Main image............................................................... --> 
 <div style="height: 0px;"></div>
-<section class="fade-in parallax-section">
-  <div class="parallax-content text-center text-white">
+<section class="fade-in parallax-section ">
+  <div class="parallax-content text-center text-white slide-text2">
  <h2 class="reveal">EKart – Shop Smart, Live Better</h2>
 <p class="reveal">Everything you need, delivered to your door with ease and savings.</p>
   </div>
 </section>
 
+<style>
+  
+
+   @keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-text2 {
+    animation: slideIn 1s ease-out forwards;
+  }
+
+</style>
 
 
 

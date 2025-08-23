@@ -106,16 +106,17 @@
   }
   .hero-content h1 {
     font-size: 2rem;
-    margin-top: 10px;
+    margin-top: 50px;
   }
   .hero-content p {
     font-size: 1rem;
   }
   .hero-visuals {
-    gap: 20px;
+    gap: 15px;
   }
   .hero-visuals img {
-    width: 80px;
+    width: 140px;
+
   }
 }
 
@@ -127,7 +128,7 @@
     font-size: 0.9rem;
   }
   .hero-visuals img {
-    width: 60px;
+    width: 140px;
   }
   .cta-button {
     padding: 10px 20px;
@@ -184,16 +185,6 @@
   }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-visuals img {
-    width: 90px;
-  }
-}
 
 
     .video-products {
@@ -277,13 +268,15 @@ margin-bottom: 0%;
 }
 
 .category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap:wrap ;
   max-width: 1000px;
   margin: auto;
+  flex-direction: row;
+  justify-content: center;   /* centers cards horizontally */
+  align-items: center;     /* centers cards vertically inside each row */
 }
-
 
 
 .category-card:hover {
@@ -292,9 +285,11 @@ margin-bottom: 0%;
   transform: translateY(-10px);
 }
 .category-card {
-  padding: 20px;
+  padding: 25px 0px;
+  width: 310px;
   border-radius: 15px;
   text-align: center;
+  margin-bottom: 20px;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
@@ -323,18 +318,18 @@ margin-bottom: 0%;
 }
 
 .category-image {
-  width: 140px;     
+  width: 220px;     
     /* increased size */
-  height: 140px;      /* increased size */
+  height: 220px;      /* increased size */
   object-fit: contain;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border-radius: 16px;
   filter: drop-shadow(0 0 8px #00e5ff);
   transition: transform 0.4s ease;
 }
 
 .category-card:hover .category-image {
-  transform: scale(1.15);
+  transform: scale(1.04);
   filter: drop-shadow(0 0 16px #00e5ff);
 }
 
@@ -484,5 +479,145 @@ margin-bottom: 0%;
 
   .timeline-item p {
     font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+.container1 {
+  display: flex;
+  height: 90vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+/* Left video side */
+.video-wrapper {
+  flex: 1.2;
+  position: relative;
+  border-radius: 16px;
+  width: 500px;
+  height: 470px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+a{
+text-decoration: none;
+color: #fff;
+}
+
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+/* Right text side */
+.text-wrapper {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.text-wrapper h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.text-wrapper p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #f0f0f0dd;
+}
+
+/* Scrollbar styling for modern browsers */
+.text-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-wrapper::-webkit-scrollbar-track {
+  background: #0e0e34;
+  border-radius: 10px;
+}
+
+.text-wrapper::-webkit-scrollbar-thumb {
+  background: #9698ff;
+  border-radius: 10px;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
+    gap: 15px;
+  }
+  .video-wrapper,
+  .text-wrapper {
+    flex: unset;
+    width: 100%;         /* Full width */
+    max-width: 400px;    /* Limit max width to keep nice margins */
+    margin: 0 auto;      /* Center horizontally */
+    border-radius: 12px;
+  }
+  .video-wrapper {
+    height: auto;      
+  }
+  .video-wrapper video {
+    height: auto;    
+
+    max-height: 300px;  /* Limit max height on mobile */
+    object-fit: contain; /* Preserve aspect ratio */
+  }
+  .text-wrapper {
+    height: 300px;
+    overflow-y: auto;
+    margin-top: 30px;
+  }
+  .text-wrapper h1 {
+    font-size: 1.8rem;  /* Smaller heading */
+  }
+  .text-wrapper p {
+    font-size: 1rem;    /* Smaller text */
+  }
+}
+
+/* Extra small screens (phones smaller than 360px) */
+@media (max-width: 360px) {
+  .container1 {
+    padding: 5px;
+    gap: 10px;
+  }
+  .video-wrapper,
+  .text-wrapper {
+    max-width: 100%;   /* Full width */
+  }
+  .text-wrapper {
+    height: 250px;
+    padding: 20px;
+  }
+  .text-wrapper h1 {
+    font-size: 1.5rem;
+  }
+  .text-wrapper p {
+    font-size: 0.9rem;
   }
 }

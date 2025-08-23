@@ -12,11 +12,14 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    
+    height: 62px;
+        align-items: center;
+
     left: 0;
     z-index: 50;
 }   /* Scrolled Navbar */
-    .navbar.scrolled {
+
+.navbar.scrolled {
       background: #1b1b1f; /* Solid dark */
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
     }
@@ -25,7 +28,7 @@ header {
     display: block;
     color: #ffff;
     font-size: larger;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -67,7 +70,9 @@ header {
 }
 
 .nav-links a:hover {
-    /* color: #7c3aed; */
+
+background: linear-gradient(45deg, #00e5ff, #ff00cc);
+border-radius: 40px;
 }
 
 .search-box {
@@ -280,7 +285,21 @@ header {
        
     }
 }
+@media (min-width: 362px) {
 
+  
+
+
+    .menu-btn,
+    .mobile-search-btn {
+        padding-right: 30px;
+       
+    }
+    /* .logo img{
+        height: 20px;
+        width: 25px;
+    } */
+}
 @media (max-width: 450px) {
     .navbar a h5 {
         display: none;
@@ -308,7 +327,7 @@ header {
 
 @media (max-width: 1030px) {
     .navbar {
-        justify-content: end;
+        /* justify-content: ; */
         padding: 0 20px;
         margin-left: 0; /* Removed */
         gap: 10px;

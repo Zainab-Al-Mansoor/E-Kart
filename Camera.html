@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="eachproduct.css">
       <link rel="stylesheet" href="footer.css">
       <link rel="stylesheet" href="c.css">
+           <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
+
 
 </head>
 <body>
@@ -98,14 +100,31 @@
           <!--...................................................................... Main image............................................................... --> 
 <div style="height: 0px;"></div>
 <section class="fade-in parallax-section">
-  <div class="parallax-content text-center text-white">
- <h2>EKart – Shop Smart, Live Better</h2>
-<p>Everything you need, delivered to your door with ease and savings.</p>
+  <div class="parallax-content text-center text-white slide-text2">
+ <h2 class="reveal">Capture Life with Style</h2>
+<p class="reveal">“Your favorite brands, just a click away.”</p>
   </div>
 </section>
 
 
 <style>
+
+
+   @keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-text2 {
+    animation: slideIn 1s ease-out forwards;
+  }
+
   .fade-in {
   animation: fadeIn 1s ease-in;
 }
@@ -131,14 +150,14 @@
   <div class="featured-items">
     <!-- feature box -->
     <div class="feature-box">
-      <img src="img/C1.webp" alt="Smartwatches">
+      <img src="img/CB.jpg" alt="Smartwatches">
       <h3>M20 TWS Dolby Buds
 
 </h3>
     </div>
 
     <div class="feature-box">
-      <img src="img/C2.png" alt="Smartwatches">
+      <img src="img/Cbanner2.jpg" alt="Smartwatches">
       <h3>F9 Pro FlexiBuds Z
 
 
@@ -146,7 +165,7 @@
     </div>
 
     <div class="feature-box">
-      <img src="img/C3.webp" alt="Smartwatches">
+      <img src="img/cBanner3.jpg" alt="Smartwatches">
       <h3>DX-02 GlowPods FX
 
 
@@ -165,18 +184,65 @@
   </section>
  <!-- .........................FOOTER........................................................................... -->
 
+ <script src="gsap.min.js"></script>
+<script src="ScrollTrigger.min.js"></script>
+<script src="index.min.js"></script>
+<script src="lenis.min.js"></script>
+
+<!-- scroll animation -->
+<script>
+
+gsap.registerPlugin(ScrollTrigger)
+
+const splitTypes = document.querySelectorAll('.reveal')
+
+splitTypes.forEach((char,i) =>{
+    const text = new SplitType(char, {types:'chars'})
+
+    gsap.from(text.chars,{
+        scrollTrigger:{
+            trigger:char,
+            start:'top 65%',
+            end:' top 50%',
+            scrub: false,
+            markers:false
+        },
+        // y:30,
+        // opacity:0,
+        // stagger:0.01
+
+        scaleY:0,
+        y: -20,
+        transformOrigin:'right',
+        stagger:0.04
+        
+    })
+
+})
+
+const lenis = new Lenis()
+ lenis.on('scroll', (e)  => {
+ console.log(e) 
+ }) 
+ 
+ function raf(time) {
+ lenis.raf(time)
+ requestAnimationFrame(raf)
+ } 
+ requestAnimationFrame(raf)
+
+</script>
+
+
+
   <footer>
     <div class="FT-brandlogo">
-      <div class="FT-brandlogoIMG">
-        <img class="footLogo" src="img/mylogo.png" alt="">
-      </div>
-      <div class="footText">
-        <h2>E-Kart</h2>
-      </div>
+   
     </div>
 
     <div class="FT-containerF">
       <div class="FT-child1">
+         <h3>E-Kart</h3>
         <ul class="FT-list">
           <a href="index.html">
             <li class="FT-li">Home</li>
@@ -206,7 +272,8 @@
       </div>
 
       <div class="FT-child2">
-        <h3>Customer Care</h3>
+               <h3>Customer Care</h3>
+
         <ul class="FT-list">
           <li class="FT-li">Help Center</li>
           <li class="FT-li">Provide Information</li>
@@ -216,7 +283,6 @@
           <li class="FT-li">Cancellation Policy</li>
           <li class="FT-li">Warranty & Repair</li>
           <li class="FT-li">Product Support</li>
-          <li class="FT-li">Payment Options</li>
         </ul>
       </div>
 
@@ -236,7 +302,7 @@
           <div class="FT-text">Latest innovations</div>
         </div><br>
         <div class="FT-images">
-             <img src="img/foot img1.svg" alt="" class="FT-img1">
+          <img src="img/foot img1.svg" alt="" class="FT-img1">
           <img src="img/foot img2.svg" alt="" class="FT-img1">
           <img  src="img/foot img3.png" alt="" class="FT-img1">
         </div>

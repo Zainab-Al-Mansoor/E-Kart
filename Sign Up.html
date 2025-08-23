@@ -8,7 +8,8 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-  
+       <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
+
   <link rel="stylesheet" href="footer.css">
   <style>
     * {
@@ -23,8 +24,7 @@
 /* background-image: url('img/SignBg.jpg');    */
     } 
 .form-container {
-  background: rgba(255, 255, 255, 0.15); /* Light transparent white */
-  backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+  background: rgba(80, 16, 86, 0.406);  backdrop-filter: blur(10px); /* Adds a frosted glass effect */
   padding: 40px;
   border-radius: 15px;
   margin: 0 auto;
@@ -66,7 +66,9 @@
       border: 1px solid  rgba(255, 255, 255, 0.15);
       transition: 0.3s ease;
     }
-
+    .form-group input::placeholder{
+  color: #8b8b8b;
+}
     .form-group input:focus {
       border-color: #6a82fb;
       outline: none;
@@ -184,7 +186,7 @@ margin-bottom: 20px;
             <button onclick="search_products()"
               style="background: transparent; border: none; cursor: pointer"
             >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="blue"
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="white"
               viewBox="0 0 24 24">
               <path d="M21 21l-5.2-5.2M16 10.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" />
@@ -251,15 +253,15 @@ margin-bottom: 20px;
             />
       <div class="form-group">
         <label  for="name"> Name</label>
-        <input name="name" type="text" id="name"  />
+        <input name="name" type="text" id="name"  placeholder="Enter your name"/>
       </div>
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input name="email" type="email" id="email"  />
+        <input name="email" type="email" id="email"  placeholder="Enter your email"/>
       </div>
       <div class="form-group">
         <label for="password">Password (min 6 chars)</label>
-        <input name="password" type="password" id="password" minlength="6"  />
+        <input name="password" type="password" id="password" minlength="6"  placeholder="Enter your password"/>
       </div>
       <button  type="submit" class="subBtn2" >Sign Up</button>
     </form>
@@ -361,16 +363,12 @@ form.addEventListener("submit", function (e) {
 
   <footer>
     <div class="FT-brandlogo">
-      <div class="FT-brandlogoIMG">
-        <img class="footLogo" src="img/mylogo.png" alt="">
-      </div>
-      <div class="footText">
-        <h2>E-Kart</h2>
-      </div>
+   
     </div>
 
     <div class="FT-containerF">
       <div class="FT-child1">
+         <h3>E-Kart</h3>
         <ul class="FT-list">
           <a href="index.html">
             <li class="FT-li">Home</li>
@@ -400,7 +398,8 @@ form.addEventListener("submit", function (e) {
       </div>
 
       <div class="FT-child2">
-        <h3>Customer Care</h3>
+               <h3>Customer Care</h3>
+
         <ul class="FT-list">
           <li class="FT-li">Help Center</li>
           <li class="FT-li">Provide Information</li>
@@ -410,7 +409,6 @@ form.addEventListener("submit", function (e) {
           <li class="FT-li">Cancellation Policy</li>
           <li class="FT-li">Warranty & Repair</li>
           <li class="FT-li">Product Support</li>
-          <li class="FT-li">Payment Options</li>
         </ul>
       </div>
 
@@ -430,7 +428,7 @@ form.addEventListener("submit", function (e) {
           <div class="FT-text">Latest innovations</div>
         </div><br>
         <div class="FT-images">
-           <img src="img/foot img1.svg" alt="" class="FT-img1">
+          <img src="img/foot img1.svg" alt="" class="FT-img1">
           <img src="img/foot img2.svg" alt="" class="FT-img1">
           <img  src="img/foot img3.png" alt="" class="FT-img1">
         </div>

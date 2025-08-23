@@ -3,7 +3,7 @@ body{
   padding: 0%;
     background-color: #0b0c10;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Times New Roman', Times, serif;
 }
 *{
    margin: 0%;
@@ -68,7 +68,7 @@ justify-content: center;
 
  
   .parallax-section {
-  background-image: url('img/Bannermain.jpg'); /* Replace with your image */
+  background-image: url('img/AP6.jpg'); /* Replace with your image */
   height: 80vh;
   background-attachment: fixed;
   background-position: center;
@@ -95,13 +95,56 @@ justify-content: center;
 
 .parallax-content p {
   font-size: 1.2rem;
-  color: #e0f7fa;
+  color: #e0f7fa; 
 }
 
+
+
+
+
+@media  (max-width: 824px) {
+.parallax-content h2{
+  font-size: 2.3rem;
+  text-align: center;
+}
+}
+@media  (max-width: 400px) {
+.parallax-content h2{
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+.parallax-content p {
+  font-size: 1rem;
+  color: #e0f7fa;
+  text-align: center;
+}
+
+.parallax-content {
+  background-color: rgba(0, 0, 0, 0.5); 
+  max-width: 100%;  height: 70vh;
+align-content: center;
+}
+
+
+  .parallax-section  {
+  background-image: url('img/h2.jpg'); /* Replace with your image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-size: cover;
+
+  height: 70vh;
+  /* object-fit: cover; */
+  
+}
 .parallax-info-section {
   background-color: #f0fff4;
 }
+  
 
+}
     .about-us {
       padding: 60px 20px;
     }
@@ -125,6 +168,7 @@ justify-content: center;
 
     .about-text h2 {
       font-size: 2.2rem;
+      text-align: center;
   font-weight: 700;
   background: linear-gradient(to right, #ec4899, #a855f7, #3b82f6);
   background-clip: text;
@@ -590,7 +634,9 @@ justify-content: center;
 
 
 /* ===== Add to Cart Button ===== */
-.add-to-cart-btn {  background: linear-gradient(to right, #67d5ec, #a2b6ff);
+.add-to-cart-btn {  
+  background: linear-gradient(to right, #d946ef, #a855f7, #6366f1); /* pink → purple → blue */
+
 
   color: #2c3e50;
   border: none;
@@ -604,7 +650,8 @@ justify-content: center;
 }
 
 .add-to-cart-btn:hover {
-  transform: scale(1.05);  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  transform: scale(1.05);  
+  background: linear-gradient(to right,#6366f1 , #a855f7, #d946ef); /* pink → purple → blue */
 
 }
 
@@ -863,8 +910,7 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   padding: 20px;
-
-  box-sizing: border-box;
+  background: linear-gradient(to right, #4a2e75, #764ba2, #667eea);
 }
 
 /* Swiper */
@@ -885,7 +931,7 @@ justify-content: center;
   flex-direction: column;
   align-items: center;
 
-  background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
+  background: #ff80ea25; /* semi-transparent white */
   backdrop-filter: blur(10px);           /* blur effect */
   -webkit-backdrop-filter: blur(10px);   /* for Safari */
 }
@@ -996,4 +1042,31 @@ font-size: 30px;
   width: 50%;
 
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width: 400px) {
+
+
+    .about-us {
+        padding: 15px 20px;
+        text-align: center;
+    }
+
 }

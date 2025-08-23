@@ -116,148 +116,14 @@
     <p>Explore AI-driven innovation that adapts, learns, and evolves with you.</p>
     <a href="#ai-products" class="cta-button">Explore AI Products →</a>
   </div>
-  <div class="hero-visuals">    <img src="img/aip4.jpg" alt="Smartphone AI">
-
+  <div class="hero-visuals">   
+     <img src="img/aip4.jpg" alt="Smartphone AI">
     <img src="img/wh10.jpg" alt="Smartwatch AI">
     <img src="img/aiT.jpg" alt="SmartTV AI">
   </div>
   <div class="background-overlay"></div>
 </section>
 
-
-<style>
-  /* Reset */
-
-body {
-  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-}
-
-.container1 {
-  display: flex;
-  height: 90vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 20px;
-  padding: 20px;
-  color: #fff;
-}
-
-/* Left video side */
-.video-wrapper {
-  flex: 1.2;
-  position: relative;
-  border-radius: 16px;
-  width: 500px;
-  height: 470px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-}
-
-.video-wrapper video {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  display: block;
-}
-
-/* Right text side */
-.text-wrapper {
-  flex: 1;
-  padding: 30px;
-  overflow-y: auto;
-}
-
-.text-wrapper h1 {
-  margin-top: 0;
-  font-size: 2.5rem;
-  color: #fff;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.text-wrapper p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  color: #f0f0f0dd;
-}
-
-/* Scrollbar styling for modern browsers */
-.text-wrapper::-webkit-scrollbar {
-  width: 8px;
-}
-
-.text-wrapper::-webkit-scrollbar-track {
-  background: #0e0e34;
-  border-radius: 10px;
-}
-
-.text-wrapper::-webkit-scrollbar-thumb {
-  background: #9698ff;
-  border-radius: 10px;
-}
-
-/* Responsive: stack on small screens */
-@media (max-width: 768px) {
-  .container1 {
-    flex-direction: column;
-    height: auto;
-    max-width: 100%;
-    padding: 10px;
-    gap: 15px;
-  }
-  .video-wrapper,
-  .text-wrapper {
-    flex: unset;
-    width: 100%;         /* Full width */
-    max-width: 400px;    /* Limit max width to keep nice margins */
-    margin: 0 auto;      /* Center horizontally */
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
-  }
-  .video-wrapper {
-    height: auto;       /* Let height adapt to video aspect ratio */
-  }
-  .video-wrapper video {
-    height: auto;
-    max-height: 300px;  /* Limit max height on mobile */
-    object-fit: contain; /* Preserve aspect ratio */
-  }
-  .text-wrapper {
-    height: 300px;
-    overflow-y: auto;
-  }
-  .text-wrapper h1 {
-    font-size: 1.8rem;  /* Smaller heading */
-  }
-  .text-wrapper p {
-    font-size: 1rem;    /* Smaller text */
-  }
-}
-
-/* Extra small screens (phones smaller than 360px) */
-@media (max-width: 360px) {
-  .container1 {
-    padding: 5px;
-    gap: 10px;
-  }
-  .video-wrapper,
-  .text-wrapper {
-    max-width: 100%;   /* Full width */
-  }
-  .text-wrapper {
-    height: 250px;
-    padding: 20px;
-  }
-  .text-wrapper h1 {
-    font-size: 1.5rem;
-  }
-  .text-wrapper p {
-    font-size: 0.9rem;
-  }
-}
-
-</style>
 
 <!-- Slider -->
     <div class="container1">
@@ -401,7 +267,7 @@ setInterval(() => {
       <img src="img/aiW.jpg" alt="Smartwatch AI" class="category-image" />
       <h3>Smartwatch AI</h3>
       <p>Track, Learn, Suggest</p>
-      <button class="buy-btn">Buy Now</button>
+      <button class="buy-btn"><a href="BuyNow.html">Buy Now</a></button>
     </div>
 
     <!-- Smart TV AI -->
@@ -409,7 +275,7 @@ setInterval(() => {
       <img src="img/aiTV.jpg" alt="Smart TV AI" class="category-image" />
       <h3>Smart TV AI</h3>
       <p>Personalized Viewing, Voice Search</p>
-      <button class="buy-btn">Buy Now</button>
+      <button class="buy-btn"><a href="BuyNow.html">Buy Now</a></button>
     </div>
 
     <!-- Smartphone AI -->
@@ -417,7 +283,7 @@ setInterval(() => {
       <img src="img/Pai2.jpg" alt="Smartphone AI" class="category-image" />
       <h3>Smartphone AI</h3>
       <p>Face Unlock, Smart Assistant</p>
-      <button class="buy-btn">Buy Now</button>
+      <button class="buy-btn"><a href="BuyNow.html">Buy Now</a></button>
     </div>
 
     <!-- Earbuds AI -->
@@ -425,7 +291,7 @@ setInterval(() => {
       <img src="img/EarbudAI.jpg" alt="Earbuds AI" class="category-image" />
       <h3>Earbuds AI</h3>
       <p>Noise Adaptation, Smart Sensors</p>
-      <button class="buy-btn">Buy Now</button>
+      <button class="buy-btn"><a href="BuyNow.html">Buy Now</a></button>
     </div>
 
     <!-- Camera AI -->
@@ -433,7 +299,7 @@ setInterval(() => {
       <img src="img/AICamera.jpg" alt="Camera AI" class="category-image" />
       <h3>Camera AI</h3>
       <p>Scene Detection, Auto-Editing</p>
-      <button class="buy-btn">Buy Now</button>
+      <button class="buy-btn"><a href="BuyNow.html">Buy Now</a></button>
     </div>
 
   </div>
@@ -533,18 +399,15 @@ timelineItems.forEach(item => timelineObserver.observe(item));
 
   <!-- .........................FOOTER........................................................................... -->
 
+
   <footer>
     <div class="FT-brandlogo">
-      <div class="FT-brandlogoIMG">
-        <img class="footLogo" src="img/mylogo.png" alt="">
-      </div>
-      <div class="footText">
-        <h2>E-Kart</h2>
-      </div>
+   
     </div>
 
     <div class="FT-containerF">
       <div class="FT-child1">
+         <h3>E-Kart</h3>
         <ul class="FT-list">
           <a href="index.html">
             <li class="FT-li">Home</li>
@@ -574,7 +437,8 @@ timelineItems.forEach(item => timelineObserver.observe(item));
       </div>
 
       <div class="FT-child2">
-        <h3>Customer Care</h3>
+               <h3>Customer Care</h3>
+
         <ul class="FT-list">
           <li class="FT-li">Help Center</li>
           <li class="FT-li">Provide Information</li>
@@ -584,7 +448,6 @@ timelineItems.forEach(item => timelineObserver.observe(item));
           <li class="FT-li">Cancellation Policy</li>
           <li class="FT-li">Warranty & Repair</li>
           <li class="FT-li">Product Support</li>
-          <li class="FT-li">Payment Options</li>
         </ul>
       </div>
 
