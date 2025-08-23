@@ -112,6 +112,22 @@ border-radius: 40px;
     z-index: 1000;
 }
 
+/* Product links - special style */
+.mobile-menu-content a.product-link {
+  background: linear-gradient(45deg, #00e5ff, #ff00cc);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 8px 0;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Hover effect for product links */
+.mobile-menu-content a.product-link:hover {
+  background: linear-gradient(45deg, #ff00cc, #00e5ff); /* reverse gradient */
+  transform: scale(1.05);
+}
 /* Dropdown Links */
 .dropdown-content a {
     color: #ffff;
