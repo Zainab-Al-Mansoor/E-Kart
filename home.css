@@ -651,6 +651,7 @@ justify-content: center;
     height: 355px;
     min-width: 330px;
     max-width: 280px;
+    margin-bottom: 0px;
   }
   .arrow-btn {
    
