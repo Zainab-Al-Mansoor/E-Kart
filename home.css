@@ -40,9 +40,9 @@ body{
 
   .Wspan{
    width: 65px;
-    height: 45px;
+    height: 40px;
     position: fixed;
-    bottom: 20px;
+    bottom: 15px;
     right: 20px;
     
   }
@@ -316,7 +316,7 @@ align-items: center;
   border-radius: 16px;
   padding: 8px  20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
-  height:390px;
+  height:355px;
   min-width: 200px;
   max-width: 280px;
   color: #fff;
@@ -648,10 +648,18 @@ justify-content: center;
     
   }
   .launch-card{
-    height: 370px;
+    height: 355px;
     min-width: 330px;
     max-width: 280px;
   }
+  .arrow-btn {
+   
+    border-radius: 90%;
+    width: 41px;
+    height: 32px;
+    font-size: 18px;
+    cursor: pointer;
+}
   .promise-card{
     margin-bottom: 280px;
      width: 320px;
