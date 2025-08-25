@@ -462,8 +462,15 @@ background: linear-gradient(to right, #d946ef, #a855f7, #6366f1); /* pink → pu
     .sw-detail-info {
       max-width: 100%;
     }
-  }
 
+
+
+      .sw-detail-section {
+margin-left: 18px;
+margin-right: 18px;
+
+  }
+  }
   .con{
     margin-top: 0px;
   }

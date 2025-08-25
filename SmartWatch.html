@@ -97,71 +97,7 @@
 
           <!--...................................................................... Main image............................................................... --> 
 <div style="height: 0px;"></div>
-<style>
-  .custom-swiper-container {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    position: relative; /* ✅ Needed for absolute text positioning */
-  }
 
-  .custom-swiper-slide {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-  }
-
-  .custom-swiper-slide img {
-  width: 100%;
-  height: 240px;
-  opacity: 0.8;
-  
-  /* ✅ 80% visible */
-  object-fit: cover;
-  display: block;
-}
-
-
-  .swiper-wrapper {
-    align-items: stretch;
-  }
-
-  @media (max-width: 787px) {
-    .swiper-pagination {
-      display: none;
-    }
-  }
-
-  /* ✅ SmartWatches text style */
-.slider-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 5rem;
-  font-weight: 800;
-  /* is color is good yhi */
-      background: linear-gradient(to right, #667eea, #764ba2, #4a2e75);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 
-    0 2px 5px rgba(0, 0, 0, 0.5),   /* dark base shadow for depth */
-    0 0 20px rgba(59, 130, 246, 0.5), /* larger glow */
-    0 0 30px rgba(6, 182, 212, 0.4);  /* aqua glow */
-  z-index: 10;
-  pointer-events: none;
-  white-space: nowrap;
-}
-
-  @media (max-width: 640px) {
-    .slider-title {
-      font-size: 2rem;
-    }
-  }
-</style>
 
 <!-- Swiper -->
 <div class="swiper custom-swiper-container">
