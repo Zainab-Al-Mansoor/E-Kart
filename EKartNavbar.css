@@ -353,4 +353,31 @@ border-radius: 40px;
         display: none;
     }
 }
-
+@media (max-width: 768px) {
+  header{
+    height: 80px;
+    align-items: center;
+}
+        .navbar {
+        padding-top:20px ;
+       
+    }
+    .navbar.scrolled {
+    height: 80px;
+align-items: center;
+padding-top:0px ;
+}
+    .menu-btn{
+       font-size: 29px;
+       font-weight: 600;
+       padding-right: 12px;
+    }
+    .search-box input{
+        width: 200px;
+        height: 42px;
+    }
+     .mobile-menu {
+    position: relative;
+    top: 20px; /* same as header height */
+  }
+}
