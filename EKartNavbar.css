@@ -381,3 +381,12 @@ padding-top:0px ;
     top: 20px; /* same as header height */
   }
 }
+@media (max-width: 768px) {
+  .mobile-menu {
+    position: absolute;
+    top: 100%;  /* Always starts right below header */
+    left: 0;
+    width: 100%;
+  }
+}
+
