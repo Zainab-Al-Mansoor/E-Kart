@@ -667,3 +667,15 @@ padding: 4px 0px;  }
     font-size: 0.9rem;
   }
 }
+
+
+
+.text-wrapper {
+      overflow: hidden;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      background: transparent;
+      scroll-behavior: smooth;
+      /* smooth scrolling */
+    }

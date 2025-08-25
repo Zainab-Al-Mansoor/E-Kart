@@ -59,12 +59,7 @@
   background-color: #f0fff4;
 }
 
-
-
-
-
-   
-    .con {
+.con {
       color: #fff;
       display: flex;
       justify-content: center;
@@ -200,4 +195,9 @@
     font-size: 2rem;
     margin-bottom: 20px;
   }
+
+
+.ComSection{
+  margin-top: 40px;
+}
 }

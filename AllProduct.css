@@ -285,6 +285,13 @@ a{
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+
+  
+.slide img
+{
+        margin-top: 20px;
+      
+      }
   .product-card {
     max-width: 100%;
     height: auto;
