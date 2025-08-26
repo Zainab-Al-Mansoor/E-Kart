@@ -528,3 +528,35 @@ a {
     padding: 5px 10px;
   }
 }
+
+
+/* ===== Cart Quantity Controls ===== */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.quantity-control button {
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 6px;
+  width: 22px;
+  height: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+
+.quantity-control .quantity {
+  min-width: 25px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
