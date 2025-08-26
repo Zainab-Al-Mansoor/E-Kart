@@ -679,3 +679,120 @@ padding: 4px 0px;  }
       scroll-behavior: smooth;
       /* smooth scrolling */
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Floating Chat Button */
+  #chat-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+  }
+
+  /* Chat Window */
+  #chat-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 320px;
+    height: 450px;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    z-index: 999;
+  }
+
+  #chat-header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 14px;
+  }
+
+  .msg {
+    margin: 8px 0;
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 80%;
+    line-height: 1.4;
+  }
+
+  .user {
+    background: #2575fc;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .bot {
+    background: #f1f1f1;
+    color: #333;
+    margin-right: auto;
+  }
+
+  .bot img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  #chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+
+  #chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+
+  #chat-input button {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+

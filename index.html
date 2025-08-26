@@ -279,6 +279,172 @@
     </div>
   </section>
 
+
+
+
+
+
+
+
+  <div class="center-container">
+
+  <h1  class="eachProductH2">Trending Now by Category</h1>
+</div>
+    <div class="filter-buttons">
+      <button onclick="filterCategory('smartwatch')">⌚ Smartwatch</button>
+      <button onclick="filterCategory('smartphone')">📱 Smartphone</button>
+      <button onclick="filterCategory('tv')">📺 TV</button>
+      <button onclick="filterCategory('earbuds')">🎧 Earbuds</button>
+      <button onclick="filterCategory('camera')">📷 Camera</button>
+    </div>
+
+    <div class="products">
+      <!-- Smartwatch (5 products) -->
+      <div class="card smartwatch">
+        <img
+          src="https://zerolifestyle.co/cdn/shop/files/Envi_1.webp?v=1734558268&width=700"
+        />
+      </div>
+      <div class="card smartwatch">
+        <img
+          src="https://zerolifestyle.co/cdn/shop/files/Infinity-silver-realistic.jpg?v=1733315727&width=400"
+        />
+      </div>
+      <div class="card smartwatch">
+        <img
+          src="https://zerolifestyle.co/cdn/shop/files/Silver-vogue.webp?v=1742632877&width=400"
+        />
+      </div>
+      <div class="card smartwatch">
+        <img
+          src="https://zerolifestyle.co/cdn/shop/files/1_ceb0f8ec-2695-4c16-b0cd-0862a61e3c6b.jpg?v=1732606599&width=400"
+        />
+      </div>
+      <div class="card smartwatch">
+        <img
+          src="https://zerolifestyle.co/cdn/shop/files/Meta_Realistic_05_1.webp?v=1719096837&width=400"
+        />
+      </div>
+
+      <!-- Smartphone (5 products) -->
+      <div class="card smartphone">
+        <img
+          src="https://images.priceoye.pk/tecno-camon-20-pro-pakistan-priceoye-f2vv4-500x500.webp"
+        />
+      </div>
+      <div class="card smartphone">
+        <img
+          src="https://images.priceoye.pk/xiaomi-redmi-note-12-pro-pakistan-priceoye-7rgsb-500x500.webp"
+        />
+      </div>
+      <div class="card smartphone">
+        <img
+          src="https://images.priceoye.pk/samsung-galaxy-s23-fe-pakistan-priceoye-4qzll-500x500.webp"
+        />
+      </div>
+      <div class="card smartphone">
+        <img src="http://127.0.0.1:5500/img/p2.jpg" />
+      </div>
+      <div class="card smartphone">
+        <img
+          src="https://qirat-al-mansoor.github.io/CELLINFO/assets/oneplus%207pro.jpg"
+        />
+      </div>
+
+      <!-- TV (5 products) -->
+      <div class="card tv">
+        <img src="http://127.0.0.1:5500/img/STV2.jpg" />
+      </div>
+      <div class="card tv">
+        <img
+          src="https://www.mega.pk/items_images/HAIER+40INCH+SMART++LE-40K6600+Price+in+Pakistan%2C+Specifications%2C+Features_-_20685.webp"
+        />
+      </div>
+      <div class="card tv">
+        <img
+          src="https://static.tossdown.com/images/7d6fa91f-ead3-426f-9860-45e53e0da208.webp"
+        />
+      </div>
+
+      <!-- Earbuds (5 products) -->
+      <div class="card earbuds">
+        <img
+          src="https://images.priceoye.pk/dx-02-tws-earbuds-in-ear-wireless-earphone-pakistan-priceoye-pd15v-500x500.webp"
+        />
+      </div>
+      <div class="card earbuds">
+        <img
+          src="https://images.priceoye.pk/zero-arcade-900-wireless-earbuds-pakistan-priceoye-ry6xx-500x500.webp"
+        />
+      </div>
+      <div class="card earbuds">
+        <img
+          src="https://images.priceoye.pk/f9-pro-wireless-bluetooth-earbuds-pakistan-priceoye-6x0pa-500x500.webp"
+        />
+      </div>
+      <div class="card earbuds">
+        <img
+          src="https://images.priceoye.pk/lenovo-xt95-pro-wireless-earbuds-pakistan-priceoye-uao59-500x500.webp"
+        />
+      </div>
+      <div class="card earbuds">
+        <img
+          src="https://images.priceoye.pk/hottu-tws-earbuds-hot-ts20-pakistan-priceoye-9p3qt-500x500.webp"
+        />
+      </div>
+
+      <!-- Camera (5 products) -->
+      <div class="card camera"><img src="img/camera5.jpg" /></div>
+      <div class="card camera"><img src="img/camera2.jpg" /></div>
+      <div class="card camera">
+        <img src="img/camera22.jpg" />
+      </div>
+      <div class="card camera"><img src="img/caamera4.jpg" /></div>
+      <div class="card camera"><img src="img/camera6.jpg" /></div>
+    </div>
+
+<script>
+  function filterCategory(category) {
+    const allCards = document.querySelectorAll(".card");
+
+    allCards.forEach((card) => {
+      if (card.classList.contains(category)) {
+        card.classList.remove("hidden");
+      } else {
+        card.classList.add("hidden");
+      }
+    });
+  }
+
+  // Page load: show all Smartwatch products (5)
+  window.onload = () => {
+    const allCards = document.querySelectorAll(".card");
+    allCards.forEach((card) => {
+      if (card.classList.contains("smartwatch")) {
+        card.classList.remove("hidden"); // show all smartwatches
+      } else {
+        card.classList.add("hidden"); // hide others
+      }
+    });
+  };
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  <!-- Home Page Slider (Main) -->
 <div class=" center-container">
    <h2 class="eachProductH2">  Featured Picks </h2>

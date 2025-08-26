@@ -160,10 +160,12 @@ const filtered = allProducts.filter(product =>
   (product.display && product.display.toLowerCase().includes(searchWord))
 );
 
-    if (filtered.length === 0) {
-      allProductsCon.innerHTML = "<p>No products found for your search.</p>";
-      return;
-    }
+  if (filtered.length === 0) {
+    alert("❌ Sorry! No matching products found. Try: Smartwatch, Smartphone, SmartTVs, Earbuds, Camera.");
+    allProductsCon.innerHTML = "<p style='color:red; text-align:center; margin-top:20px;'>No products found for your search.</p>";
+    return;
+}
+
 
     filtered.forEach(product => {
       const card = createProductCard(product);
@@ -179,3 +181,6 @@ const filtered = allProducts.filter(product =>
 
 
 
+
+
+///agar search pr kuch match naa karai product yaa show naa ho tu ye alert de do Sorry! No matching products found. Try: Smartwatch, Smartphone, TV, Earbuds, Camera.
