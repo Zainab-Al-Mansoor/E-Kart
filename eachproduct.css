@@ -48,9 +48,10 @@ a {
 
 /* ===== Featured Section ===== */
 .featured-section {
-  padding: 60px 20px;
+  padding: 30px 20px;
   background-color: #0b0c10;
   text-align: center;
+  padding-bottom:50px;
 }
 
 .section-title {
@@ -124,6 +125,8 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 10px;
+
+  margin-bottom: 30px;
 }
 
 .card {

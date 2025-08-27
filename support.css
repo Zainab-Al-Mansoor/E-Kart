@@ -267,7 +267,12 @@ body {
 
      font-size: 18px;
  }
+@media (max-width :768px) {
+   .MN-marquee-text{
+     padding-top:20px ;
+   }
 
+}
  @keyframes slide-left {
      0% {
          transform: translateX(0);
