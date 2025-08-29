@@ -64,8 +64,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      padding: 20px;
+      min-height: 85vh;
+      padding: 20px; 
       font-family: 'Courier New', Courier, monospace;
     }
 
@@ -94,11 +94,17 @@
 
     .left-sec p {      text-align: center;
 
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       line-height: 1.6;
       color: #ccc;
     }
+@media (max-width:500px) {
+    .left-sec p {      
 
+      font-size: 1.07rem;
+      
+    }
+}
  
 
     .swiper {
