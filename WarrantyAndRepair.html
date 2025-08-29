@@ -1,26 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warranty & Repair - EKart</title>
+  <link rel="stylesheet" href="footer.css">
+
+  <link rel="stylesheet" href="EKartNavbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>SmartTVs</title>
-  <link rel="stylesheet" href="EKartNavbar.css">
   <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="eachproduct.css">
-  <link rel="stylesheet" href="sTV.css">
-  <link rel="stylesheet" href="cart.css">
-    <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+  <style>
+    /* ===== Base ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+    }
 
+    body {
+      background-color: #0b0c10;
+      color: #ffffff;
+  
+    }
+.con{
+  margin-top: 30px;
+      line-height: 1.7;
+      padding: 40px 20px;
+}
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
+    .policy-container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .policy-container h2 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #00c6ff;
+      border-left: 4px solid #0072ff;
+      padding-left: 10px;
+    }
+
+    .policy-container p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: #dddddd;
+    }
+
+    .policy-list {
+      margin: 10px 0 20px 20px;
+    }
+
+   .policy-list .policy-item {
+      margin-bottom: 10px;
+      color: #cccccc;
+    }
+
+    /* Highlight Box */
+    .highlight {
+      background: linear-gradient(90deg, rgba(0, 198, 255, 0.15), rgba(0, 114, 255, 0.15));
+      padding: 15px;
+      border-left: 5px solid #00c6ff;
+      border-radius: 10px;
+      margin: 20px 0;
+      color: #f5f5f5;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
 </head>
-
 <body>
+
+
   <!-- navbar................................................................................................. -->
   <header>
     <div class="container">
@@ -105,12 +179,10 @@
         </div>
     </div>
   </header>
-  <br>
-  <br>
-  <br>
 
 
-  <!-- Side Cart Panel -->
+
+ <!-- Side Cart Panel -->
 <div id="sideCart" class="side-cart">
   <!-- Header with title and cross button -->
   <div class="side-cart-header">
@@ -126,61 +198,67 @@
     <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
   </div>
 </div>
-<script src="cart.js"></script>
 
-    <div class="maincon">
 
-   
-  <div class="ekart-container">
-    <!-- Left content -->
-    <div class="ekart-content">
-      <h1>Ekart Smart TVs</h1>
-      <p>Discover the ultimate viewing experience with Ekart Smart TVs. Enjoy crystal-clear picture quality, vibrant colors, and seamless connectivity. Upgrade your home entertainment today!</p>
-      <button  class="ekart-button"><a href="#smart-tv-shop">Shop Now</a></button>
+
+<div class="con">   
+  
+  <h1>Warranty & Repair</h1>
+<div class="policy-container">
+    <p>
+      At EKart, we stand behind the quality of the products we deliver.  
+      Our Warranty & Repair policy ensures that you receive the best post-purchase support.
+    </p>
+
+    <h2>1. Warranty Coverage</h2>
+    <p>
+      - Most products sold on EKart come with a <strong>manufacturer’s warranty</strong> ranging from 6 months to 2 years.  
+      - Warranty covers manufacturing defects, hardware malfunctions, and product failures under normal use.
+    </p>
+
+    <h2>2. What is Not Covered</h2>
+    <ul class="policy-list">
+      <li class="policy-item">Damage caused by misuse, accidents, or unauthorized repairs.</li>
+      <li class="policy-item">Normal wear and tear (scratches, dents, fading).</li>
+      <li class="policy-item">Consumable items such as batteries, cables, and accessories unless specified.</li>
+    </ul>
+
+    <h2>3. Repair Services</h2>
+    <p>
+      - If your product requires repair, EKart will coordinate with authorized service centers.  
+      - Repair times may vary depending on the issue, typically ranging from <strong>7 to 21 business days</strong>.  
+      - Out-of-warranty repairs may incur service and part replacement charges.
+    </p>
+
+    <div class="highlight">
+      ⚡ Tip: Always keep your purchase invoice and warranty card safe, as they are required to claim warranty and repair services.
     </div>
 
-    <!-- Right Swiper slider -->
-    <div class="swiper ekart-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide ekart-slide">
-          <img src="img/stv3.jpg" />
-        </div>
-        <div class="swiper-slide ekart-slide">
-                  <img src="img/STV2.jpg" />
+    <h2>4. How to Claim</h2>
+    <p>
+      To initiate a warranty or repair request:
+    </p>
+    <ul>
+      <li>Go to “My Orders” in your EKart account and select the product.</li>
+      <li>Click on “Request Warranty/Repair”.</li>
+      <li>Provide product details, issue description, and attach pictures if required.</li>
+    </ul>
 
-        </div>
-        <div class="swiper-slide ekart-slide">
-          <img src="img/STV55.jpg" />
-        </div>
-        <div class="swiper-slide ekart-slide">
-          <img src="img/STV1.jpg" />
-        </div>
-        <div class="swiper-slide ekart-slide">
-                    <img src="img/stv4.jpg" />
-
-        </div>
-        <div class="swiper-slide ekart-slide">
-          <img src="img/stv.jpg" />
-        </div>
-      </div>
-      <div class="swiper-button-next ekart-next"></div>
-      <div class="swiper-button-prev ekart-prev"></div>
-      <div class="swiper-pagination ekart-pagination"></div>
-    </div>
+    <h2>5. Contact Us</h2>
+    <p>
+      For warranty or repair-related queries, reach out to our support team:  
+      <br>Email: warranty@ekart.com  
+      <br>Helpline: +1 (800) 987-6543
+    </p>
   </div>
- </div>
+
+</div>
 
 
-  <!--Earbuds  Section -->
-  <section id="smart-tv-shop" class="smart-section">
-    <h2 class="section-title">SmartTVs Collection</h2>
-    <div id="SmartTVs" class="card-grid"></div>
-  </section>
-
-  <!-- .........................FOOTER........................................................................... -->
 
 
-  <footer>
+
+    <footer>
     <div class="FT-brandlogo">
 
     </div>
@@ -298,33 +376,8 @@
       <p>Copyright &copy;2025; Designed by <span class="designer">APTECH</span></p>
     </div>
   </footer>
-
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var ekartSwiper = new Swiper(".ekart-swiper", {
-      effect: "flip",
-      grabCursor: true,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".ekart-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".ekart-next",
-        prevEl: ".ekart-prev",
-      },
-    });
-  </script>
-
-
-  <script src="eachproduct.js"></script>
-  <script src="nav.js"></script>
+<script src="cart.js"></script>
+<script src="nav.js"></script>
 
 </body>
-
 </html>

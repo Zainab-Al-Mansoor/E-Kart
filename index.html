@@ -7,38 +7,38 @@
   <title>E-Kart</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-     <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
   <link rel="stylesheet" href="EKartNavbar.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="cart.css">
+
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="footer.css">
 
   <!-- Link Swiper's CSS -->
-  
+
 
 </head>
 
 <body>
- <!-- navbar................................................................................................. -->
+  <!-- navbar................................................................................................. -->
   <header>
     <div class="container">
-      <div class="navbar" id="navbar">
+      <div class="navbar">
         <a href="index.html" class="logo">
-          <img
-            src="img/mylogo.png"
-            alt=" logo" />
+          <img src="img/mylogo.png" alt=" logo" />
           <h5> E-Kart</h5>
         </a>
 
         <nav class="nav-links">
           <a href="index.html">Home</a>
           <div class="dropdown">
-          <a href="AllProduct.html">All Accessories</a>
-                         <a href="SmartWatch.html">Smart Watches</a>
+            <a href="AllProduct.html">All Accessories</a>
+            <a href="SmartWatch.html">Smart Watches</a>
 
-          <div class="dropdown-content">
+            <div class="dropdown-content">
               <a href="SmartPhone.html">Smartphones</a>
               <a href="SmartTVs.html">SmartTVs</a>
 
@@ -53,10 +53,8 @@
 
 
         <div id="" class="search-box">
-           <input type="text" id="search-input" placeholder="Search products, features..." />
-            <button onclick="search_products()"
-              style="background: transparent; border: none; cursor: pointer"
-            >
+          <input type="text" id="search-input" placeholder="Search products, features..." />
+          <button onclick="search_products()" style="background: transparent; border: none; cursor: pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="white"
               viewBox="0 0 24 24">
               <path d="M21 21l-5.2-5.2M16 10.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z" stroke-width="2"
@@ -66,85 +64,110 @@
         </div>
         <button id="menu-toggle" class="menu-btn">☰</button>
         <div class="action-buttons">
-  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
-</div>
+          <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+
+
+          <!-- Cart Icon -->
+          <a href="#" id="cart-icon" class="cart-link">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+
+        </div>
 
       </div>
-   <div id="mobile-menu" class="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="index.html">Home</a>
- 
- <a href="AllProduct.html">All Accessories ▾ </a>
 
- <!-- //in five product ko koi aise css do jis sai ye baqi links sai alag dikhai -->
-   <a href="SmartPhone.html" class="product-link">Smartphones</a>
-<a href="SmartWatch.html" class="product-link">Smartwatches</a>
-<a href="Earbuds.html" class="product-link">Earbuds</a>
-<a href="SmartTVs.html" class="product-link">SmartTVs</a>
-<a href="Camera.html" class="product-link">Cameras</a>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-content">
+          <a href="index.html">Home</a>
 
-    
-        
-            <a href="Vision 2025.html">NextGen-AI</a>
-            <a href="Support.html">Support</a>
+          <a href="AllProduct.html">All Accessories ▾ </a>
 
-        
-  <!-- other links -->
-  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
-</div>
-          </div>
+          <!-- //in five product ko koi aise css do jis sai ye baqi links sai alag dikhai -->
+          <a href="SmartPhone.html" class="product-link">Smartphones</a>
+          <a href="SmartWatch.html" class="product-link">Smartwatches</a>
+          <a href="Earbuds.html" class="product-link">Earbuds</a>
+          <a href="SmartTVs.html" class="product-link">SmartTVs</a>
+          <a href="Camera.html" class="product-link">Cameras</a>
+
+
+
+          <a href="Vision 2025.html">NextGen-AI</a>
+          <a href="Support.html">Support</a>
+
+
+          <!-- other links -->
+          <a href="Sign Up.html" class="signup-btn">Sign Up</a>
         </div>
+      </div>
+    </div>
     </div>
   </header>
- <br>
-<br>
-<br>
+  <br>
+  <br>
+  <br>
+  <!-- Side Cart Panel -->
+  <div id="sideCart" class="side-cart">
+    <!-- Header with title and cross button -->
+    <div class="side-cart-header">
+      <h2>Your Cart</h2>
+      <span class="close-cross" onclick="closeSideCart()">×</span>
+    </div>
 
+    <!-- Cart Items -->
+    <div id="sideCartItems"></div>
 
-
-<span class="Wspan" >
-  <a target="_blank" href="https://wa.me/923212271468?text=Assalamualaikum%2C%20mujhe%20aapki%20service%20ke%20baare%20mein%20maloomat%20chahiye
-">
-    <img class="Wimg" src="img/whatsapp-logo-icon-png-png-favpng-2afidVbQGYeKuKGEPQEa56myz-removebg-preview.png" alt="whatsapp" srcset="">
-  </a>
-</span>
-
-
-<!-- products show only when search and bbaki products nhi show ho  -->
-<div style="display: none;" id="allProductsCon"><!-- card --></div>
-<div id="earbuds" style="display: none;"></div>
-<div id="Cameras" style="display: none;"></div>
-<div id="SmartPhoneCon" style="display: none;"></div>
-<div id="SmartTVsCon" style="display: none;"></div>
-
-          <!--...................................................................... Main image............................................................... --> 
-<div style="height: 0px;"></div>
-<section class="fade-in parallax-section ">
-  <div class="parallax-content text-center text-white slide-text2">
- <h2 class="reveal">EKart – Shop Smart</h2>
-<p class="reveal">Everything you need, delivered to your door </p>
+    <!-- Checkout Button -->
+    <div class="checkout-btn-container">
+      <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
   </div>
-</section>
 
-<style>
-  
+  <script src="cart.js"></script>
 
-   @keyframes slideIn {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
+
+  <span class="Wspan">
+    <a target="_blank" href="https://wa.me/923212271468?text=Assalamualaikum%2C%20mujhe%20aapki%20service%20ke%20baare%20mein%20maloomat%20chahiye
+">
+      <img class="Wimg" src="img/whatsapp-logo-icon-png-png-favpng-2afidVbQGYeKuKGEPQEa56myz-removebg-preview.png"
+        alt="whatsapp" srcset="">
+    </a>
+  </span>
+
+
+  <!-- products show only when search and bbaki products nhi show ho  -->
+  <div style="display: none;" id="allProductsCon"><!-- card --></div>
+  <div id="earbuds" style="display: none;"></div>
+  <div id="Cameras" style="display: none;"></div>
+  <div id="SmartPhoneCon" style="display: none;"></div>
+  <div id="SmartTVsCon" style="display: none;"></div>
+
+  <!--...................................................................... Main image............................................................... -->
+  <div style="height: 0px;"></div>
+  <section class="fade-in parallax-section ">
+    <div class="parallax-content text-center text-white slide-text2">
+      <h2 class="reveal">EKart – Shop Smart</h2>
+      <p class="reveal">Everything you need, delivered to your door </p>
+    </div>
+  </section>
+
+  <style>
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
+
+    .slide-text2 {
+      animation: slideIn 1s ease-out forwards;
     }
-  }
-
-  .slide-text2 {
-    animation: slideIn 1s ease-out forwards;
-  }
-
-</style>
+  </style>
 
 
 
@@ -154,9 +177,11 @@
   <section class="about-us">
     <div class="about-content">
       <div class="about-text">
-<h2 class="eachProductH2">About Us</h2>
-        <p class="slide-up">Welcome to <strong>E-Kart</strong> — your one-stop destination for hassle-free online shopping. From electronics to fashion, we bring top-quality products right to your doorstep.</p>
-        <p class="slide-up">Our mission is to make shopping simple, enjoyable, and secure — with great deals and fast delivery.</p>
+        <h2 class="eachProductH2">About Us</h2>
+        <p class="slide-up">Welcome to <strong>E-Kart</strong> — your one-stop destination for hassle-free online
+          shopping. From electronics to fashion, we bring top-quality products right to your doorstep.</p>
+        <p class="slide-up">Our mission is to make shopping simple, enjoyable, and secure — with great deals and fast
+          delivery.</p>
       </div>
       <div class="about-image">
         <div class="swiper aboutSwiper">
@@ -164,7 +189,9 @@
             <div class="swiper-slide"><img src="img/all.jpg" alt="Slide 1" loading="lazy"></div>
             <div class="swiper-slide"><img src="img/c3.jpg" alt="Slide 2" loading="lazy"></div>
             <div class="swiper-slide"><img src="img/c7.jpg" alt="Slide 3" loading="lazy"></div>
-            <div class="swiper-slide"><img src="img/Flux_Dev_SituationYou_are_a_professional_graphic_designer_spec_1.jpg" alt="Slide 4" loading="lazy"></div>
+            <div class="swiper-slide"><img
+                src="img/Flux_Dev_SituationYou_are_a_professional_graphic_designer_spec_1.jpg" alt="Slide 4"
+                loading="lazy"></div>
           </div>
           <div class="swiper-pagination about-pagination"></div>
         </div>
@@ -172,11 +199,11 @@
     </div>
   </section>
   <div class="center-container">
-   <h2 class=" eachProductH2">  Featured Launches </h2>
+    <h2 class=" eachProductH2"> Featured Launches </h2>
 
-</div>
-<section class="featured-section">
-  
+  </div>
+  <section class="featured-section">
+
 
     <div class="cards-container">
 
@@ -194,7 +221,7 @@
           </div>
           <button class="arrow-btn"><a href="BuyNow.html">➜</a></button>
         </div>
-        <img src="img/ad_04.webp" alt="Orbit 2" class="product-image">
+        <img src="img/ad_04.webp" alt="Orbit 2" class="product-image1">
         <div class="card-footer">
           <p class="highlight">Worth to Buy</p>
           <div class="metrics">
@@ -203,29 +230,29 @@
           </div>
         </div>
       </div>
-<!-- Card 2: Camera Product -->
-<div class="launch-card">
-  <div class="card-header">
-    <div>
-      <h3 class="product-title">Vision Pro Max</h3>
-      <p class="product-subtitle">Capture Beyond Limits</p>
-      <div class="tags">
-        <span class="tag">8K Recording</span>
-        <span class="tag">Night Vision</span>
-        <span class="tag dark">AI Stabilization</span>
+      <!-- Card 2: Camera Product -->
+      <div class="launch-card">
+        <div class="card-header">
+          <div>
+            <h3 class="product-title">Vision Pro Max</h3>
+            <p class="product-subtitle">Capture Beyond Limits</p>
+            <div class="tags">
+              <span class="tag">8K Recording</span>
+              <span class="tag">Night Vision</span>
+              <span class="tag dark">AI Stabilization</span>
+            </div>
+          </div>
+          <button class="arrow-btn"><a href="BuyNow.html">➜</a></button>
+        </div>
+        <img src="img/Vision Pro Max.jpg" alt="Vision Pro Max" class="product-image1">
+        <div class="card-footer">
+          <p class="highlight">Photographers' Choice</p>
+          <div class="metrics">
+            <span class="dot green"></span> 7k+ sold
+            <span class="dot red"></span> 3.5k+ wishlisted
+          </div>
+        </div>
       </div>
-    </div>
-    <button class="arrow-btn"><a href="BuyNow.html">➜</a></button>
-  </div>
-  <img src="img/Vision Pro Max.jpg" alt="Vision Pro Max" class="product-image">
-  <div class="card-footer">
-    <p class="highlight">Photographers' Choice</p>
-    <div class="metrics">
-      <span class="dot green"></span> 7k+ sold
-      <span class="dot red"></span> 3.5k+ wishlisted
-    </div>
-  </div>
-</div>
 
       <!-- Card 3 -->
       <div class="launch-card">
@@ -241,7 +268,7 @@
           </div>
           <button class="arrow-btn"><a href="BuyNow.html">➜</a></button>
         </div>
-        <img src="img/orbit-2.webp" alt="Orbit 2" class="product-image">
+        <img src="img/orbit-2.webp" alt="Orbit 2" class="product-image1">
         <div class="card-footer">
           <p class="highlight">Pre-Order Now</p>
           <div class="metrics">
@@ -258,15 +285,14 @@
             <h3 class="product-title">Storm <sup>®</sup> by Zero</h3>
             <p class="product-subtitle">Fawad's Recommended</p>
             <div class="tags">
-              <span class="tag">Balanced Audio</span>
-                            <span class="tag dark">40mm Driver</span>
-
-              <span class="tag">70 Hour Playtime</span>
+              <span class="tag"> Experience</span>
+              <span class="tag">15 Days Standby</span>
+              <span class="tag dark">1.38 Wide Display</span>
             </div>
           </div>
           <button class="arrow-btn"><a href="BuyNow.html">➜</a></button>
         </div>
-        <img src="img/3.webp" alt="Storm" class="product-image">
+        <img src="img/3.webp" alt="Storm" class="product-image1">
         <div class="card-footer">
           <p class="highlight">Limited Edition</p>
           <div class="metrics">
@@ -288,146 +314,117 @@
 
   <div class="center-container">
 
-  <h1  class="eachProductH2">Trending Now by Category</h1>
-</div>
-    <div class="filter-buttons">
-      <button onclick="filterCategory('smartwatch')">⌚ Smartwatch</button>
-      <button onclick="filterCategory('smartphone')">📱 Smartphone</button>
-      <button onclick="filterCategory('tv')">📺 TV</button>
-      <button onclick="filterCategory('earbuds')">🎧 Earbuds</button>
-      <button onclick="filterCategory('camera')">📷 Camera</button>
+    <h1 class="eachProductH2">Trending Now by Category</h1>
+  </div>
+  <div class="filter-buttons">
+    <button onclick="filterCategory('smartwatch')">⌚ Smartwatch</button>
+    <button onclick="filterCategory('smartphone')">📱 Smartphone</button>
+    <button onclick="filterCategory('tv')">📺 TV</button>
+    <button onclick="filterCategory('earbuds')">🎧 Earbuds</button>
+    <button onclick="filterCategory('camera')">📷 Camera</button>
+  </div>
+
+  <div class="products">
+    <!-- Smartwatch (5 products) -->
+    <div class="card smartwatch">
+      <img src="https://zerolifestyle.co/cdn/shop/files/Envi_1.webp?v=1734558268&width=700" />
+    </div>
+    <div class="card smartwatch">
+      <img src="https://zerolifestyle.co/cdn/shop/files/Infinity-silver-realistic.jpg?v=1733315727&width=400" />
+    </div>
+    <div class="card smartwatch">
+      <img src="img/wh1.jpg" />
+    </div>
+    <div class="card smartwatch">
+      <img
+        src="https://zerolifestyle.co/cdn/shop/files/1_ceb0f8ec-2695-4c16-b0cd-0862a61e3c6b.jpg?v=1732606599&width=400" />
+    </div>
+    <div class="card smartwatch">
+      <img src="https://zerolifestyle.co/cdn/shop/files/Meta_Realistic_05_1.webp?v=1719096837&width=400" />
     </div>
 
-    <div class="products">
-      <!-- Smartwatch (5 products) -->
-      <div class="card smartwatch">
-        <img
-          src="https://zerolifestyle.co/cdn/shop/files/Envi_1.webp?v=1734558268&width=700"
-        />
-      </div>
-      <div class="card smartwatch">
-        <img
-          src="https://zerolifestyle.co/cdn/shop/files/Infinity-silver-realistic.jpg?v=1733315727&width=400"
-        />
-      </div>
-      <div class="card smartwatch">
-        <img
-          src="https://zerolifestyle.co/cdn/shop/files/Silver-vogue.webp?v=1742632877&width=400"
-        />
-      </div>
-      <div class="card smartwatch">
-        <img
-          src="https://zerolifestyle.co/cdn/shop/files/1_ceb0f8ec-2695-4c16-b0cd-0862a61e3c6b.jpg?v=1732606599&width=400"
-        />
-      </div>
-      <div class="card smartwatch">
-        <img
-          src="https://zerolifestyle.co/cdn/shop/files/Meta_Realistic_05_1.webp?v=1719096837&width=400"
-        />
-      </div>
-
-      <!-- Smartphone (5 products) -->
-      <div class="card smartphone">
-        <img
-          src="https://images.priceoye.pk/tecno-camon-20-pro-pakistan-priceoye-f2vv4-500x500.webp"
-        />
-      </div>
-      <div class="card smartphone">
-        <img
-          src="https://images.priceoye.pk/xiaomi-redmi-note-12-pro-pakistan-priceoye-7rgsb-500x500.webp"
-        />
-      </div>
-      <div class="card smartphone">
-        <img
-          src="https://images.priceoye.pk/samsung-galaxy-s23-fe-pakistan-priceoye-4qzll-500x500.webp"
-        />
-      </div>
-      <div class="card smartphone">
-        <img src="http://127.0.0.1:5500/img/p2.jpg" />
-      </div>
-      <div class="card smartphone">
-        <img
-          src="https://qirat-al-mansoor.github.io/CELLINFO/assets/oneplus%207pro.jpg"
-        />
-      </div>
-
-      <!-- TV (5 products) -->
-      <div class="card tv">
-        <img src="http://127.0.0.1:5500/img/STV2.jpg" />
-      </div>
-      <div class="card tv">
-        <img
-          src="https://www.mega.pk/items_images/HAIER+40INCH+SMART++LE-40K6600+Price+in+Pakistan%2C+Specifications%2C+Features_-_20685.webp"
-        />
-      </div>
-      <div class="card tv">
-        <img
-          src="https://static.tossdown.com/images/7d6fa91f-ead3-426f-9860-45e53e0da208.webp"
-        />
-      </div>
-
-      <!-- Earbuds (5 products) -->
-      <div class="card earbuds">
-        <img
-          src="https://images.priceoye.pk/dx-02-tws-earbuds-in-ear-wireless-earphone-pakistan-priceoye-pd15v-500x500.webp"
-        />
-      </div>
-      <div class="card earbuds">
-        <img
-          src="https://images.priceoye.pk/zero-arcade-900-wireless-earbuds-pakistan-priceoye-ry6xx-500x500.webp"
-        />
-      </div>
-      <div class="card earbuds">
-        <img
-          src="https://images.priceoye.pk/f9-pro-wireless-bluetooth-earbuds-pakistan-priceoye-6x0pa-500x500.webp"
-        />
-      </div>
-      <div class="card earbuds">
-        <img
-          src="https://images.priceoye.pk/lenovo-xt95-pro-wireless-earbuds-pakistan-priceoye-uao59-500x500.webp"
-        />
-      </div>
-      <div class="card earbuds">
-        <img
-          src="https://images.priceoye.pk/hottu-tws-earbuds-hot-ts20-pakistan-priceoye-9p3qt-500x500.webp"
-        />
-      </div>
-
-      <!-- Camera (5 products) -->
-      <div class="card camera"><img src="img/camera5.jpg" /></div>
-      <div class="card camera"><img src="img/camera2.jpg" /></div>
-      <div class="card camera">
-        <img src="img/camera22.jpg" />
-      </div>
-      <div class="card camera"><img src="img/caamera4.jpg" /></div>
-      <div class="card camera"><img src="img/camera6.jpg" /></div>
+    <!-- Smartphone (5 products) -->
+    <div class="card smartphone">
+      <img src="https://images.priceoye.pk/tecno-camon-20-pro-pakistan-priceoye-f2vv4-500x500.webp" />
+    </div>
+    <div class="card smartphone">
+      <img src="https://images.priceoye.pk/xiaomi-redmi-note-12-pro-pakistan-priceoye-7rgsb-500x500.webp" />
+    </div>
+    <div class="card smartphone">
+      <img src="https://images.priceoye.pk/samsung-galaxy-s23-fe-pakistan-priceoye-4qzll-500x500.webp" />
+    </div>
+    <div class="card smartphone">
+      <img src="http://127.0.0.1:5500/img/p2.jpg" />
+    </div>
+    <div class="card smartphone">
+      <img src="https://qirat-al-mansoor.github.io/CELLINFO/assets/oneplus%207pro.jpg" />
     </div>
 
-<script>
-  function filterCategory(category) {
-    const allCards = document.querySelectorAll(".card");
+    <!-- TV (5 products) -->
+    <div class="card tv">
+      <img src="http://127.0.0.1:5500/img/STV2.jpg" />
+    </div>
+    <div class="card tv">
+      <img
+        src="https://www.mega.pk/items_images/HAIER+40INCH+SMART++LE-40K6600+Price+in+Pakistan%2C+Specifications%2C+Features_-_20685.webp" />
+    </div>
+    <div class="card tv">
+      <img src="https://static.tossdown.com/images/7d6fa91f-ead3-426f-9860-45e53e0da208.webp" />
+    </div>
 
-    allCards.forEach((card) => {
-      if (card.classList.contains(category)) {
-        card.classList.remove("hidden");
-      } else {
-        card.classList.add("hidden");
-      }
-    });
-  }
+    <!-- Earbuds (5 products) -->
+    <div class="card earbuds">
+      <img
+        src="https://images.priceoye.pk/dx-02-tws-earbuds-in-ear-wireless-earphone-pakistan-priceoye-pd15v-500x500.webp" />
+    </div>
+    <div class="card earbuds">
+      <img src="https://images.priceoye.pk/zero-arcade-900-wireless-earbuds-pakistan-priceoye-ry6xx-500x500.webp" />
+    </div>
+    <div class="card earbuds">
+      <img src="https://images.priceoye.pk/f9-pro-wireless-bluetooth-earbuds-pakistan-priceoye-6x0pa-500x500.webp" />
+    </div>
+    <div class="card earbuds">
+      <img src="https://images.priceoye.pk/lenovo-xt95-pro-wireless-earbuds-pakistan-priceoye-uao59-500x500.webp" />
+    </div>
+    <div class="card earbuds">
+      <img src="https://images.priceoye.pk/hottu-tws-earbuds-hot-ts20-pakistan-priceoye-9p3qt-500x500.webp" />
+    </div>
 
-  // Page load: show all Smartwatch products (5)
-  window.onload = () => {
-    const allCards = document.querySelectorAll(".card");
-    allCards.forEach((card) => {
-      if (card.classList.contains("smartwatch")) {
-        card.classList.remove("hidden"); // show all smartwatches
-      } else {
-        card.classList.add("hidden"); // hide others
-      }
-    });
-  };
-</script>
+    <!-- Camera (5 products) -->
+    <div class="card camera"><img src="img/camera5.jpg" /></div>
+    <div class="card camera"><img src="img/camera2.jpg" /></div>
+    <div class="card camera">
+      <img src="img/camera22.jpg" />
+    </div>
+    <div class="card camera"><img src="img/caamera4.jpg" /></div>
+    <div class="card camera"><img src="img/camera6.jpg" /></div>
+  </div>
+
+  <script>
+    function filterCategory(category) {
+      const allCards = document.querySelectorAll(".card");
+
+      allCards.forEach((card) => {
+        if (card.classList.contains(category)) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    }
+
+    // Page load: show all Smartwatch products (5)
+    window.onload = () => {
+      const allCards = document.querySelectorAll(".card");
+      allCards.forEach((card) => {
+        if (card.classList.contains("smartwatch")) {
+          card.classList.remove("hidden"); // show all smartwatches
+        } else {
+          card.classList.add("hidden"); // hide others
+        }
+      });
+    };
+  </script>
 
 
 
@@ -445,11 +442,11 @@
 
 
 
- <!-- Home Page Slider (Main) -->
-<div class=" center-container">
-   <h2 class="eachProductH2">  Featured Picks </h2>
+  <!-- Home Page Slider (Main) -->
+  <div class=" center-container">
+    <h2 class="eachProductH2"> Featured Picks </h2>
 
-</div>
+  </div>
   <div class="swiper mainSwiper">
 
     <div class="swiper-wrapper">
@@ -458,7 +455,7 @@
       <div class="swiper-slide"><img src="img/c3.jpg" /></div>
       <div class="swiper-slide"><img src="img/c4.jpg" /></div>
       <div class="swiper-slide"><img src="img/c25.jpg" /></div>
-       <div class="swiper-slide"><img src="img/c6.jpg" /></div>
+      <div class="swiper-slide"><img src="img/c6.jpg" /></div>
       <div class="swiper-slide"><img src="img/c7.jpg" /></div>
       <div class="swiper-slide"><img src="img/c8.jpg" /></div>
 
@@ -473,138 +470,142 @@
 
   <div class="center-container">
 
-<h2 class="eachProductH2">What Our Customers Say</h2>
-</div>
-<div class="ekart-review-section">
-
-  <div class="swiper ekart-review-swiper">
-    <div class="swiper-wrapper">
-      
-      <!-- Review 1 -->
-      <div class="swiper-slide">
-        <div class="ekart-review-card">
-          <h3 class="ekart-review-name">Usman A.</h3>
-          <div class="ekart-review-location">Karachi, PK</div>
-          <div class="ekart-review-stars">★★★★☆</div>
-          <p class="ekart-review-text">Great service and value for money. My smartwatch arrived in perfect condition</p>
-        <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a> 
-        </div>
-      </div>
-
-      <!-- Review 2 -->
-      <div class="swiper-slide">
-        <div class="ekart-review-card">
-          <h3 class="ekart-review-name">Sara K.</h3>
-          <div class="ekart-review-location">Lahore, PK</div>
-          <div class="ekart-review-stars">★★★★★</div>
-          <p class="ekart-review-text">Amazing! Fast delivery . The earbuds I bought exceeded my expectations in sound quality.</p>
-        <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a> 
-        </div>
-      </div>
-
-      <!-- Review 3 -->
-      <div class="swiper-slide">
-        <div class="ekart-review-card">
-          <h3 class="ekart-review-name">Ali R.</h3>
-          <div class="ekart-review-location">Islamabad, PK</div>
-          <div class="ekart-review-stars">★★★★★</div>
-          <p class="ekart-review-text">The smartphone was exactly as described, and the price was unbeatable. Definitely shopping again!</p>
-        <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a> 
-        </div>
-      </div>
-
-      <!-- Review 4 -->
-      <div class="swiper-slide">
-        <div class="ekart-review-card">
-          <h3 class="ekart-review-name">Nida F.</h3>
-          <div class="ekart-review-location">Faisalabad, PK</div>
-          <div class="ekart-review-stars">★★★★☆</div>
-          <p class="ekart-review-text">Loved the sleek design of the smartwatch. Battery lasts longer than I expected.</p>
-        <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a> 
-        </div>
-      </div>
-
-      <!-- Review 5 -->
-      <div class="swiper-slide">
-        <div class="ekart-review-card">
-          <h3 class="ekart-review-name">Ahmed B.</h3>
-          <div class="ekart-review-location">Multan, PK</div>
-          <div class="ekart-review-stars">★★★★★</div>
-          <p class="ekart-review-text">Customer service is top-notch! They quickly helped me choose the right product for my needs.</p>
-        <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a> 
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Pagination -->
-    <div class="swiper-pagination ekart-review-pagination"></div>
+    <h2 class="eachProductH2">What Our Customers Say</h2>
   </div>
-</div>
+  <div class="ekart-review-section">
 
-<!-- Swiper JS -->
+    <div class="swiper ekart-review-swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Review 1 -->
+        <div class="swiper-slide">
+          <div class="ekart-review-card">
+            <h3 class="ekart-review-name">Usman A.</h3>
+            <div class="ekart-review-location">Karachi, PK</div>
+            <div class="ekart-review-stars">★★★★☆</div>
+            <p class="ekart-review-text">Great service and value for money. My smartwatch arrived in perfect condition
+            </p>
+            <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="swiper-slide">
+          <div class="ekart-review-card">
+            <h3 class="ekart-review-name">Sara K.</h3>
+            <div class="ekart-review-location">Lahore, PK</div>
+            <div class="ekart-review-stars">★★★★★</div>
+            <p class="ekart-review-text">Amazing! Fast delivery . The earbuds I bought exceeded my expectations in sound
+              quality.</p>
+            <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="swiper-slide">
+          <div class="ekart-review-card">
+            <h3 class="ekart-review-name">Ali R.</h3>
+            <div class="ekart-review-location">Islamabad, PK</div>
+            <div class="ekart-review-stars">★★★★★</div>
+            <p class="ekart-review-text">The smartphone was exactly as described, and the price was unbeatable.
+              Definitely shopping again!</p>
+            <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a>
+          </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="swiper-slide">
+          <div class="ekart-review-card">
+            <h3 class="ekart-review-name">Nida F.</h3>
+            <div class="ekart-review-location">Faisalabad, PK</div>
+            <div class="ekart-review-stars">★★★★☆</div>
+            <p class="ekart-review-text">Loved the sleek design of the smartwatch. Battery lasts longer than I expected.
+            </p>
+            <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a>
+          </div>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="swiper-slide">
+          <div class="ekart-review-card">
+            <h3 class="ekart-review-name">Ahmed B.</h3>
+            <div class="ekart-review-location">Multan, PK</div>
+            <div class="ekart-review-stars">★★★★★</div>
+            <p class="ekart-review-text">Customer service is top-notch! They quickly helped me choose the right product
+              for my needs.</p>
+            <a href="AllProduct.html"> <button class="ekart-review-btn">Shop Now</button></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination ekart-review-pagination"></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
 
 
 
 
- <script src="gsap.min.js"></script>
-<script src="ScrollTrigger.min.js"></script>
-<script src="index.min.js"></script>
-<script src="lenis.min.js"></script>
+  <script src="gsap.min.js"></script>
+  <script src="ScrollTrigger.min.js"></script>
+  <script src="index.min.js"></script>
+  <script src="lenis.min.js"></script>
 
-<!-- scroll animation -->
-<script>
+  <!-- scroll animation -->
+  <script>
 
-gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger)
 
-const splitTypes = document.querySelectorAll('.reveal')
+    const splitTypes = document.querySelectorAll('.reveal')
 
-splitTypes.forEach((char,i) =>{
-    const text = new SplitType(char, {types:'chars'})
+    splitTypes.forEach((char, i) => {
+      const text = new SplitType(char, { types: 'chars' })
 
-    gsap.from(text.chars,{
-        scrollTrigger:{
-            trigger:char,
-            start:'top 65%',
-            end:' top 50%',
-            scrub: false,
-            markers:false
+      gsap.from(text.chars, {
+        scrollTrigger: {
+          trigger: char,
+          start: 'top 65%',
+          end: ' top 50%',
+          scrub: false,
+          markers: false
         },
         // y:30,
         // opacity:0,
         // stagger:0.01
 
-        scaleY:0,
+        scaleY: 0,
         y: -20,
-        transformOrigin:'right',
-        stagger:0.04
-        
+        transformOrigin: 'right',
+        stagger: 0.04
+
+      })
+
     })
 
-})
+    const lenis = new Lenis()
+    lenis.on('scroll', (e) => {
+      console.log(e)
+    })
 
-const lenis = new Lenis()
- lenis.on('scroll', (e)  => {
- console.log(e) 
- }) 
- 
- function raf(time) {
- lenis.raf(time)
- requestAnimationFrame(raf)
- } 
- requestAnimationFrame(raf)
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
 
-</script>
-
+  </script>
 
   <footer>
     <div class="FT-brandlogo">
-   
+
     </div>
 
     <div class="FT-containerF">
       <div class="FT-child1">
-         <h3>E-Kart</h3>
+        <h3>E-Kart</h3>
         <ul class="FT-list">
           <a href="index.html">
             <li class="FT-li">Home</li>
@@ -634,17 +635,42 @@ const lenis = new Lenis()
       </div>
 
       <div class="FT-child2">
-               <h3>Customer Care</h3>
+        <h3>Customer Care</h3>
 
         <ul class="FT-list">
-          <li class="FT-li">Help Center</li>
-          <li class="FT-li">Provide Information</li>
+          <a target="_blank" href="HelpCenter.html">
+            <li class="FT-li">Help Center</li>
+          </a>
+
+          <a href="provideInfo.html" target="_blank">
+            <li class="FT-li">Provide Information</li>
+          </a>
+          <a href="CorporateandBulkPurchasing.html" rel="noopener noreferrer" target="_blank"></a>
           <li class="FT-li">Corporate & Bulk Purchasing</li>
-          <li class="FT-li">Returns & Refunds</li>
-          <li class="FT-li">Track Your Order</li>
-          <li class="FT-li">Cancellation Policy</li>
-          <li class="FT-li">Warranty & Repair</li>
-          <li class="FT-li">Product Support</li>
+          </a>
+          <a href="Returns.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Returns & Refunds</li>
+          </a>
+
+
+          <a href="trackYourOrder.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Track Your Order</li>
+          </a>
+
+
+
+
+          <a href="Cancellation Policy.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Cancellation Policy</li>
+          </a>
+          <a href="WarrantyAndRepair.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Warranty & Repair</li>
+          </a>
+
+
+          <a href="Product Support.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Product Support</li>
+          </a>
         </ul>
       </div>
 
@@ -666,7 +692,7 @@ const lenis = new Lenis()
         <div class="FT-images">
           <img src="img/foot img1.svg" alt="" class="FT-img1">
           <img src="img/foot img2.svg" alt="" class="FT-img1">
-          <img  src="img/foot img3.png" alt="" class="FT-img1">
+          <img src="img/foot img3.png" alt="" class="FT-img1">
         </div>
       </div>
 
@@ -696,35 +722,36 @@ const lenis = new Lenis()
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Swiper Initialization -->
-<script src="home.js">
- 
-</script>
+  <script src="home.js">
 
-<script src="ShowProducts.js"></script>
+  </script>
+
+  <script src="ShowProducts.js"></script>
   <script src="nav.js"></script>
 
-<script>
-var swiper = new Swiper('.ekart-review-swiper', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
-  speed: 3000,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.ekart-review-pagination',
-    clickable: true,
-  },
-  breakpoints: {
-    1024: { slidesPerView: 3 },
-    768: { slidesPerView: 2 },
-    0: { slidesPerView: 1 }
-  }
-});
-</script>
+  <script>
+    var swiper = new Swiper('.ekart-review-swiper', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      speed: 3000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.ekart-review-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        1024: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
+        0: { slidesPerView: 1 }
+      }
+    });
+  </script>
 
- 
+
 </body>
+
 </html>

@@ -249,7 +249,7 @@ align-items: center;
 
 }
 
-.promise-card {
+.promise-card1 {
   background-color: #f5f5f5;
   border-radius: 20px;
   margin-bottom: 140px;
@@ -316,7 +316,7 @@ align-items: center;
   border-radius: 16px;
   padding: 8px  20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
-  height:355px;
+  height:357px;
   min-width: 200px;
   max-width: 280px;
   color: #fff;
@@ -382,7 +382,7 @@ align-items: center;
    transform: rotate(-55deg);
   transition: transform 0.5s ease-in-out;
 }
-.product-image {
+.product-image1 {
   width: 100%;
   border-radius: 12px;
   margin: 11px 0;
@@ -549,8 +549,8 @@ justify-content: center;
   
 }
 .tag-badge {
-  background: linear-gradient(135deg, #74ebd5, #acb6e5);
-  color: #2c3e50;
+  background: linear-gradient(to right, #d946ef, #a855f7, #6366f1);
+  color: #fff;
   font-size: 0.72rem;
   font-weight: 700;
   padding: 6px 14px;
@@ -647,11 +647,11 @@ justify-content: center;
     margin-left: 72px;
     
   }
-  .launch-card{
-    height: 355px;
+  /* .launch-card{
+    height: 315px;
     min-width: 330px;
     max-width: 280px;
-  }
+  } */
   .arrow-btn {
    
     border-radius: 90%;
@@ -1034,6 +1034,12 @@ font-size: 30px;
 .eachProductH2::after {
   width: 50%;
 
+}
+
+.launch-card {
+
+  height:357px;
+  
 }
 }
 

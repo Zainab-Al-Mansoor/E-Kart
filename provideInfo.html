@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Provide Information - EKart</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>SmartTVs</title>
-  <link rel="stylesheet" href="EKartNavbar.css">
   <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
   <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="eachproduct.css">
-  <link rel="stylesheet" href="sTV.css">
   <link rel="stylesheet" href="cart.css">
-    <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-
+  <link rel="stylesheet" href="EKartNavbar.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* ===== Base ===== */
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Times New Roman', Times, serif }
+    body { background-color:#0b0c10; color:white;  }
+    h1 { text-align:center; font-size:2.5rem; margin-bottom:15px; background:linear-gradient(90deg, #ec4899, #3b82f6, #a855f7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .intro { text-align:center; max-width:700px; margin:0 auto 40px; color:#cbd5e1; font-size:1.1rem; }
+  .con{
+    padding:40px 20px; line-height:1.6;
+  }
+    .info-form { max-width:600px; margin:0 auto; background:rgba(255,255,255,0.05); padding:30px; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.4); transition:transform 0.3s ease; }
+    .info-form:hover { transform:translateY(-5px); }
+    .form-label { display:block; margin:12px 0 5px; font-weight:bold; color:#f0f0f0; }
+    .form-input, textarea { width:100%; padding:12px; border:none; border-radius:8px; outline:none; background:rgba(255,255,255,0.1); color:white; font-size:1rem; margin-bottom:15px; transition:box-shadow 0.3s ease; }
+    .form-input:focus, textarea:focus { box-shadow:0 0 8px #a855f7; }
+    .btn { width:100%; padding:12px; border:none; border-radius:8px; font-size:1.1rem; font-weight:bold; background:linear-gradient(90deg, #ec4899, #3b82f6, #a855f7); color:white; cursor:pointer; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .btn:hover { transform:scale(1.03); box-shadow:0 0 12px #a855f7; }
+    .success-message { display:none; margin-top:15px; padding:12px; border-radius:8px; background: rgba(16,185,129,0.2); color:#10b981; font-weight:bold; text-align:center; }
+    @media (max-width:600px){ body{padding:20px 15px;} }
+  </style>
 </head>
-
 <body>
-  <!-- navbar................................................................................................. -->
+      <!-- navbar................................................................................................. -->
   <header>
     <div class="container">
       <div class="navbar">
@@ -105,80 +116,69 @@
         </div>
     </div>
   </header>
-  <br>
-  <br>
-  <br>
+    <!-- Side Cart Panel -->
+  <div id="sideCart" class="side-cart">
+    <!-- Header with title and cross button -->
+    <div class="side-cart-header">
+      <h2>Your Cart</h2>
+      <span class="close-cross" onclick="closeSideCart()">×</span>
+    </div>
 
+    <!-- Cart Items -->
+    <div id="sideCartItems"></div>
 
-  <!-- Side Cart Panel -->
-<div id="sideCart" class="side-cart">
-  <!-- Header with title and cross button -->
-  <div class="side-cart-header">
-    <h2>Your Cart</h2>
-    <span class="close-cross" onclick="closeSideCart()">×</span>
+    <!-- Checkout Button -->
+    <div class="checkout-btn-container">
+      <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
   </div>
+  <script src="cart.js"></script>
 
-  <!-- Cart Items -->
-  <div id="sideCartItems"></div>
 
-  <!-- Checkout Button -->
-  <div class="checkout-btn-container">
-    <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
-  </div>
+
+<br>
+<br>
+<br>
+<div class="con">
+    <h1>Provide Information</h1>
+<p class="intro">Help us serve you better by providing your information. This allows us to personalize your EKart experience and ensure your requests are processed efficiently.</p>
+
+<div class="info-form">
+ <form id="infoForm">
+  <label class="form-label" for="name">Full Name</label>
+  <input class="form-input" type="text" id="name" placeholder="John Doe">
+  <small class="error-msg" id="nameError"></small>
+
+  <label class="form-label" for="email">Email Address</label>
+  <input class="form-input" type="email" id="email" placeholder="john@example.com">
+  <small class="error-msg" id="emailError"></small>
+
+  <label class="form-label" for="phone">Phone Number</label>
+  <input class="form-input" type="text" id="phone" placeholder="+1 234 567 890">
+  <small class="error-msg" id="phoneError"></small>
+
+  <label class="form-label" for="message">Additional Information</label>
+  <textarea class="form-input" id="message" rows="4" placeholder="Provide any details here..."></textarea>
+
+  <button class="btn" type="submit">Submit Information</button>
+  <div class="success-message" id="successMsg">✅ Your information has been submitted!</div>
+</form>
+
+<style>
+  .error-msg {
+    display: block;
+    color: #f87171; /* red color */
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    min-height: 18px;
+  }
+</style>
+
+
+
 </div>
-<script src="cart.js"></script>
-
-    <div class="maincon">
-
-   
-  <div class="ekart-container">
-    <!-- Left content -->
-    <div class="ekart-content">
-      <h1>Ekart Smart TVs</h1>
-      <p>Discover the ultimate viewing experience with Ekart Smart TVs. Enjoy crystal-clear picture quality, vibrant colors, and seamless connectivity. Upgrade your home entertainment today!</p>
-      <button  class="ekart-button"><a href="#smart-tv-shop">Shop Now</a></button>
-    </div>
-
-    <!-- Right Swiper slider -->
-    <div class="swiper ekart-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide ekart-slide">
-          <img src="img/stv3.jpg" />
-        </div>
-        <div class="swiper-slide ekart-slide">
-                  <img src="img/STV2.jpg" />
-
-        </div>
-        <div class="swiper-slide ekart-slide">
-          <img src="img/STV55.jpg" />
-        </div>
-        <div class="swiper-slide ekart-slide">
-          <img src="img/STV1.jpg" />
-        </div>
-        <div class="swiper-slide ekart-slide">
-                    <img src="img/stv4.jpg" />
-
-        </div>
-        <div class="swiper-slide ekart-slide">
-          <img src="img/stv.jpg" />
-        </div>
-      </div>
-      <div class="swiper-button-next ekart-next"></div>
-      <div class="swiper-button-prev ekart-prev"></div>
-      <div class="swiper-pagination ekart-pagination"></div>
-    </div>
-  </div>
- </div>
-
-
-  <!--Earbuds  Section -->
-  <section id="smart-tv-shop" class="smart-section">
-    <h2 class="section-title">SmartTVs Collection</h2>
-    <div id="SmartTVs" class="card-grid"></div>
-  </section>
-
-  <!-- .........................FOOTER........................................................................... -->
-
+</div>
 
   <footer>
     <div class="FT-brandlogo">
@@ -299,32 +299,86 @@
     </div>
   </footer>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var ekartSwiper = new Swiper(".ekart-swiper", {
-      effect: "flip",
-      grabCursor: true,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".ekart-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".ekart-next",
-        prevEl: ".ekart-prev",
-      },
-    });
-  </script>
+<script>
+const form = document.getElementById('infoForm');
+const successMsg = document.getElementById('successMsg');
 
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
 
-  <script src="eachproduct.js"></script>
-  <script src="nav.js"></script>
+const nameError = document.getElementById('nameError');
+const emailError = document.getElementById('emailError');
+const phoneError = document.getElementById('phoneError');
 
+// Regex patterns
+const nameRegex = /^[a-zA-Z\s]{2,50}$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phoneRegex = /^\+?\d{7,15}$/;
+
+// Load draft from localStorage
+window.addEventListener('load', () => {
+  if(localStorage.getItem('infoDraft')){
+    const draft = JSON.parse(localStorage.getItem('infoDraft'));
+    nameInput.value = draft.name || "";
+    emailInput.value = draft.email || "";
+    phoneInput.value = draft.phone || "";
+    document.getElementById('message').value = draft.message || "";
+  }
+});
+
+// Save draft on input
+form.addEventListener('input', () => {
+  const draft = {
+    name: nameInput.value,
+    email: emailInput.value,
+    phone: phoneInput.value,
+    message: document.getElementById('message').value
+  };
+  localStorage.setItem('infoDraft', JSON.stringify(draft));
+});
+
+// Validate function
+function validateInput() {
+  let isValid = true;
+
+  if(!nameRegex.test(nameInput.value.trim())){
+    nameError.textContent = "Full Name must be 2-50 letters and spaces only.";
+    isValid = false;
+  } else {
+    nameError.textContent = "";
+  }
+
+  if(!emailRegex.test(emailInput.value.trim())){
+    emailError.textContent = "Enter a valid Email Address.";
+    isValid = false;
+  } else {
+    emailError.textContent = "";
+  }
+
+  if(phoneInput.value.trim() && !phoneRegex.test(phoneInput.value.trim())){
+    phoneError.textContent = "Phone Number must be 7-15 digits (optional '+').";
+    isValid = false;
+  } else {
+    phoneError.textContent = "";
+  }
+
+  return isValid;
+}
+
+// Submit form
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  if(validateInput()){
+    localStorage.removeItem('infoDraft');
+    successMsg.style.display = 'block';
+    form.reset();
+    setTimeout(() => successMsg.style.display = 'none', 3000);
+  }
+});
+</script>
+
+<script src="nav.js"></script>
 </body>
-
 </html>

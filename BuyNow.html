@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="EKartNavbar.css">
   <link rel="stylesheet" href="footer.css">
        <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
-
+<link rel="stylesheet" href="cart.css">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" /> 
@@ -16,7 +16,7 @@
 </head>
 <body>
  <!-- navbar................................................................................................. -->
-  <header>
+ <header>
     <div class="container">
       <div class="navbar">
         <a href="index.html" class="logo">
@@ -51,7 +51,7 @@
             <button onclick="search_products()"
               style="background: transparent; border: none; cursor: pointer"
             >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="blue"
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="white"
               viewBox="0 0 24 24">
               <path d="M21 21l-5.2-5.2M16 10.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" />
@@ -61,10 +61,19 @@
         <button id="menu-toggle" class="menu-btn">☰</button>
         <div class="action-buttons">
   <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+
+
+   <!-- Cart Icon -->
+<a href="#" id="cart-icon" class="cart-link">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cart-count">0</span>
+</a>
+
 </div>
 
       </div>
-  <div id="mobile-menu" class="mobile-menu">
+
+     <div id="mobile-menu" class="mobile-menu">
           <div class="mobile-menu-content">
             <a href="index.html">Home</a>
  
@@ -91,7 +100,6 @@
     </div>
   </header>
 
-
 <style>
   .con{
     background-image: url('img/BuyNowBg.jpg');
@@ -99,6 +107,24 @@
   }
 </style>
 
+
+ <!-- Side Cart Panel -->
+<div id="sideCart" class="side-cart">
+  <!-- Header with title and cross button -->
+  <div class="side-cart-header">
+    <h2>Your Cart</h2>
+    <span class="close-cross" onclick="closeSideCart()">×</span>
+  </div>
+
+  <!-- Cart Items -->
+  <div id="sideCartItems"></div>
+
+  <!-- Checkout Button -->
+  <div class="checkout-btn-container">
+    <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+  </div>
+</div>
+<script src="cart.js"></script>
 
 <div class="con">
 
@@ -130,7 +156,7 @@
       <input name="email" type="email" id="email" placeholder="Enter your email" >
 
       <label for="phone">Phone Number</label>
-      <input name="tel" type="tel" id="phone" placeholder="Enter your phone no" >
+      <input name="telephone" type="tel" id="phone" placeholder="Enter your phone no" >
 
       <label for="address">Street Address</label>
       <input name="address" type="text" id="address" placeholder="Enter your address" >
@@ -142,7 +168,7 @@
       <input name="zipCode" type="text" id="zip" placeholder="Enter your zipCode" >
 
       <label for="payment">Payment Method</label>
-      <select id="payment" >
+      <select name="payment" id="payment" >
         <option  value="">Select Payment Method</option>
         <option value="COD">Cash on Delivery</option>
         <option value="Credit Card">Credit Card</option>
@@ -154,7 +180,7 @@
 
       <div class="checkbox-wrapper">
         <input name="checkbox" type="checkbox" id="terms" >
-        <label for="terms">I agree to the Terms and Conditions</label>
+        <label  for="terms">I agree to the Terms and Conditions</label>
       </div>
 
       <button class="subBtn" type="submit">Place Order</button>

@@ -11,7 +11,7 @@ const createProductCard = (product) => {
 
 
   const card = document.createElement('div');
-  card.classList.add('product-card');
+  card.classList.add('product-card1');
 
   const img = document.createElement('img');
   img.src = product.img[0];

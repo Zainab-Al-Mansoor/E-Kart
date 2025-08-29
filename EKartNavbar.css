@@ -71,7 +71,7 @@ header {
 
 .nav-links a:hover {
 
-background: linear-gradient(45deg, #00e5ff, #ff00cc);
+  background: linear-gradient(to right, #d946ef, #a855f7, #6366f1);
 border-radius: 40px;
 }
 
@@ -106,7 +106,7 @@ border-radius: 40px;
           background: linear-gradient(to right, #667eea, #764ba2, #4a2e75);
 
     position: absolute;
-    min-width: 160px;
+    min-width: 129px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     z-index: 1000;
@@ -131,13 +131,11 @@ border-radius: 40px;
 /* Dropdown Links */
 .dropdown-content a {
     color: #ffff;
-    border-bottom: 4px solid #fff;
+    border-bottom: 0.4px solid #fff;
     padding: 8px 12px;
     text-decoration: none;
     display: block;
-    transition: background 0.2s;
 }
-
 
 /* Show Dropdown on Hover */
 .dropdown:hover .dropdown-content {
@@ -390,3 +388,58 @@ padding-top:0px ;
   }
 }
 
+
+.dropdown-content a:hover {
+    background:none;
+        border-bottom: 0.4px solid #fff;
+ 
+    border-radius: 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* cart icon */
+/* Cart Icon Style */
+.cart-link {
+  position: relative;
+  margin-left: 15px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.cart-link i {
+  font-size: 22px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cart-link:hover i {
+  transform: scale(1.1);
+  color: #ffcc00; /* highlight on hover */
+}
+
+/* Badge (small number) */
+#cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: crimson;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  display: inline-block;
+  min-width: 18px;
+  text-align: center;
+}

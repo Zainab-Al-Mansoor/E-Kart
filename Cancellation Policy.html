@@ -1,25 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancellation Policy - EKart</title>
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="EKartNavbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>SmartTVs</title>
-  <link rel="stylesheet" href="EKartNavbar.css">
   <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="eachproduct.css">
-  <link rel="stylesheet" href="sTV.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="cart.css">
-    <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <style>
+    /* ===== Base ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+      }
 
+    body {
+      background-color: #0b0c10;
+      color: #ffffff;
+ 
+    }
+.con{
+         line-height: 1.7;
+      padding: 40px 20px;
+}
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      background: linear-gradient(90deg, #ff6ec7, #7366ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
+    .policy-container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .policy-container h2 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #ff9de2;
+      border-left: 4px solid #7366ff;
+      padding-left: 10px;
+    }
+
+    .policy-container p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: #dddddd;
+    }
+
+    .ul {
+      margin: 10px 0 20px 20px;
+    }
+
+    .ul .li {
+      margin-bottom: 10px;
+      color: #cccccc;
+    }
+
+    /* Highlight box */
+    .highlight {
+      background: linear-gradient(90deg, rgba(255, 110, 199, 0.15), rgba(115, 102, 255, 0.15));
+      padding: 15px;
+      border-left: 5px solid #ff6ec7;
+      border-radius: 10px;
+      margin: 20px 0;
+      color: #f5f5f5;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
 </head>
-
 <body>
   <!-- navbar................................................................................................. -->
   <header>
@@ -107,79 +178,75 @@
   </header>
   <br>
   <br>
-  <br>
-
-
   <!-- Side Cart Panel -->
-<div id="sideCart" class="side-cart">
-  <!-- Header with title and cross button -->
-  <div class="side-cart-header">
-    <h2>Your Cart</h2>
-    <span class="close-cross" onclick="closeSideCart()">×</span>
+  <div id="sideCart" class="side-cart">
+    <!-- Header with title and cross button -->
+    <div class="side-cart-header">
+      <h2>Your Cart</h2>
+      <span class="close-cross" onclick="closeSideCart()">×</span>
+    </div>
+
+    <!-- Cart Items -->
+    <div id="sideCartItems"></div>
+
+    <!-- Checkout Button -->
+    <div class="checkout-btn-container">
+      <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
   </div>
+  <script src="cart.js"></script>
 
-  <!-- Cart Items -->
-  <div id="sideCartItems"></div>
 
-  <!-- Checkout Button -->
-  <div class="checkout-btn-container">
-    <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+
+<div class="con">  <h1>Cancellation Policy</h1>
+
+  <div class="policy-container">
+    <p>
+      At EKart, we value your trust and want to make your shopping experience as smooth as possible.  
+      Please review our cancellation policy below for details on how cancellations are handled.
+    </p>
+
+    <h2>1. Order Cancellation Window</h2>
+    <p>
+      - Orders can be cancelled within <strong>24 hours</strong> of purchase without any charges.  
+      - After 24 hours, cancellations may not be guaranteed if the order has already been processed or shipped.
+    </p>
+
+    <h2>2. How to Cancel</h2>
+    <p>
+      You can request cancellation through:
+    </p>
+    <ul>
+      <li>“My Orders” section in your EKart account.</li>
+      <li>Contacting our customer support team via email or chat.</li>
+    </ul>
+
+    <h2>3. Refund Process</h2>
+    <p>
+      - If the order is successfully cancelled, refunds will be processed to your original payment method within <strong>7–10 business days</strong>.  
+      - For Cash on Delivery (COD) orders, refunds will be issued via bank transfer or store credit.
+    </p>
+
+    <h2>4. Exceptions</h2>
+    <p>Certain items may not be eligible for cancellation, including but not limited to:</p>
+    <ul class="ul">
+      <li class="li">Customized or personalized products.</li>
+      <li class="li">Perishable or consumable goods.</li>
+      <li class="li">Items marked as “Final Sale” or “Non-returnable”.</li>
+    </ul>
+
+    <div class="highlight">
+      ⚠️ Note: Once your order is shipped, it cannot be cancelled. You may initiate a return request after delivery if eligible.
+    </div>
+
+    <h2>5. Contact Us</h2>
+    <p>
+      For any assistance regarding cancellations, please reach out to our support team:  
+      <br>Email: support@ekart.com  
+      <br>Helpline: +1 (800) 123-4567
+    </p>
   </div>
 </div>
-<script src="cart.js"></script>
-
-    <div class="maincon">
-
-   
-  <div class="ekart-container">
-    <!-- Left content -->
-    <div class="ekart-content">
-      <h1>Ekart Smart TVs</h1>
-      <p>Discover the ultimate viewing experience with Ekart Smart TVs. Enjoy crystal-clear picture quality, vibrant colors, and seamless connectivity. Upgrade your home entertainment today!</p>
-      <button  class="ekart-button"><a href="#smart-tv-shop">Shop Now</a></button>
-    </div>
-
-    <!-- Right Swiper slider -->
-    <div class="swiper ekart-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide ekart-slide">
-          <img src="img/stv3.jpg" />
-        </div>
-        <div class="swiper-slide ekart-slide">
-                  <img src="img/STV2.jpg" />
-
-        </div>
-        <div class="swiper-slide ekart-slide">
-          <img src="img/STV55.jpg" />
-        </div>
-        <div class="swiper-slide ekart-slide">
-          <img src="img/STV1.jpg" />
-        </div>
-        <div class="swiper-slide ekart-slide">
-                    <img src="img/stv4.jpg" />
-
-        </div>
-        <div class="swiper-slide ekart-slide">
-          <img src="img/stv.jpg" />
-        </div>
-      </div>
-      <div class="swiper-button-next ekart-next"></div>
-      <div class="swiper-button-prev ekart-prev"></div>
-      <div class="swiper-pagination ekart-pagination"></div>
-    </div>
-  </div>
- </div>
-
-
-  <!--Earbuds  Section -->
-  <section id="smart-tv-shop" class="smart-section">
-    <h2 class="section-title">SmartTVs Collection</h2>
-    <div id="SmartTVs" class="card-grid"></div>
-  </section>
-
-  <!-- .........................FOOTER........................................................................... -->
-
-
   <footer>
     <div class="FT-brandlogo">
 
@@ -299,32 +366,8 @@
     </div>
   </footer>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var ekartSwiper = new Swiper(".ekart-swiper", {
-      effect: "flip",
-      grabCursor: true,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".ekart-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".ekart-next",
-        prevEl: ".ekart-prev",
-      },
-    });
-  </script>
 
 
-  <script src="eachproduct.js"></script>
-  <script src="nav.js"></script>
-
+<script src="nav.js"></script>
 </body>
-
 </html>

@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-  <title>Earbuds</title>  
-       <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
-
-    <link rel="stylesheet" href="EKartNavbar.css">
-
-      <link rel="stylesheet" href="footer.css">
-      <link rel="stylesheet" href="e.css">
-
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="img/mylogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="EKartNavbar.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="e.css">
+<link rel="stylesheet" href="cart.css">
+  <title>Earbuds</title>
 
   <link rel="stylesheet" href="eachproduct.css">
 </head>
+
 <body>
- <!-- navbar................................................................................................. -->
+  <!-- navbar................................................................................................. -->
   <header>
     <div class="container">
       <div class="navbar">
         <a href="index.html" class="logo">
-          <img
-            src="img/mylogo.png"
-            alt=" logo" />
+          <img src="img/mylogo.png" alt=" logo" />
           <h5> E-Kart</h5>
         </a>
 
         <nav class="nav-links">
           <a href="index.html">Home</a>
           <div class="dropdown">
-          <a href="AllProduct.html">All Accessories</a>
-                         <a href="SmartWatch.html">Smart Watches</a>
+            <a href="AllProduct.html">All Accessories</a>
+            <a href="SmartWatch.html">Smart Watches</a>
 
-          <div class="dropdown-content">
+            <div class="dropdown-content">
               <a href="SmartPhone.html">Smartphones</a>
               <a href="SmartTVs.html">SmartTVs</a>
 
@@ -50,10 +48,8 @@
 
 
         <div id="" class="search-box">
-           <input type="text" id="search-input" placeholder="Search products, features..." />
-            <button onclick="search_products()"
-              style="background: transparent; border: none; cursor: pointer"
-            >
+          <input type="text" id="search-input" placeholder="Search products, features..." />
+          <button onclick="search_products()" style="background: transparent; border: none; cursor: pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="white"
               viewBox="0 0 24 24">
               <path d="M21 21l-5.2-5.2M16 10.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z" stroke-width="2"
@@ -63,101 +59,123 @@
         </div>
         <button id="menu-toggle" class="menu-btn">☰</button>
         <div class="action-buttons">
-  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
-</div>
+          <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+
+
+          <!-- Cart Icon -->
+          <a href="#" id="cart-icon" class="cart-link">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+
+        </div>
 
       </div>
 
-     <div id="mobile-menu" class="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="index.html">Home</a>
- 
- <a href="AllProduct.html">All Accessories ▾ </a>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-content">
+          <a href="index.html">Home</a>
 
- <!-- //in five product ko koi aise css do jis sai ye baqi links sai alag dikhai -->
-   <a href="SmartPhone.html" class="product-link">Smartphones</a>
-<a href="SmartWatch.html" class="product-link">Smartwatches</a>
-<a href="Earbuds.html" class="product-link">Earbuds</a>
-<a href="SmartTVs.html" class="product-link">SmartTVs</a>
-<a href="Camera.html" class="product-link">Cameras</a>
+          <a href="AllProduct.html">All Accessories ▾ </a>
 
-    
-        
-            <a href="Vision 2025.html">NextGen-AI</a>
-            <a href="Support.html">Support</a>
+          <!-- //in five product ko koi aise css do jis sai ye baqi links sai alag dikhai -->
+          <a href="SmartPhone.html" class="product-link">Smartphones</a>
+          <a href="SmartWatch.html" class="product-link">Smartwatches</a>
+          <a href="Earbuds.html" class="product-link">Earbuds</a>
+          <a href="SmartTVs.html" class="product-link">SmartTVs</a>
+          <a href="Camera.html" class="product-link">Cameras</a>
 
-        
-  <!-- other links -->
-  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
-</div>
-          </div>
+
+
+          <a href="Vision 2025.html">NextGen-AI</a>
+          <a href="Support.html">Support</a>
+
+
+          <!-- other links -->
+          <a href="Sign Up.html" class="signup-btn">Sign Up</a>
         </div>
+      </div>
+    </div>
     </div>
   </header>
   <br>
-<br>
-<br>
+  <br>
+  <br>
 
 
-
-
-
-
-
-<style>
-  
-  
-
-
-   @keyframes slideIn {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  .slide-text2 {
-    animation: slideIn 1s ease-out forwards;
-  }
-
-</style>
-
-<!-- featured section -->
-<section class="featured-section slide-text2">
-  <h2 class="section-title ">Top Rated Tech Earbuds
-
-</h2>
-  <div class="featured-items">
-    <!-- feature box -->
-    <div class="feature-box">
-      <img src="img/earbud1.webp" alt="Smartwatches">
-      <h3>M20 TWS Dolby Buds
-
-</h3>
+  <!-- Side Cart Panel -->
+  <div id="sideCart" class="side-cart">
+    <!-- Header with title and cross button -->
+    <div class="side-cart-header">
+      <h2>Your Cart</h2>
+      <span class="close-cross" onclick="closeSideCart()">×</span>
     </div>
 
-    <div class="feature-box">
-      <img src="img/earbud2.webp" alt="Smartwatches">
-      <h3>F9 Pro FlexiBuds Z
+    <!-- Cart Items -->
+    <div id="sideCartItems"></div>
 
-
-</h3>
-    </div>
-
-    <div class="feature-box">
-      <img src="img/earbud3.webp" alt="Smartwatches">
-      <h3>DX-02 GlowPods FX
-
-
-
- </h3>
+    <!-- Checkout Button -->
+    <div class="checkout-btn-container">
+      <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
     </div>
   </div>
-</section>
+  <script src="cart.js"></script>
+
+
+
+
+
+
+  <style>
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .slide-text2 {
+      animation: slideIn 1s ease-out forwards;
+    }
+  </style>
+
+  <!-- featured section -->
+  <section class="featured-section slide-text2">
+    <h2 class="section-title ">Top Rated Tech Earbuds
+
+    </h2>
+    <div class="featured-items">
+      <!-- feature box -->
+      <div class="feature-box">
+        <img src="img/earbud1.webp" alt="Smartwatches">
+        <h3>M20 TWS Dolby Buds
+
+        </h3>
+      </div>
+
+      <div class="feature-box">
+        <img src="img/earbud2.webp" alt="Smartwatches">
+        <h3>F9 Pro FlexiBuds Z
+
+
+        </h3>
+      </div>
+
+      <div class="feature-box">
+        <img src="img/earbud3.webp" alt="Smartwatches">
+        <h3>DX-02 GlowPods FX
+
+
+
+        </h3>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -169,15 +187,14 @@
 
   <!-- .........................FOOTER........................................................................... -->
 
- 
   <footer>
     <div class="FT-brandlogo">
-   
+
     </div>
 
     <div class="FT-containerF">
       <div class="FT-child1">
-         <h3>E-Kart</h3>
+        <h3>E-Kart</h3>
         <ul class="FT-list">
           <a href="index.html">
             <li class="FT-li">Home</li>
@@ -207,17 +224,42 @@
       </div>
 
       <div class="FT-child2">
-               <h3>Customer Care</h3>
+        <h3>Customer Care</h3>
 
         <ul class="FT-list">
-          <li class="FT-li">Help Center</li>
-          <li class="FT-li">Provide Information</li>
+          <a target="_blank" href="HelpCenter.html">
+            <li class="FT-li">Help Center</li>
+          </a>
+
+          <a href="provideInfo.html" target="_blank">
+            <li class="FT-li">Provide Information</li>
+          </a>
+          <a href="CorporateandBulkPurchasing.html" rel="noopener noreferrer" target="_blank"></a>
           <li class="FT-li">Corporate & Bulk Purchasing</li>
-          <li class="FT-li">Returns & Refunds</li>
-          <li class="FT-li">Track Your Order</li>
-          <li class="FT-li">Cancellation Policy</li>
-          <li class="FT-li">Warranty & Repair</li>
-          <li class="FT-li">Product Support</li>
+          </a>
+          <a href="Returns.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Returns & Refunds</li>
+          </a>
+
+
+          <a href="trackYourOrder.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Track Your Order</li>
+          </a>
+
+
+
+
+          <a href="Cancellation Policy.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Cancellation Policy</li>
+          </a>
+          <a href="WarrantyAndRepair.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Warranty & Repair</li>
+          </a>
+
+
+          <a href="Product Support.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Product Support</li>
+          </a>
         </ul>
       </div>
 
@@ -239,7 +281,7 @@
         <div class="FT-images">
           <img src="img/foot img1.svg" alt="" class="FT-img1">
           <img src="img/foot img2.svg" alt="" class="FT-img1">
-          <img  src="img/foot img3.png" alt="" class="FT-img1">
+          <img src="img/foot img3.png" alt="" class="FT-img1">
         </div>
       </div>
 
@@ -263,10 +305,8 @@
       <p>Copyright &copy;2025; Designed by <span class="designer">APTECH</span></p>
     </div>
   </footer>
-
-
-
   <script src="eachproduct.js"></script>
   <script src="nav.js"></script>
 </body>
+
 </html>

@@ -29,7 +29,7 @@ const fetchSingleProduct = async () => {
     }
 
     const card = document.createElement('div');
-    card.classList.add('product-card');
+    card.classList.add('product-card2');
 
     card.innerHTML = `
     <div class="left">
@@ -38,7 +38,7 @@ const fetchSingleProduct = async () => {
 
       <div class="right">
         <p class="breadcrumb">Home / ${product.title}</p>
-        <span class="tag">${product.tag || 'PREMIUM ITEM'}</span>
+        <span class="tag2">${product.tag || 'PREMIUM ITEM'}</span>
         <h1>${product.title}</h1>
         <p class="sub">${product.description || 'Smartwatch with AMOLED Display'}</p>
 
@@ -235,3 +235,6 @@ function removeFromCart(index) {
 function closeSideCart() {
   document.getElementById('sideCart').classList.remove('open');
 }
+
+
+

@@ -18,13 +18,14 @@
     <link rel="stylesheet" href="EKartNavbar.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="sp.css">
+    <link rel="stylesheet" href="cart.css">
 
 </head>
 <body>
  <!-- navbar................................................................................................. -->
-  <header>
+ <header>
     <div class="container">
-      <div id="navbar" class="navbar">
+      <div class="navbar">
         <a href="index.html" class="logo">
           <img
             src="img/mylogo.png"
@@ -67,11 +68,19 @@
         <button id="menu-toggle" class="menu-btn">☰</button>
         <div class="action-buttons">
   <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+
+
+   <!-- Cart Icon -->
+<a href="#" id="cart-icon" class="cart-link">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="cart-count">0</span>
+</a>
+
 </div>
 
       </div>
 
-       <div id="mobile-menu" class="mobile-menu">
+     <div id="mobile-menu" class="mobile-menu">
           <div class="mobile-menu-content">
             <a href="index.html">Home</a>
  
@@ -102,7 +111,23 @@
 <br>
 
 
+ <!-- Side Cart Panel -->
+<div id="sideCart" class="side-cart">
+  <!-- Header with title and cross button -->
+  <div class="side-cart-header">
+    <h2>Your Cart</h2>
+    <span class="close-cross" onclick="closeSideCart()">×</span>
+  </div>
 
+  <!-- Cart Items -->
+  <div id="sideCartItems"></div>
+
+  <!-- Checkout Button -->
+  <div class="checkout-btn-container">
+    <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+  </div>
+</div>
+<script src="cart.js"></script>
 
 
 <section class="ComSection">
@@ -483,14 +508,14 @@ h1 span {
 
  <!-- .........................FOOTER........................................................................... -->
 
-  <footer>
+   <footer>
     <div class="FT-brandlogo">
-   
+
     </div>
 
     <div class="FT-containerF">
       <div class="FT-child1">
-         <h3>E-Kart</h3>
+        <h3>E-Kart</h3>
         <ul class="FT-list">
           <a href="index.html">
             <li class="FT-li">Home</li>
@@ -520,17 +545,42 @@ h1 span {
       </div>
 
       <div class="FT-child2">
-               <h3>Customer Care</h3>
+        <h3>Customer Care</h3>
 
         <ul class="FT-list">
-          <li class="FT-li">Help Center</li>
-          <li class="FT-li">Provide Information</li>
+          <a target="_blank" href="HelpCenter.html">
+            <li class="FT-li">Help Center</li>
+          </a>
+
+          <a href="provideInfo.html" target="_blank">
+            <li class="FT-li">Provide Information</li>
+          </a>
+          <a href="CorporateandBulkPurchasing.html" rel="noopener noreferrer" target="_blank"></a>
           <li class="FT-li">Corporate & Bulk Purchasing</li>
-          <li class="FT-li">Returns & Refunds</li>
-          <li class="FT-li">Track Your Order</li>
-          <li class="FT-li">Cancellation Policy</li>
-          <li class="FT-li">Warranty & Repair</li>
-          <li class="FT-li">Product Support</li>
+          </a>
+          <a href="Returns.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Returns & Refunds</li>
+          </a>
+
+
+          <a href="trackYourOrder.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Track Your Order</li>
+          </a>
+
+
+
+
+          <a href="Cancellation Policy.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Cancellation Policy</li>
+          </a>
+          <a href="WarrantyAndRepair.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Warranty & Repair</li>
+          </a>
+
+
+          <a href="Product Support.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Product Support</li>
+          </a>
         </ul>
       </div>
 
@@ -552,7 +602,7 @@ h1 span {
         <div class="FT-images">
           <img src="img/foot img1.svg" alt="" class="FT-img1">
           <img src="img/foot img2.svg" alt="" class="FT-img1">
-          <img  src="img/foot img3.png" alt="" class="FT-img1">
+          <img src="img/foot img3.png" alt="" class="FT-img1">
         </div>
       </div>
 
@@ -576,7 +626,6 @@ h1 span {
       <p>Copyright &copy;2025; Designed by <span class="designer">APTECH</span></p>
     </div>
   </footer>
-
 
   <script src="eachproduct.js"></script>
   <script src="nav.js"></script>

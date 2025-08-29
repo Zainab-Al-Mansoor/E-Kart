@@ -36,3 +36,42 @@ const menuBtn = document.getElementById("menu-toggle");
       }
     });
  
+
+
+
+
+
+
+    // cart icon
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const cartCount = document.getElementById("cart-count");
+
+  function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    cartCount.textContent = totalItems;
+  }
+
+  updateCartCount();
+
+  // Optional: Update in real-time if items are added on same page
+  window.addEventListener("storage", updateCartCount);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('cart-icon').addEventListener('click', function(e) {
+  e.preventDefault(); // prevent page reload
+  showSideCart();      // call your function
+});
