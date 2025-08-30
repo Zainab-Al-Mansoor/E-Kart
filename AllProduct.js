@@ -127,8 +127,28 @@ fetchEarbuds();
 fetchSmartTVs();
 
 // Search Function
+// Enter key se search trigger karein
+document.getElementById("search-input").addEventListener("keypress", function(e) {
+  if (e.key === "Enter") {
+    e.preventDefault(); // Form submit hone se rokne ke liye
+    search_products();
+  }
+});
+
+// Search Function
+// Search Function
 const search_products = async () => {
-  const searchWord = document.getElementById("search-input").value.toLowerCase();
+  const searchInput = document.getElementById("search-input");
+  const searchWord = searchInput.value.toLowerCase().trim();
+
+  // Agar user empty search kare
+  if (!searchWord) {
+    alert("🔎 Please enter a product name to search!");
+    return;
+  }
+
+  // Enter ke baad input clear kar do
+  searchInput.value = "";
 
   // Clear all product containers before showing search results
   allProductsCon.innerHTML = "";
@@ -137,35 +157,33 @@ const search_products = async () => {
   SmartPhoneCon.innerHTML = "";
   SmartTVsCon.innerHTML = "";
 
-document.querySelector('.eachProductH2').innerHTML=''
-document.getElementById('banner').style.display='none'
+  document.querySelector('.eachProductH2').innerHTML = '';
+  document.getElementById('banner').style.display = 'none';
 
   try {
-const categories = ['SmartWatch', 'Earbuds', 'Cameras', 'SmartPhone', 'SmartTVs'];
+    const categories = ['SmartWatch', 'Earbuds', 'Cameras', 'SmartPhone', 'SmartTVs'];
     let allProducts = [];
 
-  for (let category of categories) {
-  const response = await fetch(`JSON/${category}.json`);
-  const data = await response.json();
-  console.log(`Loaded ${category}:`, data);
-  allProducts = allProducts.concat(data);
-}
+    for (let category of categories) {
+      const response = await fetch(`JSON/${category}.json`);
+      const data = await response.json();
+      allProducts = allProducts.concat(data);
+    }
 
-const filtered = allProducts.filter(product =>
-  (product.title && product.title.toLowerCase().includes(searchWord)) ||
-  (product.name && product.name.toLowerCase().includes(searchWord)) ||
-  (product.productName && product.productName.toLowerCase().includes(searchWord)) ||
-  (product.description && product.description.toLowerCase().includes(searchWord)) ||
-  (product.desc && product.desc.toLowerCase().includes(searchWord)) ||
-  (product.display && product.display.toLowerCase().includes(searchWord))
-);
+    const filtered = allProducts.filter(product =>
+      (product.title && product.title.toLowerCase().includes(searchWord)) ||
+      (product.name && product.name.toLowerCase().includes(searchWord)) ||
+      (product.productName && product.productName.toLowerCase().includes(searchWord)) ||
+      (product.description && product.description.toLowerCase().includes(searchWord)) ||
+      (product.desc && product.desc.toLowerCase().includes(searchWord)) ||
+      (product.display && product.display.toLowerCase().includes(searchWord))
+    );
 
-  if (filtered.length === 0) {
-    alert("❌ Sorry! No matching products found. Try: Smartwatch, Smartphone, SmartTVs, Earbuds, Camera.");
-    allProductsCon.innerHTML = "<p style='color:red; text-align:center; margin-top:20px;'>No products found for your search.</p>";
-    return;
-}
-
+    if (filtered.length === 0) {
+      alert("❌ Sorry! No matching products found. Try: Smartwatch, Smartphone, SmartTVs, Earbuds, Camera.");
+      allProductsCon.innerHTML = "<p style='color:red; text-align:center; margin-top:20px;'>No products found for your search.</p>";
+      return;
+    }
 
     filtered.forEach(product => {
       const card = createProductCard(product);
@@ -176,7 +194,6 @@ const filtered = allProducts.filter(product =>
     console.error('Search Error:', error);
   }
 };
-
 
 
 

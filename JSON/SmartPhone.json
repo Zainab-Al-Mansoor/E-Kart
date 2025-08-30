@@ -10,8 +10,8 @@
     "tag": "PRO PERFORMANCE",
     "description": "Apple's flagship with Dynamic Island and ProMotion OLED.",
     "img": [
-      "https://m.media-amazon.com/images/I/51CJE8vrvIL._AC_SX522_.jpg",
-      "https://m.media-amazon.com/images/I/51BSZYdcy2L._AC_SX679_.jpg"
+      "img/sm1.png",
+      "img/sm2.png"
     ]
   },
   {
@@ -25,8 +25,8 @@
     "tag": "ULTRA FLAGSHIP",
     "description": "200MP camera & S-Pen flagship experience.",
     "img": [
-      "https://images.priceoye.pk/samsung-galaxy-s23-fe-pakistan-priceoye-g80vp-500x500.webp",
-      "https://images.priceoye.pk/samsung-galaxy-s23-fe-pakistan-priceoye-4qzll-500x500.webp"
+      "img/s3.png",
+      "img/sm4.png"
     ]
   },
   {
@@ -40,8 +40,8 @@
     "tag": "CAMERA KING",
     "description": "Leica-powered camera with WQHD+ AMOLED.",
     "img": [
-      "https://images.priceoye.pk/xiaomi-redmi-note-13-pro-pakistan-priceoye-8zikv-500x500.webp",
-      "https://images.priceoye.pk/xiaomi-redmi-note-13-pro-pakistan-priceoye-g80t6-500x500.webp"
+      "img/sm5.png",
+      "img/sm6.png"
     ]
   },
   {
@@ -55,8 +55,8 @@
     "tag": "GAMER’S PICK",
     "description": "High refresh rate display for gaming & smooth UI.",
     "img": [
-      "https://images.priceoye.pk/realme-note-60-pakistan-priceoye-4ee41-500x500.webp",
-      "https://images.priceoye.pk/realme-note-60-pakistan-priceoye-5qnqn-500x500.webp"
+      "img/sm7.png",
+      "img/sm8.png"
     ]
   },
   {
@@ -70,8 +70,8 @@
     "tag": "STYLE & VALUE",
     "description": "AMOLED screen & premium design at budget price.",
     "img": [
-      "https://images.priceoye.pk/tecno-camon-20-pro-pakistan-priceoye-i672r-500x500.webp",
-      "https://images.priceoye.pk/tecno-camon-20-pro-pakistan-priceoye-f2vv4-500x500.webp"
+      "img/sm9.png",
+      "img/sm10.png"
     ]
   },
   {
@@ -85,8 +85,9 @@
     "tag": "STYLISH CHOICE",
     "description": "Stylish body, long battery life & 90Hz display.",
     "img": [
-      "https://images.priceoye.pk/vivo-y29-pakistan-priceoye-2233y-500x500.webp",
-      "https://images.priceoye.pk/vivo-y29-pakistan-priceoye-atc7c-500x500.webp"
+      "img/sm11.png",
+
+      "img/sm12.png"
     ]
   },
   {
@@ -100,8 +101,8 @@
     "tag": "PORTRAIT MASTER",
     "description": "Portrait Expert with flagship-grade features.",
     "img": [
-      "https://images.priceoye.pk/oppo-reno-11-5g-pakistan-priceoye-30ovw-500x500.webp",
-      "https://images.priceoye.pk/oppo-reno-11-5g-pakistan-priceoye-vu20c-500x500.webp"
+      "img/sm13.png",
+      "img/sm14.png"
     ]
   },
   {
@@ -115,8 +116,8 @@
     "tag": "FLAGSHIP KILLER",
     "description": "Flagship killer with fast charging and clean UI.",
     "img": [
-      "https://images.priceoye.pk/tecno-spark-8c-pakistan-priceoye-x8bpl-500x500.webp",
-      "https://images.priceoye.pk/tecno-spark-8c-pakistan-priceoye-91ryn-500x500.webp"
+      "img/sm15.png",
+      "img/sm16.png"
     ]
   },
   {
@@ -130,8 +131,8 @@
     "tag": "MIDRANGE KING",
     "description": "Reliable mid-range with IP67 & great cameras.",
     "img": [
-      "https://images.priceoye.pk/samsung-galaxy-a54-5g-pakistan-priceoye-wmmpy-500x500.webp",
-      "https://images.priceoye.pk/samsung-galaxy-a54-5g-pakistan-priceoye-9z4d9-500x500.webp"
+      "img/sm17.png",
+      "img/sm18.png"
     ]
   },
   {
@@ -145,8 +146,8 @@
     "tag": "POPULAR CHOICE",
     "description": "Best-seller with AMOLED & stereo speakers.",
     "img": [
-      "https://images.priceoye.pk/xiaomi-redmi-note-12-pro-pakistan-priceoye-yyklz-500x500.webp",
-      "https://images.priceoye.pk/xiaomi-redmi-note-12-pro-pakistan-priceoye-7rgsb-500x500.webp"
+      "img/sm19.png",
+      "img/sm7.png"
     ]
   },
   {
@@ -160,8 +161,8 @@
     "tag": "BIG SCREEN DEAL",
     "description": "Affordable phone with smooth 120Hz display.",
     "img": [
-      "https://images.priceoye.pk/infinix-note-50-pakistan-priceoye-iqzrw-500x500.webp",
-      "https://images.priceoye.pk/infinix-note-50-pakistan-priceoye-w3jlm-500x500.webp"
+      "img/sm21.png",
+      "img/sm22.png"
     ]
   },
   {
@@ -175,8 +176,8 @@
     "tag": "CLEAN UI PICK",
     "description": "Clean stock Android with fast performance.",
     "img": [
-      "https://images.priceoye.pk/motorola-moto-g23-pakistan-priceoye-fkuhw-500x500.webp",
-      "https://images.priceoye.pk/motorola-moto-g23-pakistan-priceoye-nays6-500x500.webp"
+      "img/sm23.png",
+      "img/sm25.png"
     ]
   }
 ]

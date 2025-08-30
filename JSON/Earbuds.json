@@ -10,8 +10,8 @@
     "rating": 4.3,
     "tag": "GAMER CHOICE",
     "img": [
-      "https://images.priceoye.pk/zero-arcade-900-wireless-earbuds-pakistan-priceoye-qd68v-500x500.webp",
-      "https://images.priceoye.pk/zero-arcade-900-wireless-earbuds-pakistan-priceoye-ry6xx-500x500.webp"
+      "img/E2.png",
+      "img/E1.png"
     ]
   },
   {
@@ -25,8 +25,8 @@
     "rating": 4.7,
     "tag": "FLAGSHIP KILLER",
     "img": [
-      "https://images.priceoye.pk/m20-tws-wireless-bluetooth-earbuds-pakistan-priceoye-zniaz-270x270.webp",
-      "https://images.priceoye.pk/m20-tws-wireless-bluetooth-earbuds-pakistan-priceoye-5bcvq-500x500.webp"
+      "img/eq1.png",
+      "img/eq2.png"
     ]
   },
   {
@@ -40,8 +40,9 @@
     "rating": 4.6,
     "tag": "RUGGED",
     "img": [
-      "https://images.priceoye.pk/m29-tws-wireless-bluetooth-earbuds-pakistan-priceoye-2nx9z-500x500.webp",
-      "https://m.media-amazon.com/images/I/71cmAChhQKL._AC_UY218_.jpg"
+      "img/eq3.png",
+      "img/eq4.png"
+      
     ]
   },
   {
@@ -55,7 +56,7 @@
     "rating": 4.4,
     "tag": "NEW ARRIVAL",
     "img": [
-      "https://images.priceoye.pk/f9-pro-wireless-bluetooth-earbuds-pakistan-priceoye-ehs1n-500x500.webp",
+      "img/eq5.png",
       "https://images.priceoye.pk/f9-pro-wireless-bluetooth-earbuds-pakistan-priceoye-6x0pa-500x500.webp"
     ]
   },
@@ -70,8 +71,9 @@
     "rating": 4.5,
     "tag": "LIMITED OFFER",
     "img": [
-      "https://images.priceoye.pk/zero-wave-neo-wireless-earbuds-pakistan-priceoye-ih9wk-500x500.webp",
-      "https://images.priceoye.pk/zero-wave-neo-wireless-earbuds-pakistan-priceoye-okajx-500x500.webp"
+      "img/eq6.png",
+      "img/eq7.png"
+      
     ]
   },
   {
@@ -85,8 +87,9 @@
     "rating": 4.6,
     "tag": "CURVED DESIGN",
     "img": [
-      "https://images.priceoye.pk/lenovo-xt95-pro-wireless-earbuds-pakistan-priceoye-3doi6-500x500.webp",
-      "https://images.priceoye.pk/lenovo-xt95-pro-wireless-earbuds-pakistan-priceoye-uao59-500x500.webp"
+      "img/eq8.png",
+      "img/eq9.png"
+
     ]
   },
   {
@@ -100,25 +103,11 @@
     "rating": 4.5,
     "tag": "TRENDING",
     "img": [
-      "https://images.priceoye.pk/q20-lcd-tws-wireless-earbuds-pakistan-priceoye-h1rxg-500x500.webp",
-      "https://images.priceoye.pk/q20-lcd-tws-wireless-earbuds-pakistan-priceoye-k1waw-500x500.webp"
+      "img/eq10.png",
+      "img/eq11.png"
     ]
   },
-  {
-    "productName": "Earbuds",
-    "description": "Experience powerful sound with premium earbuds.",
-    "title": "Hot TS20 PulsePods Air",
-    "display": "Ultra Lightweight | Fast Pairing",
-    "price": 2899,
-    "original_price": 6999,
-    "discount": "59% OFF",
-    "rating": 4.4,
-    "tag": "FEATHER LIGHT",
-    "img": [
-      "https://images.priceoye.pk/hottu-tws-earbuds-hot-ts20-pakistan-priceoye-agjnm-500x500.webp",
-      "https://images.priceoye.pk/hottu-tws-earbuds-hot-ts20-pakistan-priceoye-9p3qt-500x500.webp"
-    ]
-  },
+
   {
     "productName": "Earbuds",
     "description": "Experience powerful sound with premium earbuds.",
@@ -130,8 +119,8 @@
     "rating": 4.6,
     "tag": "HOT DEAL",
     "img": [
-      "https://images.priceoye.pk/zero-flash-earbuds-pakistan-priceoye-00ars-500x500.webp",
-      "https://images.priceoye.pk/zero-flash-earbuds-pakistan-priceoye-mc8rb-500x500.webp"
+    "img/eq14.png",
+      "img/eq15.png"
     ]
   },
   {

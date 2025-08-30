@@ -61,7 +61,12 @@ body{
   margin-bottom: 30px;
 }
 
-
+@media (max-width:420px) {
+  .eachProductH2{
+    text-align: center;
+    margin-left: 20px;
+  }
+}
 
 
 
@@ -287,7 +292,7 @@ align-items: center;
 }
 
 .featured-section .launch-card img{
-  height: 150px;
+  height: 170px;
 }
 .section-title {
  font-size: 2.2rem;
@@ -316,7 +321,7 @@ align-items: center;
   border-radius: 16px;
   padding: 8px  20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
-  height:357px;
+  height:390px;
   min-width: 200px;
   max-width: 280px;
   color: #fff;
@@ -1038,7 +1043,7 @@ font-size: 30px;
 
 .launch-card {
 
-  height:357px;
+  height:387px;
   
 }
 }

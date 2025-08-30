@@ -1,4 +1,14 @@
-// Function to render cart items on checkout page
+// ===== Custom Alert Functions =====
+function showCustomAlert(message) {
+  document.getElementById("alertMessage").innerText = message;
+  document.getElementById("customAlert").style.display = "flex";
+}
+
+function closeCustomAlert() {
+  document.getElementById("customAlert").style.display = "none";
+}
+
+// ===== Function to render cart items on checkout page =====
 function renderCheckoutCart() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   const cartItemsContainer = document.getElementById("checkoutCartItems");
@@ -37,13 +47,13 @@ function renderCheckoutCart() {
   cartTotalContainer.innerHTML = `<h3>Total: $${total.toFixed(2)}</h3>`;
 }
 
-// Handle checkout form submission
+// ===== Handle checkout form submission =====
 document.getElementById("buyNowForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   if (cart.length === 0) {
-    alert("Your cart is empty. Please add products before checkout.");
+    showCustomAlert("❌ Your cart is empty. Please add products before checkout.");
     return;
   }
 
@@ -67,7 +77,7 @@ document.getElementById("buyNowForm").addEventListener("submit", function (e) {
 
   console.log("Order Placed ✅", orderData);
 
-  alert("🎉 Order placed successfully! Your info and products are saved.");
+  showCustomAlert(" Order placed successfully! Your info and products are saved.");
 
   // Clear cart after order placed
   localStorage.removeItem("cart");
@@ -77,5 +87,5 @@ document.getElementById("buyNowForm").addEventListener("submit", function (e) {
   renderCheckoutCart();
 });
 
-// Initial call to render checkout cart
+// ===== Initial call to render checkout cart =====
 renderCheckoutCart();

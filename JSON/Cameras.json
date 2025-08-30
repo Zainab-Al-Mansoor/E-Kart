@@ -1,20 +1,20 @@
 [
- 
-  {
+   {
     "productName": "Camera",
     "description": "Capture your moments with perfection.",
     "title": "Nikon D5600 DSLR",
-    "display": "24.2MP | Vari-Angle Touchscreen | Wi-Fi & Bluetooth",
-    "price": 122499,
-    "original_price": 149999,
-    "discount": "18% OFF",
-    "rating": 4.6,
-    "tag": "POPULAR PICK",
+    "display": "24.2MP | Mirrorless | Flip Screen | 4K Video",
+    "price": 169999,
+    "original_price": 194999,
+    "discount": "13% OFF",
+    "rating": 4.9,
+    "tag": "VLOGGING KING",
     "img": [
-      "https://www.nikon.com.pk/wp-content/uploads/2023/05/dc-300x300.jpg",
-      "https://www.nikon.com.pk/wp-content/uploads/2023/05/d66-300x300.jpg"
+      "img/ec9.png",
+      "img/ec7.png"
     ]
   },
+  
   {
     "productName": "Camera",
     "description": "Capture your moments with perfection.",
@@ -41,8 +41,9 @@
     "rating": 4.7,
     "tag": "RETRO STYLE",
     "img": [
-      "https://m.media-amazon.com/images/I/71IFO4AldiL._AC_SX466_.jpg",
-      "https://m.media-amazon.com/images/I/71NklGcM0FL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+      "img/ec1.png",
+      "img/ec2.png"
+
     ]
   },
   {
@@ -56,8 +57,8 @@
     "rating": 4.8,
     "tag": "ACTION CAM",
     "img": [
-      "https://m.media-amazon.com/images/I/617sGSjmC1L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-      "https://m.media-amazon.com/images/I/71U+IWg+vUL._AC_SX466_.jpg"
+      "img/ec3.png",
+      "img/ec4.png"
     ]
   }
 ]

@@ -66,16 +66,20 @@ header {
     text-decoration: none;
     color: #fff;
     margin: 0 8px;
-    padding: 8px 12px;
+    padding: 10px 13px;
     font-weight: 600;
-    transition: color 0.2s;
+    /* transition: color 0.2s; */
     font-size: 14px;
 }
 
 .nav-links a:hover {
 
-  background: linear-gradient(to right, #d946ef, #a855f7, #6366f1);
-border-radius: 40px;
+     /* border: 1px solid #00ccff; */
+  box-shadow: 0 0 7px #e4e9ff;
+
+
+  /* background: linear-gradient(to right, #d946ef, #a855f7, #6366f1); */
+border-radius: 25px;
 }
 
 .search-box {
@@ -83,7 +87,12 @@ border-radius: 40px;
     margin: 0 8px;    color: #fff;
 
 }
-
+.search-box input:hover{
+     box-shadow: 0 0 10px #e4e9ff;
+}
+.search-box input:focus{
+     box-shadow: 0 0 10px #e4e9ff;
+}
 .search-box input {
     padding: 10px 55px 10px 16px;
     border: 1px solid #a071e6;
@@ -134,12 +143,14 @@ border-radius: 40px;
 /* Dropdown Links */
 .dropdown-content a {
     color: #ffff;
-    border-bottom: 0.4px solid #fff;
+    border-bottom: 0.4px solid #676767;
     padding: 8px 12px;
     text-decoration: none;
     display: block;
 }
-
+.dropdown-content a:hover {
+  box-shadow: none;
+}
 /* Show Dropdown on Hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -191,7 +202,9 @@ border-radius: 40px;
       transition: background 0.3s ease;
 }
 
-
+.signup-btn:hover {
+     box-shadow: 0 0 10px #e4e9ff;
+}
 
 .menu-btn,
 .mobile-search-btn {

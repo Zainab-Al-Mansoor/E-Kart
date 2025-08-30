@@ -16,24 +16,22 @@
 
 </head>
 <body>
-<!-- navbar................................................................................................. -->
-  <header>
+ <!-- navbar................................................................................................. -->
+ <header>
     <div class="container">
-      <div class="navbar">
+      <div id="navbar" class="navbar">
         <a href="index.html" class="logo">
-          <img
-            src="img/mylogo.png"
-            alt=" logo" />
+          <img src="img/mylogo.png" alt=" logo" />
           <h5> E-Kart</h5>
         </a>
 
         <nav class="nav-links">
           <a href="index.html">Home</a>
           <div class="dropdown">
-          <a href="AllProduct.html">All Accessories</a>
-                         <a href="SmartWatch.html">Smart Watches</a>
+            <a href="AllProduct.html">All Accessories</a>
+            <a href="SmartWatch.html">Smart Watches</a>
 
-          <div class="dropdown-content">
+            <div class="dropdown-content">
               <a href="SmartPhone.html">Smartphones</a>
               <a href="SmartTVs.html">SmartTVs</a>
 
@@ -48,10 +46,8 @@
 
 
         <div id="" class="search-box">
-           <input type="text" id="search-input" placeholder="Search products, features..." />
-            <button onclick="search_products()"
-              style="background: transparent; border: none; cursor: pointer"
-            >
+          <input type="text" id="search-input" placeholder="Search products, features..." />
+          <button onclick="search_products()" style="background: transparent; border: none; cursor: pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="white"
               viewBox="0 0 24 24">
               <path d="M21 21l-5.2-5.2M16 10.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0z" stroke-width="2"
@@ -59,50 +55,45 @@
             </svg>
           </button>
         </div>
-        <button id="menu-toggle" class="menu-btn">☰</button>
         <div class="action-buttons">
-  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
+          <a href="Sign Up.html" class="signup-btn">Sign Up</a>
 
 
-   <!-- Cart Icon -->
-<a href="#" id="cart-icon" class="cart-link">
-  <i class="fas fa-shopping-cart"></i>
-  <span id="cart-count">0</span>
-</a>
+          <!-- Cart Icon -->
+          <a href="#" id="cart-icon" class="cart-link">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
 
-</div>
+        </div>
+        <button id="menu-toggle" class="menu-btn">☰</button>
 
       </div>
 
-     <div id="mobile-menu" class="mobile-menu">
-          <div class="mobile-menu-content">
-            <a href="index.html">Home</a>
- 
- <a href="AllProduct.html">All Accessories ▾ </a>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-content">
+          <a href="index.html">Home</a>
 
- <!-- //in five product ko koi aise css do jis sai ye baqi links sai alag dikhai -->
-   <a href="SmartPhone.html" class="product-link">Smartphones</a>
-<a href="SmartWatch.html" class="product-link">Smartwatches</a>
-<a href="Earbuds.html" class="product-link">Earbuds</a>
-<a href="SmartTVs.html" class="product-link">SmartTVs</a>
-<a href="Camera.html" class="product-link">Cameras</a>
+          <a href="AllProduct.html">All Accessories ▾ </a>
 
-    
-        
-            <a href="Vision 2025.html">NextGen-AI</a>
-            <a href="Support.html">Support</a>
+          <!-- //in five product ko koi aise css do jis sai ye baqi links sai alag dikhai -->
+          <a href="SmartPhone.html" class="product-link">Smartphones</a>
+          <a href="SmartWatch.html" class="product-link">Smartwatches</a>
+          <a href="Earbuds.html" class="product-link">Earbuds</a>
+          <a href="SmartTVs.html" class="product-link">SmartTVs</a>
+          <a href="Camera.html" class="product-link">Cameras</a>
 
-        
-  <!-- other links -->
-  <a href="Sign Up.html" class="signup-btn">Sign Up</a>
-</div>
-          </div>
+
+
+          <a href="Vision 2025.html">NextGen-AI</a>
+          <a href="Support.html">Support</a>
+
+
+          <!-- other links -->
+          <a href="Sign Up.html" class="signup-btn">Sign Up</a>
         </div>
-
-
-
-
-
+      </div>
+    </div>
     </div>
   </header>
 
@@ -301,7 +292,7 @@
   <h2 class="sw-detail-title">Smartphone Detail</h2>
   <div class="sw-detail-content">
     <div class="sw-detail-image-container">
-      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Smartphone Model" class="sw-detail-image" />
+      <img src="img/pnew.jpg" alt="Smartphone Model" class="sw-detail-image" />
     </div>
     <div class="sw-detail-info">
       <h3 class="sw-detail-name">Galaxy S21 Ultra</h3>
@@ -337,7 +328,7 @@
   <h2 class="sw-detail-title">Smart TV Detail</h2>
   <div class="sw-detail-content">
     <div class="sw-detail-image-container">
-      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=500&q=80" alt="Smart TV Model" class="sw-detail-image" />
+      <img src="img/main1.jpg" alt="Smart TV Model" class="sw-detail-image" />
     </div>
     <div class="sw-detail-info">
       <h3 class="sw-detail-name">LG OLED CX 55"</h3>
@@ -358,20 +349,46 @@
 </section>
 
 
+<!-- Floating back to top -->
+  <button class="fab1" title="Back to top" id="toTop" aria-label="Back to top">↑</button>
+  
+  <script>
+      // Back to top
+  document.getElementById('toTop').addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
 
+  // Tiny toast system
+  const toast = (msg) => {
+    const el = document.createElement('div');
+    el.textContent = msg;
+    Object.assign(el.style, {
+      position:'fixed', left:'50%', bottom:'22px', transform:'translateX(-50%)',
+      background:'rgba(255,255,255,0.08)', color:'white', border:'1px solid rgba(255,255,255,0.18)',
+      padding:'10px 14px', borderRadius:'12px', zIndex: 50, backdropFilter:'blur(6px)'
+    });
+    document.body.appendChild(el);
+    setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity .4s'; }, 1400);
+    setTimeout(() => el.remove(), 1900);
+  };
+  </script>
 
+<style>
+    /* Floating back-to-top */
+  .fab1 { position: fixed; 
+    right: 20px; bottom: 20px; width: 46px; height:46px;
+     border-radius: 50%; background: linear-gradient(45deg, #00e5ff, #ff00cc); border:0; cursor: pointer; display:grid; place-items:center; box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
 
+ 
+</style>
   <!-- .........................FOOTER........................................................................... -->
-
 
   <footer>
     <div class="FT-brandlogo">
-   
+
     </div>
 
     <div class="FT-containerF">
       <div class="FT-child1">
-         <h3>E-Kart</h3>
+        <h3>E-Kart</h3>
         <ul class="FT-list">
           <a href="index.html">
             <li class="FT-li">Home</li>
@@ -401,17 +418,42 @@
       </div>
 
       <div class="FT-child2">
-               <h3>Customer Care</h3>
+        <h3>Customer Care</h3>
 
         <ul class="FT-list">
-          <li class="FT-li">Help Center</li>
-          <li class="FT-li">Provide Information</li>
+          <a target="_blank" href="HelpCenter.html">
+            <li class="FT-li">Help Center</li>
+          </a>
+
+          <a href="provideInfo.html" target="_blank">
+            <li class="FT-li">Provide Information</li>
+          </a>
+          <a href="CorporateandBulkPurchasing.html" rel="noopener noreferrer" target="_blank"></a>
           <li class="FT-li">Corporate & Bulk Purchasing</li>
-          <li class="FT-li">Returns & Refunds</li>
-          <li class="FT-li">Track Your Order</li>
-          <li class="FT-li">Cancellation Policy</li>
-          <li class="FT-li">Warranty & Repair</li>
-          <li class="FT-li">Product Support</li>
+          </a>
+          <a href="Returns.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Returns & Refunds</li>
+          </a>
+
+
+          <a href="trackYourOrder.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Track Your Order</li>
+          </a>
+
+
+
+
+          <a href="Cancellation Policy.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Cancellation Policy</li>
+          </a>
+          <a href="WarrantyAndRepair.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Warranty & Repair</li>
+          </a>
+
+
+          <a href="Product Support.html" target="_blank" rel="noopener noreferrer">
+            <li class="FT-li">Product Support</li>
+          </a>
         </ul>
       </div>
 
@@ -433,7 +475,7 @@
         <div class="FT-images">
           <img src="img/foot img1.svg" alt="" class="FT-img1">
           <img src="img/foot img2.svg" alt="" class="FT-img1">
-          <img  src="img/foot img3.png" alt="" class="FT-img1">
+          <img src="img/foot img3.png" alt="" class="FT-img1">
         </div>
       </div>
 
@@ -457,7 +499,6 @@
       <p>Copyright &copy;2025; Designed by <span class="designer">APTECH</span></p>
     </div>
   </footer>
-
 
     <script src="AllProduct.js"></script>
     <script src="nav.js"></script>
