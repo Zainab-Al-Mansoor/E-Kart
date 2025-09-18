@@ -157,34 +157,62 @@
     <br>
     <div style="padding-top: 90px;"></div>
 
+<script>
+  const form = document.getElementById('signupForm');
+  const alertBox = document.getElementById('customAlert');
 
-    <script>
-      const form = document.getElementById('signupForm');
-      const alertBox = document.getElementById('customAlert');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
 
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
 
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const password = document.getElementById('password').value.trim();
+    // Regex patterns
+    const nameRegex = /^[A-Za-z\s]{3,30}$/;   // Only letters & spaces, 3–30 chars
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email format
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{6,}$/;
+    // Min 6 chars, at least 1 letter + 1 number
 
-        if (name === '' || email === '' || password.length < 6) {
-          alertBox.innerText = 'Please fill all fields correctly!';
-          alertBox.style.backgroundColor = '#f44336'; // red
-        } else {
-          alertBox.innerText = 'Successfully Signed Up!';
-          alertBox.style.backgroundColor = '#4CAF50'; // green
-          form.reset();
-        }
+    let message = '';
+    let isValid = true;
 
-        alertBox.style.display = 'block';
+    // Empty field checks
+    if (name === '' || email === '' || password === '') {
+      message = 'All fields are required.';
+      isValid = false;
+    }
+    // Regex checks
+    else if (!nameRegex.test(name)) {
+      message = 'Enter a valid name (3–30 letters only).';
+      isValid = false;
+    } else if (!emailRegex.test(email)) {
+      message = 'Enter a valid email address.';
+      isValid = false;
+    } else if (!passwordRegex.test(password)) {
+      message = 'Password must be at least 6 chars with letters & numbers.';
+      isValid = false;
+    }
 
-        setTimeout(() => {
-          alertBox.style.display = 'none';
-        }, 3000);
-      });
-    </script>
+    // Show alert box
+    if (!isValid) {
+      alertBox.innerText = message;
+      alertBox.style.backgroundColor = '#f44336'; // red
+    } else {
+      alertBox.innerText = 'Successfully Signed Up!';
+      alertBox.style.backgroundColor = '#4CAF50'; // green
+      form.reset();
+    }
+
+    alertBox.style.display = 'block';
+
+    setTimeout(() => {
+      alertBox.style.display = 'none';
+    }, 3000);
+  });
+</script>
+
+
     <!-- 
 <script>
 const form = document.getElementById("form");
